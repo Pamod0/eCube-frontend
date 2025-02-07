@@ -1,0 +1,28 @@
+{
+    "singleQuote": true,
+    "printWidth": 160,
+    "editor.formatOnSave": true,
+    "proseWrap": "always",
+    "tabWidth": 4,
+    "requireConfig": false,
+    "useTabs": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "semi": true,
+    "trim_trailing_whitespace": true,
+    "overrides": [
+        {
+            "files": "*.json",
+            "options": {
+                "printWidth": 120
+            }
+        },
+        {
+            "files": "*.ts",
+            "options": {
+                "printWidth": 120
+            }
+        }
+    ]
+}
