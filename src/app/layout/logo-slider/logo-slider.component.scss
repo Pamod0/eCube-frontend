@@ -1,0 +1,37 @@
+.logo-slider {
+    display: grid;
+    grid-template-columns: 0.5fr 8fr 0.5fr;
+    gap: 1rem;
+    padding: 0 80px;
+    background: linear-gradient(135deg, #000 30%, #0a0716 100%);
+}
+.slider {
+    overflow: hidden;
+    background: linear-gradient(135deg, #000 30%, #0a0716 100%);
+    padding: 1em 0em;
+}
+.text {
+    margin-bottom: 20px;
+    color: #c0c0c0;
+}
+img {
+    width: 91px;
+    height: 20px;
+    animation: scroll 60s linear infinite;
+}
+
+.slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translatex(-1000%);
+    }
+}

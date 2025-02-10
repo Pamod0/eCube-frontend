@@ -1,66 +1,74 @@
 /* Header Styles */
 .navbar {
+    display: grid;
+    grid-template-columns: 0.5fr 11fr 0.5fr;
     background-color: #0a0716;
     color: white;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 16px 120px;
-    font-family: "Poppins", serif;
-  }
-  
-  /* Logo */
-  .logo {
+    font-family: 'Poppins', serif;
+}
+.navbar-inner {
+  background-color: #0a0716;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 16px 120px;
+  font-family: "Poppins", serif;
+}
+
+/* Logo */
+.logo {
     display: flex;
     align-items: center;
-  }
-  
-  .logo-img {
-    height: 32px;
+}
+
+.logo-img {
+    height: 40px;
     margin-right: 8px;
-  }
-  
-  .logo-text {
+}
+
+.logo-text {
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  .dot {
+}
+
+.dot {
     color: #3b82f6; /* Blue color */
-  }
-  
-  /* Navigation Links */
-  .nav-links {
+}
+
+/* Navigation Links */
+.nav-links {
     list-style: none;
     display: flex;
     gap: 24px;
     margin: 0;
     padding: 0;
-  }
-  
-  .nav-links li a {
+}
+
+.nav-links li a {
     text-decoration: none;
     color: white;
     font-weight: 500;
     transition: color 0.3s;
-  }
-  
-  .nav-links li a:hover {
+}
+
+.nav-links li a:hover {
     color: #bbbbbb;
-  }
-  
-  /* Contact Button */
-  .contact-btn {
-    background-color: #1235EC; /* Blue */
+}
+
+/* Contact Button */
+.contact-btn {
+    background-color: #1235ec; /* Blue */
     color: white;
     text-decoration: none;
     font-weight: 600;
     padding: 6px 16px;
     border-radius: 8px;
     transition: background-color 0.3s;
-  }
-  
-  .contact-btn:hover {
+}
+
+.contact-btn:hover {
     background-color: #1e40af; /* Darker blue */
-  }
-  
+}
