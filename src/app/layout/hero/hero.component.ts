@@ -9,6 +9,5 @@ import {MatButtonModule} from '@angular/material/button';
     styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-    longText =
-        'We harness AI to build high-quality websites and software in record time. Let’s accelerate your success.';
+
 }
