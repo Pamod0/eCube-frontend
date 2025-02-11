@@ -6,10 +6,11 @@ import { AboutUsComponent } from "../layout/about-us/about-us.component";
 import { OurServicesComponent } from "../layout/our-services/our-services.component";
 import { OurProjectsComponent } from "../layout/our-projects/our-projects.component";
 import { ReviewsComponent } from "../layout/reviews/reviews.component";
+import { TestimonialComponent } from "../layout/testimonial/testimonial.component";
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, HeroComponent, LogoSliderComponent, AboutUsComponent, OurServicesComponent, OurProjectsComponent, ReviewsComponent],
+  imports: [HeaderComponent, HeroComponent, LogoSliderComponent, AboutUsComponent, OurServicesComponent, OurProjectsComponent, ReviewsComponent, TestimonialComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
