@@ -1,0 +1,110 @@
+.our-projects {
+    display: grid;
+    grid-template-columns: 0.5fr 11fr 0.5fr;
+    gap: 2rem;
+    padding: 80px;
+    background: linear-gradient(135deg, #000 30%, #0a0716 100%);
+}
+.our-projects-txt {
+    color: #6f6f6f;
+}
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.our-projects-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px 10px 0;
+    padding: 8px 20px;
+    border: 1px solid #1235ec;
+    border-radius: 7px;
+    background-color: #1235ec;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+    mat-icon {
+        margin-left: 5px;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    .project {
+        border: 2px solid #003dad;
+        border-radius: 32px;
+        padding: 3rem;
+    }
+    > div {
+        width: 100%;
+    }
+    .top-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-top {
+        display: flex;
+    }
+    .icon-container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #c0c0c0;
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+    }
+    h2 {
+        margin-left: 3rem;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+    }
+    .logo {
+        width: 96px;
+        height: 96px;
+    }
+    p {
+        margin-top: 2rem;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .avatar-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0.3rem;
+        margin-top: 2rem;
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 0.3rem;
+        }
+
+        span {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-right: 1rem;
+            color: #ffffff;
+            mat-icon {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

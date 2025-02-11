@@ -21,7 +21,21 @@
                 Our Work. <br />
                 Their Words.
             </h1>
-            <mat-icon style="color: #c0c0c0" aria-hidden="false" fontIcon="arrow_forward_ios"></mat-icon>
+
+            <div class="indicators">
+                <span for="item-1" id="song-1" class="indicator active"></span>
+                <span for="item-2" id="song-2" class="indicator"></span>
+                <span for="item-3" id="song-3" class="indicator"></span>
+            </div>
+
+            <div>
+                <mat-icon id="prevBtn" class="mat-icon-1" style="color: #c0c0c0" aria-hidden="false" fontIcon="arrow_forward_ios"></mat-icon>
+                <mat-icon id="nextBtn" class="mat-icon-2" style="color: #c0c0c0" aria-hidden="false" fontIcon="arrow_back_ios"></mat-icon>
+            </div>
+            <!-- <div class="carousel-buttons">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div> -->
         </div>
         <!-- <div class="hero-image"></div> -->
         <div class="carousel">
@@ -34,58 +48,12 @@
                         <img src="/assets/images/hero-1.jpg" alt="song" />
                     </label>
                     <label class="slide" for="item-2" id="song-2">
-                        <img src="/assets/images/hero-1.jpg" alt="song" />
+                        <img src="/assets/images/hero-person.png" alt="song" />
                     </label>
                     <label class="slide" for="item-3" id="song-3">
                         <img src="/assets/images/hero-1.jpg" alt="song" />
                     </label>
                 </div>
-                <!-- <div class="player">
-                    <div class="upper-part">
-                        <div class="play-icon">
-                            <svg
-                                width="20"
-                                height="20"
-                                fill="#2992dc"
-                                stroke="#2992dc"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                class="feather feather-play"
-                                viewBox="0 0 24 24"
-                            >
-                                <defs />
-                                <path d="M5 3l14 9-14 9V3z" />
-                            </svg>
-                        </div>
-                        <div class="info-area" id="test">
-                            <label class="song-info" id="song-info-1">
-                                <div class="title">Bunker</div>
-                                <div class="sub-line">
-                                    <div class="subtitle">Balthazar</div>
-                                    <div class="time">4.05</div>
-                                </div>
-                            </label>
-                            <label class="song-info" id="song-info-2">
-                                <div class="title">Words Remain</div>
-                                <div class="sub-line">
-                                    <div class="subtitle">Moderator</div>
-                                    <div class="time">4.05</div>
-                                </div>
-                            </label>
-                            <label class="song-info" id="song-info-3">
-                                <div class="title">Falling Out</div>
-                                <div class="sub-line">
-                                    <div class="subtitle">Otzeki</div>
-                                    <div class="time">4.05</div>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <span class="progress"></span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
