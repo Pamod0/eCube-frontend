@@ -1,22 +1,75 @@
-<div class="card">
-    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
-      <ng-template let-product #item>
-          <div class="border border-surface-200 dark:border-surface-700 rounded m-2 p-4">
-              <div class="mb-4">
-                  <div class="relative mx-auto">
-                      <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" [alt]="product.name" class="w-full rounded-border" />
-                      <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)" class="absolute" styleClass="dark:!bg-surface-900" [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
-                  </div>
-              </div>
-              <div class="mb-4 font-medium">{{ product.name }}</div>
-              <div class="flex justify-between items-center">
-                  <div class="mt-0 font-semibold text-xl">{{ '$' + product.price }}</div>
-                  <span>
-                      <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
-                      <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
-                  </span>
-              </div>
-          </div>
-      </ng-template>
-  </p-carousel>
-</div>
+<!-- [circular]="true" autoplayInterval="3000"  -->
+<p-carousel
+    [value]="reviews"
+    [numVisible]="2"
+    [numScroll]="1"
+    [responsiveOptions]="carouselResponsiveOptions"
+    [circular]="true"
+    autoplayInterval="3000"
+    showIndicators="false"
+    showNavigators="false"
+>
+    <ng-template let-review #item>
+        <div class="border border-surface rounded-border m-2 p-4">
+            <div class="project">
+                <div class="icon-container-wrapper">
+                    <div class="icon-container-2"><mat-icon style="color: #000000" aria-hidden="false" fontIcon="north_east"></mat-icon></div>
+                </div>
+
+                <div class="top-wrapper">
+                    <div class="container-top">
+                        <h2 class="poppins-semibold">
+                            <span>{{review.company}}</span> <br />
+                            {{review.project}}
+                        </h2>
+                    </div>
+                </div>
+                <div>
+                    <p class="poppins-regular">
+                        "{{review.review}}"
+                    </p>
+                </div>
+                <div>
+                    <div class="avatar-container">
+                        <div>
+                            <div><img src="/assets/images/{{review.avatar}}" alt="" /></div>
+                        </div>
+                        <div>
+                            <span class="poppins-regular">{{review.reviewer}}</span> <br />
+                            <span class="poppins-light" style="font-size: 12px">{{review.designation}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
+<!-- <div class="card">
+    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true" autoplayInterval="3000" [responsiveOptions]="carouselResponsiveOptions">
+        <ng-template let-product #item>
+            <div class="border border-surface rounded-border m-2 p-4">
+                <div class="mb-4">
+                    <div class="relative mx-auto">
+                        <img
+                            src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}"
+                            [alt]="product.name"
+                            class="w-full rounded-border"
+                        />
+                        <div class="absolute bg-black/70 rounded-border" [ngStyle]="{ 'left.px': 5, 'top.px': 5 }">
+                            <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 font-medium">{{ product.name }}</div>
+                <div class="flex justify-between items-center">
+                    <div class="mt-0 font-semibold text-xl">{{ '$' + product.price }}</div>
+                    <span>
+                        <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                        <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div> -->
