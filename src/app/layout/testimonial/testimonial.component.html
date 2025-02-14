@@ -10,33 +10,33 @@
     showNavigators="false"
 >
     <ng-template let-review #item>
-        <div class="border border-surface rounded-border m-2 p-4">
+        <div class="border border-surface rounded-border mr-2 pr-4">
             <div class="project">
                 <div class="icon-container-wrapper">
-                    <div class="icon-container-2"><mat-icon style="color: #000000" aria-hidden="false" fontIcon="north_east"></mat-icon></div>
+                    <a href="{{ review.link }}" target="_blank">
+                        <div class="icon-container-2"><mat-icon style="color: #000000" aria-hidden="false" fontIcon="north_east"></mat-icon></div>
+                    </a>
                 </div>
 
                 <div class="top-wrapper">
                     <div class="container-top">
                         <h2 class="poppins-semibold">
-                            <span>{{review.company}}</span> <br />
-                            {{review.project}}
+                            <span>{{ review.company }}</span> <br />
+                            {{ review.project }}
                         </h2>
                     </div>
                 </div>
                 <div>
-                    <p class="poppins-regular">
-                        "{{review.review}}"
-                    </p>
+                    <p class="poppins-regular">"{{ review.review }}"</p>
                 </div>
                 <div>
                     <div class="avatar-container">
                         <div>
-                            <div><img src="/assets/images/{{review.avatar}}" alt="" /></div>
+                            <div><img src="/assets/images/{{ review.avatar }}" alt="" /></div>
                         </div>
                         <div>
-                            <span class="poppins-regular">{{review.reviewer}}</span> <br />
-                            <span class="poppins-light" style="font-size: 12px">{{review.designation}}</span>
+                            <span class="poppins-regular">{{ review.reviewer }}</span> <br />
+                            <span class="poppins-light" style="font-size: 12px">{{ review.designation }}</span>
                         </div>
                     </div>
                 </div>

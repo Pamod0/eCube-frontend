@@ -1,0 +1,71 @@
+@use '@angular/material' as mat;
+
+.reviews {
+    display: grid;
+    grid-template-columns: 0.5fr 11fr 0.5fr;
+    gap: 2rem;
+    padding: 80px;
+    background: linear-gradient(135deg, #000 30%, #0a0716 100%);
+}
+.reviews-txt {
+    color: #6f6f6f;
+}
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 48px;
+}
+.reviews-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+.example-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    // min-width: 150px;
+    // max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+.example-full-width:nth-child(4) {
+    grid-column: span 3; /* Make the third field take full width in the next row */
+}
+
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+:root {
+    @include mat.form-field-overrides(
+        (
+            filled-container-color: transparent,
+            filled-label-text-color: #ffffff
+        )
+    );
+}
+
+.btn {
+    padding: 20px 40px;
+    border-radius: 32px;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #1235EC;
+    color: #ffffff;
+}
+
+.primary:hover {
+    background: #e5e5e5;
+    color: #1235EC;
+}

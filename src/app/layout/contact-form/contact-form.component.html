@@ -1,0 +1,49 @@
+<section class="reviews">
+    <div></div>
+
+    <div style="overflow: hidden">
+        <div class="reviews-txt poppins-regular">Get Started</div>
+        <div class="reviews-inner">
+            <div>
+                <h1 class="poppins-bold">
+                    Get in touch with us. <br />
+                    We’re here to assist you.
+                </h1>
+            </div>
+            <div class="form">
+                <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Your Name</mat-label>
+                        <input matInput placeholder="Ex. John Doe" value="" />
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Email Address</mat-label>
+                        <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com" />
+                        <mat-hint>Errors appear instantly!</mat-hint>
+                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        <mat-error>Please enter a valid email address</mat-error>
+                        } @if (emailFormControl.hasError('required')) {
+                        <mat-error>Email is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Phone Number (optional)</mat-label>
+                        <input matInput placeholder="Ex. +94705895541" value="" />
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Message</mat-label>
+                        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                    </mat-form-field>
+
+                    <button href="#" class="btn primary poppins-regular">Leave us a Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div></div>
+    </div>
+    <div></div>
+</section>

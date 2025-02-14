@@ -9,6 +9,7 @@ import { ReviewsComponent } from '../layout/reviews/reviews.component';
 import { TestimonialComponent } from '../layout/testimonial/testimonial.component';
 import { AccordionComponent } from '../layout/accordion/accordion.component';
 import { FooterComponent } from "../layout/footer/footer.component";
+import { ContactFormComponent } from "../layout/contact-form/contact-form.component";
 
 @Component({
     selector: 'app-home',
@@ -21,7 +22,8 @@ import { FooterComponent } from "../layout/footer/footer.component";
     OurProjectsComponent,
     ReviewsComponent,
     AccordionComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormComponent
 ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
