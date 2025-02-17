@@ -8,8 +8,9 @@ import { OurProjectsComponent } from '../layout/our-projects/our-projects.compon
 import { ReviewsComponent } from '../layout/reviews/reviews.component';
 import { TestimonialComponent } from '../layout/testimonial/testimonial.component';
 import { AccordionComponent } from '../layout/accordion/accordion.component';
-import { FooterComponent } from "../layout/footer/footer.component";
-import { ContactFormComponent } from "../layout/contact-form/contact-form.component";
+import { FooterComponent } from '../layout/footer/footer.component';
+import { ContactFormComponent } from '../layout/contact-form/contact-form.component';
+import { BouncingGlowComponent } from "../layout/bouncing-glow/bouncing-glow.component";
 
 @Component({
     selector: 'app-home',
@@ -23,9 +24,14 @@ import { ContactFormComponent } from "../layout/contact-form/contact-form.compon
     ReviewsComponent,
     AccordionComponent,
     FooterComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    BouncingGlowComponent
 ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
 })
-export class HomeComponent {}
+export class HomeComponent {
+    ngAfterViewInit() {
+
+    }
+}
