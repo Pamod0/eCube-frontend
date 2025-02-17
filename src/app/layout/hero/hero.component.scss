@@ -1,6 +1,7 @@
 .hero {
     display: grid;
     grid-template-columns: 0.5fr 4fr 3fr 0.5fr;
+    // grid-template-columns: 2.5fr 4fr 3fr 2.5fr;
     gap: 2rem;
     padding: 80px;
     background: linear-gradient(135deg, #000 30%, #0a0716 100%);
@@ -254,4 +255,12 @@ img {
 // .indicator.active {
 //     background: black;
 //     transform: scale(1.2);
+// }
+
+// Media Queries
+
+// @media (min-width: 1440px) {
+//     .hero {
+//         grid-template-columns: 2.5fr 3.5fr 3.5fr 2.5fr;
+//     }
 // }
