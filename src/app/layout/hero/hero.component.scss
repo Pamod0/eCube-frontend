@@ -8,27 +8,6 @@
     font-family: 'Poppins', serif;
 }
 
-.background-glow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 500px;
-    background: rgba(0, 0, 255, 0.5);
-    filter: blur(150px);
-    transform: translate(-50%, -50%);
-    animation: glowAnimation 5s infinite alternate ease-in-out;
-}
-
-@keyframes glowAnimation {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-}
-
 /* Left Side */
 .hero-content {
     display: flex;
