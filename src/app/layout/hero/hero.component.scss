@@ -1,9 +1,9 @@
 .hero {
     display: grid;
-    grid-template-columns: 0.5fr 4fr 3fr 0.5fr;
+    grid-template-columns: 1fr 6fr 4fr 1fr;
     // grid-template-columns: 2.5fr 4fr 3fr 2.5fr;
-    gap: 2rem;
-    padding: 80px;
+    gap: 1rem;
+    padding: 80px 0;
     background: linear-gradient(135deg, #000 30%, #0a0716 100%);
     // background: #ffffff;
     color: white;
