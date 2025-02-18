@@ -1,11 +1,9 @@
 .hero {
     display: grid;
     grid-template-columns: 1fr 6fr 4fr 1fr;
-    // grid-template-columns: 2.5fr 4fr 3fr 2.5fr;
     gap: 2rem;
     padding: 80px 0;
     background: linear-gradient(135deg, #000 30%, #0a0716 100%);
-    // background: #ffffff;
     color: white;
     font-family: 'Poppins', serif;
 }
@@ -16,12 +14,10 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 12px;
-    // max-width: 634px;
     min-height: 670px;
     padding: 1.5rem 4rem;
     background-color: #1235ec;
 }
-
 .hero-content h1 {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -29,22 +25,18 @@
     font-weight: bold;
     line-height: 1.2;
 }
-
 .hero-content h1 span {
     color: #3b82f6; /* Blue */
 }
-
 .hero-content p {
     font-size: 20px;
     line-height: 25px;
     margin: 33px 0 130px 0;
 }
-
 .hero-buttons {
     display: flex;
     gap: 15px;
 }
-
 .btn {
     padding: 12px 24px;
     border-radius: 25px;
@@ -54,21 +46,17 @@
     cursor: pointer;
     transition: 0.3s;
 }
-
 .primary {
     background: white;
     color: black;
 }
-
 .primary:hover {
     background: #e5e5e5;
 }
-
 .secondary {
     background: #3b82f6;
     color: white;
 }
-
 .secondary:hover {
     background: #1e40af;
 }
@@ -83,17 +71,7 @@
     max-height: 670px;
     background-color: transparent;
     background: linear-gradient(135deg, #000 30%, #0a0716 100%);
-    // border-radius: 12px;
 }
-.hero-image {
-    height: 100%;
-    // border-radius: 12px;
-    background-image: url('/assets/images/hero-1-min.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .overlay {
     position: absolute;
     display: flex;
@@ -132,12 +110,9 @@
         cursor: pointer;
     }
 }
-
 .carousel {
     margin: 0;
     padding: 0;
-    // width: 100vw;
-    // height: 100vh;
     width: 100%;
     height: 100%;
 }
@@ -146,10 +121,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // padding: 30px 10px;
     font-family: 'DM Sans', sans-serif;
     transition: background 0.4s ease-in;
-    // background-color: #c394f8;
     background: linear-gradient(135deg, #000 30%, #0a0716 100%);
 
     &.blue {
@@ -163,7 +136,6 @@ input[type='radio'] {
 
 .slide {
     position: absolute;
-    // width: 60%;
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #000 30%, #0a0716 100%);
@@ -176,8 +148,6 @@ input[type='radio'] {
 
 .carousel-container {
     width: 100%;
-    // max-width: 800px;
-    // max-height: 600px;
     height: 100%;
     transform-style: preserve-3d;
     display: flex;
@@ -190,8 +160,6 @@ input[type='radio'] {
     position: relative;
     width: 100%;
     height: 100%;
-    // margin-bottom: 20px;
-
     overflow: hidden;
 }
 
@@ -199,7 +167,7 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 #item-1:checked ~ .slides #song-4,
@@ -274,7 +242,7 @@ img {
         margin-bottom: 8px;
         font-size: 100px;
         font-weight: bold;
-        line-height: 1.2;
+        line-height: 1.1;
     }
     // Right Side
     .hero-image-container {
