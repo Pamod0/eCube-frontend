@@ -141,14 +141,21 @@
 
 
 // Media Query
-@media (max-width: 1279px) {
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+    .navbar {
+        grid-template-columns: 1fr 10fr 1fr;
+        gap: 1rem;
+    }
+}
+@media (max-width: 1023px) {
     .navbar {
         grid-template-columns: 0fr 11fr 0fr !important;
     }
 }
 @media (max-width: 991px) {
     .navbar {
-        grid-template-columns: 0fr 12fr 0fr !important;
+        grid-template-columns: 1fr 10fr 1fr !important;
+        gap: 1rem;
         padding: 16px 25px;
     }
     .nav-links,
