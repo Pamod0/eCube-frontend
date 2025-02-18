@@ -2,6 +2,7 @@
 .navbar {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
+    gap: 2rem;
     background-color: #0a0716;
     color: white;
     align-items: center;
@@ -156,5 +157,10 @@
     }
     .hamburger {
         display: flex;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .navbar {
+        padding: 16px 0px;
     }
 }

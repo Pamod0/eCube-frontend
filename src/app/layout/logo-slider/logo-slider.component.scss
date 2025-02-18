@@ -35,3 +35,10 @@ img {
         transform: translatex(-1000%);
     }
 }
+
+// Media Query
+@media only screen and (max-width: 430px) {
+    .logo-slider {
+        padding: 0;
+    }
+}
