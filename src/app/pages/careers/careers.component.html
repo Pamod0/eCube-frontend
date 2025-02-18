@@ -1,0 +1,94 @@
+<app-header></app-header>
+<div class="team-section">
+    <div></div>
+    <div>
+        <div>
+            <div class="services-txt poppins-regular">Services</div>
+            <div class="header">
+                <h1 class="poppins-bold">
+                    AI-Driven Digital Solutions for<br />
+                    Faster, Smarter Growth.
+                </h1>
+                <p class="poppins-regular">
+                    Our team is a dynamic blend of skilled developers, creative designers, and world-class problem solvers dedicated to pushing the boundaries
+                    of digital innovation. With AI-driven efficiency at our core, we collaborate to craft cutting-edge solutions that are fast, scalable, and
+                    impactful. Passionate about technology and creativity, we thrive on challenges and deliver results that redefine digital excellence.
+                </p>
+            </div>
+        </div>
+        <div class="team-grid">
+            @for(member of teamMembers; track member.name) {
+            <div class="team-member">
+                <img src="{{ member.image }}" alt="{{ member.name }}" />
+                <div class="info">
+                    <h3 class="poppins-bold">{{ member.name }}</h3>
+                    <p class="poppins-regular">{{ member.position }}</p>
+                </div>
+            </div>
+            }
+        </div>
+        <div class="view-more">
+            <p class="poppins-regular">View more ↓</p>
+        </div>
+    </div>
+    <div></div>
+</div>
+
+<!-- ############################################################################################# -->
+
+<section id="our-projects" class="our-projects">
+    <div></div>
+
+    <div>
+        <div class="our-projects-txt poppins-regular">Available Positions</div>
+        <div class="our-projects-inner">
+            <div>
+                <h1 class="poppins-bold">
+                    Start doing work <br />
+                    that matters.
+                </h1>
+            </div>
+            <div>
+                <button class="btn-2">
+                    See More
+                    <mat-icon aria-hidden="false" fontIcon="north_east"> </mat-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="projects">
+            @for(vacancy of vacancies; track vacancy.title ) {
+            <div class="project">
+                <div class="top-wrapper">
+                    <div class="container-top">
+                        <!-- <img class="logo" src="/assets/images/slc-logo.png" alt="" /> -->
+                        <h2 class="poppins-semibold">{{ vacancy.title }}</h2>
+                    </div>
+                    <a href="https://vms.mycricket.com.lk" target="_blank">
+                        <div class="icon-container-2"><mat-icon style="color: #c0c0c0" aria-hidden="false" fontIcon="north_east"></mat-icon></div>
+                    </a>
+                </div>
+                <div>
+                    <p class="poppins-regular">{{ vacancy.description }}</p>
+                </div>
+                <div>
+                    <div class="avatar-container">
+                        <div>
+                            <button class="btn btn-1 poppins-regular">
+                                <mat-icon style="margin-right: 0.5rem; color: #c0c0c0" aria-hidden="false" fontIcon="location_on"></mat-icon> On Site
+                            </button>
+                            <button class="btn btn-1 poppins-regular">
+                                <mat-icon style="margin-right: 0.5rem; color: #c0c0c0" aria-hidden="false" fontIcon="schedule"></mat-icon> Full Time
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+
+    <div></div>
+</section>
+
+<app-footer></app-footer>
