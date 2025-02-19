@@ -6,11 +6,9 @@ import { AboutUsComponent } from '../layout/about-us/about-us.component';
 import { OurServicesComponent } from '../layout/our-services/our-services.component';
 import { OurProjectsComponent } from '../layout/our-projects/our-projects.component';
 import { ReviewsComponent } from '../layout/reviews/reviews.component';
-import { TestimonialComponent } from '../layout/testimonial/testimonial.component';
 import { AccordionComponent } from '../layout/accordion/accordion.component';
 import { FooterComponent } from '../layout/footer/footer.component';
 import { ContactFormComponent } from '../layout/contact-form/contact-form.component';
-import { BouncingGlowComponent } from "../layout/bouncing-glow/bouncing-glow.component";
 
 @Component({
     selector: 'app-home',
@@ -25,7 +23,6 @@ import { BouncingGlowComponent } from "../layout/bouncing-glow/bouncing-glow.com
     AccordionComponent,
     FooterComponent,
     ContactFormComponent,
-    BouncingGlowComponent
 ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
