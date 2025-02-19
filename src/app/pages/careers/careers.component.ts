@@ -29,26 +29,26 @@ export class CareersComponent {
         this.teamMembers = [
             {
                 image: '/assets/images/careers/team-1.png',
+                name: 'Divya Perera',
+                position: 'Head of Digital'
+            },
+            {
+                image: '/assets/images/careers/team-2.png',
                 name: 'Malith Weeramuni',
                 position: 'Senior UI/UX Design Engineer'
             },
             {
-                image: '/assets/images/careers/team-1.png',
-                name: 'Malith Weeramuni',
-                position: 'Senior UI/UX Design Engineer'
+                image: '/assets/images/careers/team-3.png',
+                name: 'Pamod Peiris',
+                position: 'Software Engineer'
             },
             {
-                image: '/assets/images/careers/team-1.png',
-                name: 'Malith Weeramuni',
-                position: 'Senior UI/UX Design Engineer'
+                image: '/assets/images/careers/team-4.png',
+                name: 'Keheliya Manathunga',
+                position: 'Frontend Engineer'
             },
             {
-                image: '/assets/images/careers/team-1.png',
-                name: 'Malith Weeramuni',
-                position: 'Senior UI/UX Design Engineer'
-            },
-            {
-                image: '/assets/images/careers/team-1.png',
+                image: '/assets/images/careers/team-5.png',
                 name: 'Malith Weeramuni',
                 position: 'Senior UI/UX Design Engineer'
             },
