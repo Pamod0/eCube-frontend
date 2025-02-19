@@ -11,34 +11,42 @@
                 </h1>
             </div>
             <div class="form">
-                <form class="example-form">
+                <form [formGroup]="contactForm" (ngSubmit)="submitForm()" class="example-form">
                     <mat-form-field class="example-full-width">
                         <mat-label>Your Name</mat-label>
-                        <input matInput placeholder="Ex. John Doe" value="" />
+                        <input matInput formControlName="name" placeholder="Ex. John Doe" value="" />
+                        @if (contactForm.get('name')?.hasError('required')) {<mat-error>Name is required</mat-error>}
                     </mat-form-field>
 
                     <mat-form-field class="example-full-width">
                         <mat-label>Email Address</mat-label>
-                        <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com" />
+                        <input matInput type="email" formControlName="email" placeholder="Ex. pat@example.com" />
                         <mat-hint>Errors appear instantly!</mat-hint>
-                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        @if (contactForm.get('email')?.hasError('email')) {
                         <mat-error>Please enter a valid email address</mat-error>
-                        } @if (emailFormControl.hasError('required')) {
+                        } @if (contactForm.get('email')?.hasError('required')) {
                         <mat-error>Email is <strong>required</strong></mat-error>
                         }
                     </mat-form-field>
 
                     <mat-form-field class="example-full-width">
                         <mat-label>Phone Number (optional)</mat-label>
-                        <input matInput placeholder="Ex. +94705895541" value="" />
+                        <input matInput formControlName="phone" placeholder="Ex. +94705895541" value="" />
                     </mat-form-field>
 
                     <mat-form-field class="example-full-width">
                         <mat-label>Message</mat-label>
-                        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                        <textarea matInput formControlName="message" placeholder="Ex. It makes me feel..."></textarea>
+                        @if (contactForm.get('message')?.hasError('required')) {<mat-error>Message is required</mat-error>}
                     </mat-form-field>
 
-                    <div><button href="#" class="btn primary poppins-regular">Leave us a Message<mat-icon style="color: #ffffff" aria-hidden="false" fontIcon="east"></mat-icon></button></div>
+                    <div>
+                        <button type="submit" [disabled]="isSubmitting" class="btn primary poppins-regular">
+                            Leave us a Message<mat-icon style="color: #ffffff" aria-hidden="false" fontIcon="east"></mat-icon>
+                        </button>
+                    </div>
+                    <!-- <div *ngIf="successMessage" class="success-msg">{{ successMessage }}</div>
+                    <div *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</div> -->
                 </form>
             </div>
         </div>
