@@ -1,6 +1,6 @@
 .accordion-section {
     display: grid;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 0.5fr 5fr 5fr 0.5fr;
     background-color: #1235ec;
     padding: 0rem 8rem;
     .left {
@@ -12,6 +12,7 @@
             line-height: 100px;
         }
         p {
+            margin-top: 0;
             font-size: 24px;
             color: #ffffff;
         }
@@ -40,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 28px;
+    font-size: 20px;
     padding: 15px;
     cursor: pointer;
     transition: background 0.3s;
