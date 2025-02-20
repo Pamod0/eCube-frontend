@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -6,6 +6,9 @@ import { FormControl, FormGroup, FormGroupDirective, NgForm, ReactiveFormsModule
 import { ErrorStateMatcher } from '@angular/material/core';
 
 import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 import { EmailService } from '../../services/email.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -25,7 +28,8 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
-        MatIconModule
+        MatIconModule,
+        MatProgressBarModule
     ],
     templateUrl: './contact-form.component.html',
     styleUrl: './contact-form.component.scss'
@@ -42,7 +46,8 @@ export class ContactFormComponent {
     successMessage: string | null = null;
     errorMessage: string | null = null;
 
-    constructor(private emailService: EmailService) {}
+    private _snackBar = inject(MatSnackBar);
+    private emailService = inject(EmailService);
 
     submitForm() {
         if (this.contactForm.invalid) {
@@ -57,6 +62,10 @@ export class ContactFormComponent {
             next: () => {
                 this.successMessage = 'Your message has been sent!';
                 this.contactForm.reset();
+                Object.keys(this.contactForm.controls).forEach((key) => {
+                    this.contactForm.get(key)?.setErrors(null);
+                });
+                this.openSnackBar('Submitted Successfully', 'Ok')
             },
             error: (err) => {
                 this.errorMessage = 'Failed to send message. Please try again.';
@@ -68,7 +77,7 @@ export class ContactFormComponent {
         });
     }
 
-    emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-
-    matcher = new MyErrorStateMatcher();
+    openSnackBar(message: string, action: string) {
+        this._snackBar.open(message, action);
+    }
 }

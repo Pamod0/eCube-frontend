@@ -61,6 +61,10 @@ h1 {
     color: #1235ec;
 }
 
+.primary:hover mat-icon {
+    color: #1235ec !important;
+}
+
 :host ::ng-deep .mat-mdc-text-field-wrapper {
     background-color: transparent !important;
 }
@@ -71,4 +75,8 @@ h1 {
     mat-label {
         color: #ffffff !important;
     }
+}
+:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: #ffffff !important;
+    caret-color: var(--mdc-filled-text-field-caret-color, var(--mat-sys-primary));
 }
