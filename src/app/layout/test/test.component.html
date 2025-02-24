@@ -9,7 +9,7 @@
 
 <mat-paginator
     [length]="100"
-    [pageSize]="10"
+    [pageSize]="10" 
     [showFirstLastButtons]="true"
     [pageSizeOptions]="[5, 10, 25, 100]"
     [pageIndex]="currentPage"
@@ -17,3 +17,22 @@
     aria-label="Select page"
 >
 </mat-paginator>
+
+@for (blog of blogs; track blog.name) {
+    <div class="blog">
+        <img src="{{ blog.image }}" alt="{{ blog.name }}">
+        <h3>{{ blog.name }}</h3>
+        <p>{{ blog.subject }}</p>
+        <p>{{ blog.content }}</p>
+        <a href="{{ blog.iconHref }}">
+            <img src="{{ blog.iconHref }}" alt="Icon">
+        </a>
+        <div class="buttons">
+            <button>{{ blog.button1.label }}</button>
+            <button>{{ blog.button2.label }}</button>
+            <button>{{ blog.button3.label }}</button>
+        </div>
+    </div>
+}
+
+

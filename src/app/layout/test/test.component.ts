@@ -2,6 +2,24 @@ import { Component } from '@angular/core';
 import { MatPaginatorIntl, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { PaginatorIntlService } from './paginator-intl.service';
 
+import Blogs from './blogs.json';
+
+interface Blog {
+    image: string;
+    name: string;
+    subject: string;
+    content: string;
+    iconHref: string;
+    button1: BlogButton;
+    button2: BlogButton;
+    button3: BlogButton;
+}
+
+interface BlogButton {
+    label: string;
+    href: string;
+    class: string;
+}
 
 @Component({
     selector: 'app-test',
@@ -11,6 +29,7 @@ import { PaginatorIntlService } from './paginator-intl.service';
     providers: [{ provide: MatPaginatorIntl, useClass: PaginatorIntlService }]
 })
 export class TestComponent {
+    blogs: Blog[] = [];
     courses = Array.from({ length: 100 }, (_, i) => ({
         id: i + 1,
         title: `Course ${i + 1}`,
@@ -20,6 +39,13 @@ export class TestComponent {
     currentPage = 0;
     pageSize = 10;
     paginatedCourses = this.courses.slice(0, this.pageSize);
+
+    ngAfterViewInit() {
+        this.blogs = Blogs;
+        console.log('this.blogs', this.blogs);
+    }
+
+    paginatedBlogs = this.blogs.slice(0, this.pageSize);
 
     handlePageEvent(pageEvent: PageEvent) {
         console.log('handlePageEvent', pageEvent);
