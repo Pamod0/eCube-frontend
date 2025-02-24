@@ -16,9 +16,12 @@ interface Carousel {
 })
 export class ServiceInnerComponent {
     @Input() serviceName: string = '';
-    @Input() mainTitleOne: string = ''
-    @Input() mainTitleTwo: string = ''
-    @Input() imageClass: string = '';
+    @Input() mainTitleOne: string = '';
+    @Input() imageUrl: string = '';
+    @Input() paragraphOne: string = '';
+    @Input() paragraphTwo: string = '';
+    @Input() carouselItemss: Carousel[] = [];
+    @Input() mainTitleTwo: string = '';
 
     carouselItems: Carousel[];
 
