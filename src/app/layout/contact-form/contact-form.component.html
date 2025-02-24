@@ -4,7 +4,7 @@
     <div style="overflow: hidden">
         <div class="reviews-txt poppins-regular">Get Started</div>
         <div class="reviews-inner">
-            <!-- @if (isSubmitting) {<mat-progress-bar style="margin-top: 2rem;" mode="indeterminate"></mat-progress-bar>} -->
+            @if (isSubmitting) {<mat-progress-bar style="margin-top: 2rem;" mode="indeterminate"></mat-progress-bar>}
             <div>
                 <h1 class="poppins-bold">
                     Get in touch with us. <br />
@@ -50,7 +50,7 @@
                     <div *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</div> -->
                 </form>
             </div>
-            @if (isSubmitting) {<mat-progress-bar style="margin-top: 2rem;" mode="indeterminate"></mat-progress-bar>}
+            <!-- @if (isSubmitting) {<mat-progress-bar style="margin-top: 2rem;" mode="indeterminate"></mat-progress-bar>} -->
             
 
         </div>
