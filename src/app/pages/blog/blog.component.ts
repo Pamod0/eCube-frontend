@@ -9,11 +9,12 @@ import { MatPaginatorIntl, MatPaginatorModule, PageEvent } from '@angular/materi
 import { MatIconModule } from '@angular/material/icon';
 
 import Blogs from './blogs.json';
+import { FooterExtendedComponent } from "../../layout/footer-extended/footer-extended.component";
 
 
 @Component({
     selector: 'app-blog',
-    imports: [MatPaginatorModule, MatIconModule, HeaderComponent],
+    imports: [MatPaginatorModule, MatIconModule, HeaderComponent, FooterExtendedComponent],
     templateUrl: './blog.component.html',
     styleUrl: './blog.component.scss',
     providers: [{ provide: MatPaginatorIntl, useClass: PaginatorIntlService }]

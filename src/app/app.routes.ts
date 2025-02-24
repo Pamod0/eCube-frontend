@@ -3,11 +3,19 @@ import { HomeComponent } from './home/home.component';
 import { TestComponent } from './layout/test/test.component';
 import { CareersComponent } from './pages/careers/careers.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ServiceInnerComponent } from './pages/service-inner/service-inner.component';
+import { DefaultLayoutComponent } from './layout/default-layout/default-layout.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        component: DefaultLayoutComponent,
+        children: [
+            {
+                path: '',
+                component: HomeComponent
+            }
+        ]
     },
     {
         path: 'careers',
@@ -20,5 +28,9 @@ export const routes: Routes = [
     {
         path: 'test',
         component: TestComponent
+    },
+    {
+        path: 'services',
+        component: ServiceInnerComponent
     }
 ];

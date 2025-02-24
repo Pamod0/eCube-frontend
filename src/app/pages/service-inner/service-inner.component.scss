@@ -1,0 +1,85 @@
+.services-inner {
+    display: grid;
+    grid-template-columns: 0.5fr 11fr 0.5fr;
+    gap: 2rem;
+    padding: 80px;
+    background: #070707;
+}
+.our-projects-txt {
+    color: #6f6f6f;
+}
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 48px;
+    span {
+        font-style: italic;
+        font-size: 43px;
+    }
+}
+
+.our-projects-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
+    margin-top: 4rem;
+    width: 100%;
+    height: 600px;
+    background-image: url('/assets/images/services/service-se.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.p-container {
+    margin-top: 4rem;
+    p {
+        color: #ffffff;
+    }
+}
+.carousel-header {
+    margin-top: 4rem;
+    color: #c0c0c0;
+}
+.carousel {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+    div {
+        display: flex;
+        justify-content: center;
+    }
+}
+.header-2 {
+    margin: 4rem 0;
+}
+.tiles {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(265.75px, 1fr));
+    div {
+        height: 265.75px;
+        background-color: #1a1a1a;
+    }
+}
+:host ::ng-deep {
+    .reviews {
+        grid-template-columns: 12fr !important;
+        margin-top: 4rem;
+        padding: 0 !important;
+    }
+    .reviews > div:first-child,
+    .reviews > div:last-child {
+        display: none;
+    }
+    // .reviews:first-child {
+    //     display: none;
+    // }
+    // .reviews:last-child {
+    //     display: none;
+    // }
+}
