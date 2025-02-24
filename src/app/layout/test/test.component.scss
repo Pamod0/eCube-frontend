@@ -1,3 +1,5 @@
+@use '@angular/material' as mat;
+
 .blog-section {
     position: relative;
     display: grid;
@@ -220,7 +222,19 @@
 }
 
 // Paginator
-:host ::ng-deep .mat-mdc-paginator-container {
-    // background: #070707;
-    color: #ffffff;
+:host ::ng-deep {
+    @include mat.paginator-overrides(
+        (
+            container-background-color: #070707,
+            container-text-color: #ffffff,
+            enabled-icon-color: #ffffff,
+            disabled-icon-color: hsl(0, 0%, 35%)
+        )
+    );
+    .mat-mdc-paginator .mat-mdc-select-value {
+        color: #ffffff;
+    }
+    .mat-mdc-select-arrow svg {
+        fill: #ffffff;
+    }
 }

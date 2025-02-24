@@ -1,38 +1,14 @@
 import { Component } from '@angular/core';
-import { MatPaginatorIntl, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
-import { MatIconModule } from '@angular/material/icon';
-import { PaginatorIntlService } from './paginator-intl.service';
-
-import Blogs from './blogs.json';
 import { HeaderComponent } from '../header/header.component';
 
-interface Blog {
-    image: string;
-    name: string;
-    subject: string;
-    content: string;
-    iconHref: string;
-    button1: BlogButton;
-    button2: BlogButton;
-    button3: BlogButton;
-}
+import { PaginatorIntlService } from './paginator-intl.service';
 
-interface BlogButton {
-    label: string;
-    href: string;
-    class: string;
-}
+import { Blog } from './blog.interface';
 
-interface pagination {
-    image: string;
-    name: string;
-    subject: string;
-    content: string;
-    iconHref: string;
-    button1: { label: string; href: string; class: string };
-    button2: { label: string; href: string; class: string };
-    button3: { label: string; href: string; class: string };
-}
+import { MatPaginatorIntl, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import { MatIconModule } from '@angular/material/icon';
+
+import Blogs from './blogs.json';
 
 @Component({
     selector: 'app-test',
@@ -47,13 +23,6 @@ export class TestComponent {
 
     blogs: Blog[] = Blogs;
     paginatedBlogs = this.blogs.slice(0, this.pageSize);
-
-    pagination: pagination[];
-    pagedPagination: pagination[];
-
-    ngAfterViewInit() {
-        this.pagedPagination = this.pagination.slice(0, this.pageSize);
-    }
 
     handlePageEvent(pageEvent: PageEvent) {
         this.currentPage = pageEvent.pageIndex;
