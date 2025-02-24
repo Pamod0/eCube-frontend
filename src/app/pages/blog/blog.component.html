@@ -36,7 +36,7 @@
         <!--pagination-->
 
         <div class="blog-grid">
-            @for(number of pagination; track number.name) {
+            @for(number of pagedPagination; track number.name) {
             <div class="blog">
                 <img src="{{ number.image }}" alt="{{ number.name }}" />
                 <div class="info">
@@ -49,13 +49,40 @@
                     </h3>
                     <p class="poppins-regular">{{ number.content }}</p>
                     <div class="blog-buttons poppins-regular">
-                        <a href="{{ number.button1.href }}" class="{{ number.button1.class }}" target="_blank">{{ number.button1.label }}</a>
-                        <a href="{{ number.button2.href }}" class="{{ number.button2.class }}" target="_blank">{{ number.button2.label }}</a>
-                        <a href="{{ number.button3.href }}" class="{{ number.button3.class }}" target="_blank">{{ number.button3.label }}</a>
+                        <a href="javascript:void(0)" class="{{ number.button1.class }}" target="_blank">{{ number.button1.label }}</a>
+                        <a href="javascript:void(0)" class="{{ number.button2.class }}" target="_blank">{{ number.button2.label }}</a>
+                        <a href="javascript:void(0)" class="{{ number.button3.class }}" target="_blank">{{ number.button3.label }}</a>
                     </div>
                 </div>
             </div>
             }
         </div>
+        <div class="custom-paginator">
+            <div class="left">
+                <button mat-button class="previous-button" matTooltip="Previous" (click)="paginator.previousPage()">Previous</button>
+            </div>
+
+            <div class="middle">
+                <mat-paginator
+                    class="paginator"
+                    [length]="pagination.length"
+                    [pageSize]=""
+                    [pageSizeOptions]="[6]"
+                    (page)="handlePageEvent($event)"
+                    #paginator
+                >
+                </mat-paginator>
+            </div>
+
+            <div class="right">
+                <button mat-button class="next-button" matTooltip="Next" (click)="paginator.nextPage()">Next</button>
+            </div>
+        </div>
     </div>
 </div>
+
+
+
+
+
+
