@@ -1,20 +1,33 @@
 import { Component } from '@angular/core';
+import { MatPaginatorIntl, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import { PaginatorIntlService } from './paginator-intl.service';
+
 
 @Component({
     selector: 'app-test',
-    imports: [],
+    imports: [MatPaginatorModule],
     templateUrl: './test.component.html',
-    styleUrl: './test.component.scss'
+    styleUrl: './test.component.scss',
+    providers: [{ provide: MatPaginatorIntl, useClass: PaginatorIntlService }]
 })
 export class TestComponent {
-    /* Open when someone clicks on the span element */
-    openNav() {
-        document.getElementById('myNav').style.width = '100%';
-        // document.getElementById("myNav").style.height = "100%";
-    }
+    courses = Array.from({ length: 100 }, (_, i) => ({
+        id: i + 1,
+        title: `Course ${i + 1}`,
+        description: `Description of Course ${i + 1}`
+    }));
 
-    /* Close when someone clicks on the "x" symbol inside the overlay */
-    closeNav() {
-        document.getElementById('myNav').style.width = '0%';
+    currentPage = 0;
+    pageSize = 10;
+    paginatedCourses = this.courses.slice(0, this.pageSize);
+
+    handlePageEvent(pageEvent: PageEvent) {
+        console.log('handlePageEvent', pageEvent);
+
+        this.currentPage = pageEvent.pageIndex;
+        this.pageSize = pageEvent.pageSize;
+        const startIndex = this.currentPage * this.pageSize;
+        const endIndex = startIndex + this.pageSize;
+        this.paginatedCourses = this.courses.slice(startIndex, endIndex);
     }
 }
