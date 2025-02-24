@@ -1,3 +1,5 @@
+@use '@angular/material' as mat;
+
 .blog-section {
     position: relative;
     display: grid;
@@ -37,6 +39,7 @@
     .blog-img {
         position: relative;
         overflow: hidden;
+        height: 600px;
 
         img {
             width: 100%;
@@ -220,54 +223,19 @@
 }
 
 // Paginator
-.custom-paginator {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    position: relative;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 0.5fr 11fr 0.5fr;
-    background-color: #07070700;
-
-    .previous-button {
-        position: absolute; 
-        left: 0;
-        background-color: #07070700;
-        color: #ffffff;
-        border: none;
-        cursor: pointer;
-    }
-
-    .next-button {
-        position: absolute;
-        right: 0;
-        background-color: #07070700;
-        color: #ffffff;
-        border: none;
-        cursor: pointer;
-    }
-
-    .paginator {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #07070700;
+:host ::ng-deep {
+    @include mat.paginator-overrides(
+        (
+            container-background-color: #070707,
+            container-text-color: #ffffff,
+            enabled-icon-color: #ffffff,
+            disabled-icon-color: hsl(0, 0%, 35%)
+        )
+    );
+    .mat-mdc-paginator .mat-mdc-select-value {
         color: #ffffff;
     }
-
-    .mat-paginator-range-label {
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .mat-paginator-range-label:active {
-        content: '...';
-        display: inline-block;
-        padding: 0 10px;
+    .mat-mdc-select-arrow svg {
+        fill: #ffffff;
     }
 }
-
-

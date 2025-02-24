@@ -36,14 +36,14 @@
         <!--pagination-->
 
         <div class="blog-grid">
-            @for(number of pagedPagination; track number.name) {
+            @for(number of paginatedBlogs; track number.name) {
             <div class="blog">
                 <img src="{{ number.image }}" alt="{{ number.name }}" />
                 <div class="info">
                     <h6 class="poppins-regular">{{ number.name }}</h6>
                     <h3 class="poppins-bold">
                         {{ number.subject }}
-                        <a href="{{ number.iconHref }}" target="_blank">
+                        <a href="javascript:void(0)" target="_blank">
                             <mat-icon class="icon-container-right" style="color: #c0c0c0" aria-hidden="false" fontIcon="north_east"></mat-icon>
                         </a>
                     </h3>
@@ -57,32 +57,15 @@
             </div>
             }
         </div>
-        <div class="custom-paginator">
-            <div class="left">
-                <button mat-button class="previous-button" matTooltip="Previous" (click)="paginator.previousPage()">Previous</button>
-            </div>
-
-            <div class="middle">
-                <mat-paginator
-                    class="paginator"
-                    [length]="pagination.length"
-                    [pageSize]=""
-                    [pageSizeOptions]="[6]"
-                    (page)="handlePageEvent($event)"
-                    #paginator
-                >
-                </mat-paginator>
-            </div>
-
-            <div class="right">
-                <button mat-button class="next-button" matTooltip="Next" (click)="paginator.nextPage()">Next</button>
-            </div>
-        </div>
+        <mat-paginator
+            [length]="blogs.length"
+            [pageSize]="10"
+            [showFirstLastButtons]="true"
+            [pageSizeOptions]="[5, 10, 25, 100]"
+            [pageIndex]="currentPage"
+            (page)="handlePageEvent($event)"
+            aria-label="Select page"
+        >
+        </mat-paginator>
     </div>
 </div>
-
-
-
-
-
-
