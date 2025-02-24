@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HeaderComponent } from '../../layout/header/header.component';
 import { FooterExtendedComponent } from '../../layout/footer-extended/footer-extended.component';
-import { ReviewsComponent } from "../../layout/reviews/reviews.component";
+import { ReviewsComponent } from '../../layout/reviews/reviews.component';
 
 interface Carousel {
     id: number;
@@ -15,6 +15,11 @@ interface Carousel {
     styleUrl: './service-inner.component.scss'
 })
 export class ServiceInnerComponent {
+    @Input() serviceName: string = '';
+    @Input() mainTitleOne: string = ''
+    @Input() mainTitleTwo: string = ''
+    @Input() imageClass: string = '';
+
     carouselItems: Carousel[];
 
     ngOnInit() {

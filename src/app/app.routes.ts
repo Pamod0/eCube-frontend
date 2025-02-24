@@ -5,6 +5,7 @@ import { CareersComponent } from './pages/careers/careers.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ServiceInnerComponent } from './pages/service-inner/service-inner.component';
 import { DefaultLayoutComponent } from './layout/default-layout/default-layout.component';
+import { SoftwareServiceComponent } from './pages/service-inner/software-service/software-service.component';
 
 export const routes: Routes = [
     {
@@ -31,6 +32,11 @@ export const routes: Routes = [
     },
     {
         path: 'services',
-        component: ServiceInnerComponent
+        children: [
+            {
+                path: 'software',
+                component: SoftwareServiceComponent
+            }
+        ]
     }
 ];

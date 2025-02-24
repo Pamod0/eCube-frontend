@@ -3,21 +3,17 @@
 <div class="services-inner">
     <div></div>
     <div>
-        <div class="our-projects-txt poppins-regular">Home/Services/Software Development</div>
+        <div class="our-projects-txt poppins-regular">Home/Services/{{ serviceName }}</div>
         <div class="our-projects-inner">
             <div>
-                <h1 class="poppins-bold">
-                    Transforming Ideas
-                    <span class="poppins-bold"> into Powerful,</span> <br />
-                    Custom <span class="poppins-medium">software solutions</span>
-                </h1>
+                <h1 [innerHTML]="mainTitleOne" class="poppins-bold"></h1>
             </div>
             <div>
                 <!-- avatar group here -->
             </div>
         </div>
 
-        <div class="image-container"></div>
+        <div [class]="imageClass" class="image-container"></div>
 
         <div class="p-container">
             <p class="poppins-regular">
