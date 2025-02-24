@@ -15,8 +15,12 @@ h1 {
 }
 
 .tiles {
+    // display: grid;
+    // grid-template-columns: 6fr 6fr;
+    // gap: 1rem;
+
     display: grid;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
     .tile {
         display: flex;
@@ -64,5 +68,29 @@ h1 {
                 width: 45px;
             }
         }
+    }
+}
+
+// Media Queries
+@media only screen and (max-width: 1023px) {
+
+}
+
+@media only screen and (max-width: 430px) {
+    .slide-from-left {
+        animation: none;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .services {
+        grid-template-columns: 12fr;
+        padding: 40px 1.2rem;
+    }
+    .tiles {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }

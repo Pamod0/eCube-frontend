@@ -108,3 +108,34 @@ h1 {
         }
     }
 }
+
+// Media Queries
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 430px) {
+    .slide-from-left {
+        animation: none;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .btn-2 {
+        margin: 10px 10px 10px 0;
+    }
+    .our-projects {
+        grid-template-columns: 12fr;
+        padding: 40px 1.2rem;
+    }
+    h1 {
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .our-projects-inner {
+        flex-direction: column;
+    }
+}
