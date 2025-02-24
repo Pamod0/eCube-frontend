@@ -375,11 +375,9 @@ export class BlogComponent {
 
     trackByFn(index: number, item: pagination) {
         return item.name;
-      }
+    }
 }
 
 // when you click the page number it will show like this "...."
 // 6 numbers will be shown in the pagination
 // each page will show 6 items in grid system
-
-  
