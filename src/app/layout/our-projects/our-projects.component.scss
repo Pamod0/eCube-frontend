@@ -106,6 +106,12 @@ h1 {
                 margin-right: 0.5rem;
             }
         }
+        .avatar-img {
+            width: 45px;
+            height: 45px;
+            flex-shrink: 0;
+            border-radius: 512px;
+        }
     }
 }
 
