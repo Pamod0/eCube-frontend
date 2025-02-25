@@ -9,6 +9,7 @@ import { WebDesignServiceComponent } from './pages/service-inner/web-design-serv
 import { BlogPageComponent } from './pages/blog/blog-page/blog-page/blog-page.component';
 import { UiUxDesignServiceComponent } from './pages/service-inner/ui-ux-design-service/ui-ux-design-service.component';
 import { BrandIdentityServiceComponent } from './pages/service-inner/brand-identity-service/brand-identity-service.component';
+import { SrilankaCricketComponent } from './layout/our-projects/srilanka-cricket/srilanka-cricket.component';
 
 export const routes: Routes = [
     {
@@ -57,5 +58,9 @@ export const routes: Routes = [
     {
         path: 'blog-page',
         component: BlogPageComponent
+    },
+    {
+        path: 'SLC',
+        component: SrilankaCricketComponent
     }
 ];
