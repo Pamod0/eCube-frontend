@@ -68,6 +68,12 @@ h1 {
                 width: 45px;
                 cursor: pointer;
             }
+            .avatar-img {
+                width: 45px;
+                height: 45px;
+                flex-shrink: 0;
+                border-radius: 512px;
+            }
         }
     }
 }
