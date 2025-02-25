@@ -1,0 +1,288 @@
+.blog-section {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.5fr 11fr 0.5fr;
+    gap: 2rem;
+    padding: 80px;
+    background: #070707;
+
+    // Blog header section
+    .blog-txt {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #6f6f6f;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    //left side of the header
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            right: 0;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 40px;
+            letter-spacing: -2%;
+            color: #ffffffff;
+            margin-bottom: 0;
+        }
+
+        .poppins-regular-srilanka {
+            margin-top: 0;
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: #ffffffff;
+        }
+    }
+
+    //right side of the header
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        line-height: 0.1;
+        gap: 10px;
+    }
+
+    // aurthor
+
+    .author-details {
+        display: flex;
+        flex-direction: column;
+
+        .poppins-regular-written {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 0;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: #ffffffff;
+            margin-top: 0;
+        }
+
+        .poppins-regular-malith {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 0;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: #ffffffff;
+            margin-bottom: 0;
+        }
+    }
+
+    //Image
+
+    img.Written-by {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .blog-img {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 24px;
+            margin: 30px auto;
+        }
+    }
+
+    //blog contents
+
+    .blog-content {
+        left: 0;
+        color: white;
+
+        h5 {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: #ffffffff;
+        }
+
+        p {
+            font-size: 13px;
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 25.6px;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: #ffffffff;
+        }
+    }
+
+    hr {
+        color: #434343;
+        border: 1px solid #434343;
+    }
+
+    .Saas-img {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+            margin: 30px auto;
+        }
+    }
+
+    .Saas-txt {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19.2px;
+        letter-spacing: -2%;
+        text-align: justify;
+        color: #6f6f6f;
+    }
+
+    // quote
+
+    .quote-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 40px;
+        margin: 50px auto;
+    }
+
+    .vl {
+        width: 2px;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+    }
+
+    .quote h2 {
+        margin: 0;
+        font-family: Poly;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: -2%;
+    }
+
+    .quote p {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 13.5px;
+        line-height: 25.6px;
+        letter-spacing: -2%;
+        text-align: justify;
+        color: #9c9c9c;
+    }
+}
+
+// Our Team’s Expert Insights on Web Design
+
+.team-experts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+
+    .expert-insights {
+        flex-direction: column;
+        color: white;
+
+        h2.poppins-bold-insights {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 0;
+            letter-spacing: -2%;
+            margin-bottom: 0;
+        }
+
+        .inline-text {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        span.poppins-italic-span {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 0;
+            letter-spacing: -2%;
+            line-height: 15px;
+        }
+
+        h3.poppins-bold-web {
+            font-family: Poppins;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 40px;
+            letter-spacing: -0.02em;
+            margin-right: 5px;
+            line-height: 15px;
+        }
+    }
+
+    .see-more-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+
+        .see-more {
+            display: flex;
+            align-items: center;
+            padding: 10px 30px;
+            border: 1px solid #1235ec;
+            border-radius: 7px;
+            background-color: #1235ec;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: Poppins;
+            letter-spacing: -1%;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #071753;
+            }
+
+            mat-icon {
+                margin-left: 5px;
+                color: #ffffff;
+                font-size: 20px;
+            }
+        }
+    }
+}

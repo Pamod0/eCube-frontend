@@ -7,6 +7,7 @@ import { ServiceInnerComponent } from './pages/service-inner/service-inner.compo
 import { DefaultLayoutComponent } from './layout/default-layout/default-layout.component';
 import { SoftwareServiceComponent } from './pages/service-inner/software-service/software-service.component';
 import { WebDesignServiceComponent } from './pages/service-inner/web-design-service/web-design-service.component';
+import { BlogPageComponent } from './pages/blog/blog-page/blog-page/blog-page.component';
 
 export const routes: Routes = [
     {
@@ -43,5 +44,9 @@ export const routes: Routes = [
                 component: WebDesignServiceComponent
             }
         ]
+    },
+    {
+        path: 'blog-page',
+        component: BlogPageComponent
     }
 ];
