@@ -6,9 +6,9 @@
         <div class="our-projects-txt poppins-regular">Home/Services/{{ serviceName }}</div>
         <div class="our-projects-inner">
             <div>
-                <h1 class="poppins-bold">
-                    Transforming Ideas <span class="poppins-medium"> into Powerful,</span> <br />
-                    Custom <span class="poppins-medium">software solutions</span>
+                <h1 [innerHTML]="mainTitleOne" class="poppins-bold">
+                    <!-- Transforming Ideas <span class="poppins-medium italic"> into Powerful,</span> <br />
+                    Custom <span class="poppins-medium italic">software solutions</span> -->
                 </h1>
             </div>
             <div>
@@ -27,19 +27,19 @@
             </p>
         </div>
 
-        <p class="carousel-header poppins-regular">Innovative Solutions with Cutting-Edge Software Development</p>
+        <p class="carousel-header poppins-regular">{{ carouselHeader }}</p>
 
         <div class="carousel">
-            @for (item of carouselItems; track $index) {
+            @for (item of carouselItemss; track $index) {
             <div>
                 <img src="{{ item.image }}" alt="tech" />
             </div>
             }
         </div>
 
-        <h1 class="header-2 poppins-bold">
-            Turning visions into robust, <br />
-            User-centric <span class="poppins-medium">Software Solutions</span>
+        <h1 [innerHTML]="mainTitleTwo" class="header-2 poppins-bold">
+            <!-- Turning visions into robust, <br />
+            User-centric <span class="poppins-medium italic">Software Solutions</span> -->
         </h1>
         <div class="tiles">
             <div></div>

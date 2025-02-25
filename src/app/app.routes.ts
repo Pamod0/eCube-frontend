@@ -6,6 +6,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ServiceInnerComponent } from './pages/service-inner/service-inner.component';
 import { DefaultLayoutComponent } from './layout/default-layout/default-layout.component';
 import { SoftwareServiceComponent } from './pages/service-inner/software-service/software-service.component';
+import { WebDesignServiceComponent } from './pages/service-inner/web-design-service/web-design-service.component';
 
 export const routes: Routes = [
     {
@@ -36,6 +37,10 @@ export const routes: Routes = [
             {
                 path: 'software',
                 component: SoftwareServiceComponent
+            },
+            {
+                path: 'web-design',
+                component: WebDesignServiceComponent
             }
         ]
     }
