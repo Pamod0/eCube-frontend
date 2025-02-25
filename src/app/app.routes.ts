@@ -4,6 +4,7 @@ import { TestComponent } from './layout/test/test.component';
 import { CareersComponent } from './pages/careers/careers.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { BlogPageComponent } from './pages/blog/blog-page/blog-page/blog-page.component';
+import { SrilankaCricketComponent } from './layout/our-projects/srilanka-cricket/srilanka-cricket.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path: 'blog-page',
         component: BlogPageComponent
+    },
+    {
+        path: 'SLC',
+        component: SrilankaCricketComponent
     }
 ];
