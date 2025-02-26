@@ -621,6 +621,12 @@ section {
                                 margin-top: 0;
                             }
                         }
+                        .avatar-img {
+                            width: 45px;
+                            height: 45px;
+                            flex-shrink: 0;
+                            border-radius: 512px;
+                        }
                     }
 
                     img.linkdin-logo {
@@ -730,6 +736,12 @@ section {
                             font-style: italic;
                             margin-top: 0;
                         }
+                    }
+                    .avatar-img {
+                        width: 45px;
+                        height: 45px;
+                        flex-shrink: 0;
+                        border-radius: 512px;
                     }
                 }
 
