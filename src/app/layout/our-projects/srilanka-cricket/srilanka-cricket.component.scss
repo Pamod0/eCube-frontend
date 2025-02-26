@@ -4,6 +4,7 @@ section {
     padding: 80px;
     grid-template-columns: 0.5fr 11fr 0.5fr;
 
+    // 1st content section
     .SLC-section {
         position: relative;
         display: grid;
@@ -114,7 +115,6 @@ section {
     }
 
     // 2nd content section
-
     .about-us {
         display: grid;
         grid-template-columns: 0.5fr 5.5fr 5.5fr 0.5fr;
@@ -150,6 +150,19 @@ section {
             font-size: 35px;
             line-height: 5px;
             letter-spacing: -2%;
+        }
+
+        .poppins-bold-Technology {
+            color: #ffffff;
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 5px;
+            letter-spacing: -2%;
+        }
+
+        span {
+            color: #0077b5;
         }
 
         .btn {
@@ -228,7 +241,14 @@ section {
 
         // Right side
         .Description {
-            span,
+            h3 {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28.8px;
+                letter-spacing: -2%;
+                color: #ffffff;
+            }
             p {
                 color: #ffffff;
                 font-family: Poppins;
@@ -277,7 +297,6 @@ section {
     }
 
     // 3rd content section
-
     .measurable-container {
         display: flex;
         justify-content: space-between;
@@ -315,6 +334,10 @@ section {
                     line-height: 60px;
                     text-align: left;
                     margin: 0;
+                }
+
+                span {
+                    color: #0077b5;
                 }
 
                 p {
@@ -390,7 +413,6 @@ section {
     }
 
     // 4th content section
-
     .team-section {
         display: grid;
         grid-template-columns: 0.5fr 11fr 0.5fr;
@@ -408,6 +430,10 @@ section {
                 color: #ffffff;
                 font-size: 40px;
                 line-height: 48px;
+            }
+
+            span {
+                color: #0077b5;
             }
 
             p {
