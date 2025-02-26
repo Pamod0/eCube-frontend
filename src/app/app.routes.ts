@@ -10,6 +10,10 @@ import { BlogPageComponent } from './pages/blog/blog-page/blog-page/blog-page.co
 import { UiUxDesignServiceComponent } from './pages/service-inner/ui-ux-design-service/ui-ux-design-service.component';
 import { BrandIdentityServiceComponent } from './pages/service-inner/brand-identity-service/brand-identity-service.component';
 import { SrilankaCricketComponent } from './layout/our-projects/srilanka-cricket/srilanka-cricket.component';
+import { MepaComponent } from './layout/our-projects/mepa/mepa.component';
+import { SLBasketballComponent } from './layout/our-projects/sl-basketball/sl-basketball.component';
+import { NOHSCOPComponent } from './layout/our-projects/nohscop/nohscop.component';
+
 
 export const routes: Routes = [
     {
@@ -62,5 +66,17 @@ export const routes: Routes = [
     {
         path: 'SLC',
         component: SrilankaCricketComponent
+    },
+    {
+        path: 'mepa',
+        component: MepaComponent
+    },
+    {
+        path: 'sl-basketball',
+        component: SLBasketballComponent
+    },
+    {
+        path: 'nohscop',
+        component: NOHSCOPComponent
     }
 ];

@@ -1,0 +1,264 @@
+<!--Blog-page Section-->
+
+<app-header></app-header>
+
+<!--Image and contents-->
+
+<section class="poppins-regular">
+    <!--1st Section-->
+
+    <div class="Mepa-section">
+        <div></div>
+
+        <div>
+            <div>
+                <div class="SLC-txt poppins-regular">Mepa</div>
+
+                <!-- Headers with Aurthor details -->
+
+                <div class="header">
+                    <div class="header-left">
+                        <h1 class="poppins-bold-Cricket">OceanWatch | MEPA - Beach Cleanup</h1>
+                        <h5 class="poppins-regular-Vendor">Booking Management System</h5>
+                    </div>
+                    <div class="header-right">
+                        <img src="/assets/images/mepa-logo.png" class="SLC-logo" alt="logo" />
+                        <div class="Details">
+                            <p class="poppins-regular-Powered">Powered by</p>
+                            <p class="poppins-regular-Ecube">Ecube Digital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image with Content -->
+
+                <div class="SLC-img">
+                    <img src="/assets/images/projects/Mepa/Mepa.jpg" class="img" alt="SLC-Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--2nd Section-->
+
+    <div class="about-us">
+        <div></div>
+
+        <div>
+            <div>
+                <div class="about-txt poppins-regular">System Requirement</div>
+                <h1 class="poppins-bold-Struggles">Streamlining Coastal</h1>
+                <h2 class="poppins-bold-Excellence">Cleanup Through Smart</h2>
+                <h3 class="poppins-bold-Technology">Technology<span>.</span></h3>
+            </div>
+            <div>
+                <button class="btn UIUX">UI/UX Design</button>
+                <button class="btn Software">Software Development</button>
+                <br />
+                <button class="btn Web">Web Design</button>
+            </div>
+
+            <div>
+                <p class="poppins-regular-content">Used technologies</p>
+                <div class="technologies">
+                    <img src="/assets/images/projects/SLC/Figma.png" class="tech-one" alt="Figma" />
+                    <img src="/assets/images/projects/SLC/Angular.png" class="tech-two" alt="Angular" />
+                    <img src="/assets/images/projects/Mepa/.net.png" class="tech-three" alt="Vector" />
+                    <img src="/assets/images/projects/Mepa/mysql.png" class="tech-four" alt="MongoDB" />
+                </div>
+                <h6>Completed within 4 weeks</h6>
+            </div>
+        </div>
+        <div class="Description">
+            <br />
+            <div><h3 class="poppins-semibold-project">Project Description<span>.</span></h3></div>
+            <div class="poppins-regular-content">
+                <p>
+                    OceanWatch | Mepa - Beach Cleanup Booking Management System aims to revolutionize the way beach cleanups are organized, tracked, and executed. Currently, managing volunteer participation, scheduling cleanup events, and coordinating with local teams is a fragmented and manual process, leading to inefficiencies and missed opportunities for greater environmental impact. Tasks such as volunteer registration, event coordination, and resource allocation are time-consuming and prone to errors, which hampers the overall effectiveness of beach cleanup efforts.
+                </p>
+                <p>
+                    Traditional communication methods and paper-based systems create delays in confirming bookings and sharing crucial event details, leading to confusion and coordination issues. As the scale of beach cleanup efforts grows, managing numerous volunteers, tracking the progress of cleanups, and ensuring all logistical aspects are handled smoothly becomes increasingly complex
+                </p>
+            </div>
+            <div>
+                <a href="https://www.oceanwatch.lk" target="_blank">
+                    <button class="Visit-Website">
+                        Visit Website
+                        <mat-icon aria-hidden="false" fontIcon="north_east"> </mat-icon>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <!--3rd Section-->
+
+    <div class="measurable-container">
+        <div></div>
+        <!-- Left side - Measurables -->
+        <div class="measurable-grid">
+            <div class="metric-card">
+                <h2>85%</h2>
+                <p>Cleaned Coastal</p>
+                <h6>Areas</h6>
+            </div>
+            <div class="metric-card">
+                <h2>24/7</h2>
+                <p>Real-Time</p>
+                <h6>Bookings</h6>
+            </div>
+            <div class="metric-card">
+                <h2>400+</h2>
+                <p>Coastal Cleanups</p>
+                <h6>Bookings</h6>
+            </div>
+            <div class="metric-card">
+                <h2>100%</h2>
+                <p>Transparency in</p>
+                <h6>Bookings</h6>
+            </div>
+        </div>
+
+        <!-- Right side - VMS Content -->
+        <div class="vms-content">
+            <h1>
+                Measurable Impact <br />
+                of OceanWatch
+            </h1>
+            <p>Our Booking Management System has sparked a revolution in efficiency, unlocking new levels of precision and convenience through digital innovation.</p>
+            <!-- <a class="read-more">
+                Read More
+                <mat-icon>north_east</mat-icon>
+            </a> -->
+        </div>
+
+        <div></div>
+    </div>
+
+    <!--4th Section-->
+
+    <div class="team-section">
+        <div></div>
+        <div>
+            <div>
+                <div class="services-txt poppins-regular">Team Members</div>
+                <div class="header">
+                    <h1 class="poppins-bold">
+                        The Minds Behind the<br />
+                        Innovation<span>.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="team-grid">
+                @for(member of teamMembers; track member.name) {
+                <div class="team-member">
+                    <img src="{{ member.image }}" alt="{{ member.name }}" />
+                    <div class="info">
+                        <h3 class="poppins-bold">{{ member.name }}</h3>
+                        <p class="poppins-regular">{{ member.position }}</p>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <!--5th Section-->
+
+    <div class="testimonial-section">
+        <div></div>
+        <div>
+            <div>
+                <div class="services-txt poppins-regular">Customer Testimonials</div>
+                <div class="header">
+                    <h1 class="poppins-bold">
+                        In Their Own Words, <br />
+                        OceanWatch Marine Environment<br />
+                        Protection Authority’s Experience<span>.</span>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="container-one">
+                <div class="left-side">
+                    <img src="/assets/images/projects/Mepa/Asela Rekawa.png" alt="Image" />
+                </div>
+                <div class="right-side">
+                    <p>
+                        The launch of the Oceanwatch MEPA Booking Management System has been a game-changer for our beach cleanup initiatives. With improved efficiency, transparency, and streamlined coordination, this system is transforming the way we manage and organize our efforts. 
+                    </p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <!-- <img src="/assets/images/avatar-3.png" class="SLC-logo" alt="logo" /> -->
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Asela Rekawa</p>
+                                <p class="poppins-regular-president">Former Chairman of MEPA</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-two">
+                <div class="content-grid">
+                    <p>The Oceanwatch MEPA Booking Management System brings much-needed transparency and organization to our beach cleanup initiatives, making coordination effortless and hassle-free.</p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/avatar-3.png" class="SLC-logo" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Asela Rekawa</p>
+                                <p class="poppins-regular-president">Former Chairman of MEPA</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <p>The Oceanwatch MEPA Booking Management System brings much-needed transparency and organization to our beach cleanup initiatives, making coordination effortless and hassle-free.</p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/avatar-3.png" class="SLC-logo" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Asela Rekawa</p>
+                                <p class="poppins-regular-president">Former Chairman of MEPA</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <p>The Oceanwatch MEPA Booking Management System brings much-needed transparency and organization to our beach cleanup initiatives, making coordination effortless and hassle-free.</p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/avatar-3.png" class="SLC-logo" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Asela Rekawa</p>
+                                <p class="poppins-regular-president">Former Chairman of MEPA</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
+</section>
+
+<!-- ******************** -->
+
+<app-accordion></app-accordion>
+<app-contact-form></app-contact-form>
+<app-footer></app-footer>
