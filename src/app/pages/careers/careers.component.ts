@@ -28,34 +28,34 @@ export class CareersComponent {
     ngOnInit() {
         this.teamMembers = [
             {
-                image: '/assets/images/careers/team-1.png',
+                image: '/assets/images/careers/divya.png',
                 name: 'Divya Perera',
                 position: 'Head of Digital'
             },
             {
-                image: '/assets/images/careers/team-2.png',
+                image: '/assets/images/careers/malith.png',
                 name: 'Malith Weeramuni',
                 position: 'Senior UI/UX Design Engineer'
             },
             {
-                image: '/assets/images/careers/team-3.png',
+                image: '/assets/images/careers/pamod.png',
                 name: 'Pamod Peiris',
                 position: 'Software Engineer'
             },
             {
-                image: '/assets/images/careers/team-4.png',
+                image: '/assets/images/careers/keheliya.png',
                 name: 'Keheliya Manathunga',
                 position: 'Frontend Engineer'
             },
             {
-                image: '/assets/images/careers/team-5.png',
-                name: 'Malith Weeramuni',
-                position: 'Senior UI/UX Design Engineer'
+                image: '/assets/images/careers/asma.png',
+                name: 'Asma Kharposh',
+                position: 'Content Writer'
             },
             {
-                image: '/assets/images/careers/team-1.png',
-                name: 'Malith Weeramuni',
-                position: 'Senior UI/UX Design Engineer'
+                image: '/assets/images/careers/sarujan.png',
+                name: 'Suthagar Sarujan',
+                position: 'Trainee Software Engineer'
             }
         ];
 
