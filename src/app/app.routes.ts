@@ -15,7 +15,8 @@ import { SLBasketballComponent } from './layout/our-projects/sl-basketball/sl-ba
 import { NOHSCOPComponent } from './layout/our-projects/nohscop/nohscop.component';
 import { CycloneRCMComponent } from './layout/our-projects/cyclone-rcm/cyclone-rcm.component';
 import { TourpillComponent } from './layout/our-projects/tourpill/tourpill.component';
-
+import { TestPageComponent } from './pages/test-page/test-page.component';
+import { ProjectInnerComponent } from './pages/project-inner/project-inner.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,10 @@ export const routes: Routes = [
             {
                 path: '',
                 component: HomeComponent
+            },
+            {
+                path: 'projects/:project',
+                component: ProjectInnerComponent
             }
         ]
     },
@@ -88,5 +93,9 @@ export const routes: Routes = [
     {
         path: 'tourpill',
         component: TourpillComponent
+    },
+    {
+        path: 'services/:service',
+        component: TestPageComponent
     }
 ];
