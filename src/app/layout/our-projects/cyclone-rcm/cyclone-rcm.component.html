@@ -1,0 +1,285 @@
+<!--Blog-page Section-->
+
+<app-header></app-header>
+
+<!--Image and contents-->
+
+<section class="poppins-regular">
+    <!--1st Section-->
+
+    <div class="CycloneRCM-section">
+        <div></div>
+
+        <div>
+            <div>
+                <div class="CycloneRCM-txt poppins-regular">CycloneRCM</div>
+
+                <!-- Headers with Aurthor details -->
+
+                <div class="header">
+                    <div class="header-left">
+                        <h1 class="poppins-bold-Cricket">CycloneRCM</h1>
+                        <h5 class="poppins-regular-Vendor">Brand Identity + Website</h5>
+                    </div>
+                    <div class="header-right">
+                        <img src="/assets/images/projects/Cyclone-RCM/Cyclone-logo.png" class="SLC-logo" alt="logo" />
+                        <div class="Details">
+                            <p class="poppins-regular-Powered">Powered by</p>
+                            <p class="poppins-regular-Ecube">Ecube Digital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image with Content -->
+
+                <div class="SLC-img">
+                    <img src="/assets/images/projects/Cyclone-RCM/RCM.jpg" class="img" alt="SLC-Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--2nd Section-->
+
+    <div class="about-us">
+        <div></div>
+
+        <div>
+            <div>
+                <div class="about-txt poppins-regular">System Requirement</div>
+                <h1 class="poppins-bold-Struggles">Designed for Success,</h1>
+                <h2 class="poppins-bold-Excellence">Built for Recognition<span>.</span></h2>
+                <!-- <h3 class="poppins-bold-Technology">Technology</h3> -->
+            </div>
+            <div>
+                <button class="btn UIUX">UI/UX Design</button>
+                <button class="btn Software">Software Development</button>
+                <br />
+                <button class="btn Web">Web Design</button>
+            </div>
+
+            <div>
+                <p class="poppins-regular-content">Used technologies</p>
+                <div class="technologies">
+                    <img src="/assets/images/projects/Cyclone-RCM/illustrator.png" class="tech-one" alt="Adobe" />
+                    <img src="/assets/images/projects/Cyclone-RCM/Photoshop.png" class="tech-two" alt="Angular" />
+                    <img src="/assets/images/projects/Cyclone-RCM/Mask.png" class="tech-three" alt="Vector" />
+                    <img src="/assets/images/projects/Cyclone-RCM/Vector.png" class="tech-four" alt="MongoDB" />
+                </div>
+                <h6>Completed within 4 weeks</h6>
+            </div>
+        </div>
+        <div class="Description">
+            <br />
+            <div>
+                <h3 class="poppins-semibold-project">Project Description<span>.</span></h3>
+            </div>
+            <div class="poppins-regular-content">
+                <p>
+                    CycloneRCM, a leader in Workers’ Compensation Copy Service Billing, needed a brand identity that truly reflected its innovative,
+                    technology-driven approach. Our goal was to transform their branding from outdated and fragmented to a cohesive, modern, and high-impact
+                    identity that resonates with their audience.
+                </p>
+                <p>
+                    Through strategic brand positioning, refined messaging, and a sleek visual identity, we developed a design system that embodies CycloneRCM’s
+                    commitment to efficiency, accuracy, and automation. From a refreshed logo and color palette to a seamless digital experience, our work
+                    ensures that CycloneRCM stands out in the industry as a trusted and forward-thinking solution.
+                </p>
+            </div>
+            <div>
+                <a href="https://www.oceanwatch.lk" target="_blank">
+                    <button class="Visit-Website">
+                        Visit Website
+                        <mat-icon aria-hidden="false" fontIcon="north_east"> </mat-icon>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <!--3rd Section-->
+
+    <div class="measurable-container">
+        <div></div>
+        <!-- Left side - Measurables -->
+        <div class="measurable-grid">
+            <div class="metric-card">
+                <h2>85%</h2>
+                <p>Cleaned Coastal</p>
+                <h6>Areas</h6>
+            </div>
+            <div class="metric-card">
+                <h2>24/7</h2>
+                <p>Real-Time</p>
+                <h6>Bookings</h6>
+            </div>
+            <div class="metric-card">
+                <h2>400+</h2>
+                <p>Coastal Cleanups</p>
+                <h6>Bookings</h6>
+            </div>
+            <div class="metric-card">
+                <h2>100%</h2>
+                <p>Transparency in</p>
+                <h6>Bookings</h6>
+            </div>
+        </div>
+
+        <!-- Right side - VMS Content -->
+        <div class="vms-content">
+            <h1>
+                Measurable Impact <br />
+                of CycloneRCM
+            </h1>
+            <p>
+                With CycloneRCM, businesses experience faster collections, reduced denials, and streamlined workflows—all backed by compliance-driven accuracy.
+            </p>
+            <!-- <a class="read-more">
+                Read More
+                <mat-icon>north_east</mat-icon>
+            </a> -->
+        </div>
+
+        <div></div>
+    </div>
+
+    <!--4th Section-->
+
+    <div class="team-section">
+        <div></div>
+        <div>
+            <div>
+                <div class="services-txt poppins-regular">Team Members</div>
+                <div class="header">
+                    <h1 class="poppins-bold">
+                        The Minds Behind the<br />
+                        Innovation<span>.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="team-grid">
+                @for(member of teamMembers; track member.name) {
+                <div class="team-member">
+                    <img src="{{ member.image }}" alt="{{ member.name }}" />
+                    <div class="info">
+                        <h3 class="poppins-bold">{{ member.name }}</h3>
+                        <p class="poppins-regular">{{ member.position }}</p>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <!--5th Section-->
+
+    <div class="testimonial-section">
+        <div></div>
+        <div>
+            <div>
+                <div class="services-txt poppins-regular">Customer Testimonials</div>
+                <div class="header">
+                    <h1 class="poppins-bold">
+                        In Their Own Words, <br />
+                        OceanWatch Marine Environment<br />
+                        Protection Authority’s Experience<span>.</span>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="container-one">
+                <div class="left-side">
+                    <img src="/assets/images/projects/Cyclone-RCM/Basil.jpg" alt="Image" />
+                </div>
+                <div class="right-side">
+                    <p>
+                        A Brand Identity That Speaks for Us CycloneRCM’s new branding perfectly captures our core mission—speed, accuracy, and innovation. The
+                        visual identity and messaging align seamlessly with our services, making it easier for clients to understand our impact at a glance.
+                    </p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <!-- <img src="/assets/images/avatar-3.png" class="SLC-logo" alt="logo" /> -->
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Basil Xavier</p>
+                                <p class="poppins-regular-president">President/CEO</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-two">
+                <div class="content-grid">
+                    <p>
+                        A Website Built for Engagement & Efficiency <br> Our website is now a true reflection of our capabilities. It’s modern, intuitive, and
+                        optimized for conversions. The streamlined navigation and clear messaging make it easy for clients to explore our solutions and take
+                        action.<br><br><br>
+                    </p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/avatar-3.png" class="SLC-logo" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Basil Xavier</p>
+                                <p class="poppins-regular-president">President/CEO</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <p>
+                        Stronger Market Presence & Recognition <br> The refreshed branding has given us a stronger presence in the industry. From the logo to the
+                        color scheme and content strategy, everything feels cohesive and professional—exactly what we needed to stand out in a competitive
+                        market.<br><br>
+                    </p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/avatar-3.png" class="SLC-logo" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Basil Xavier</p>
+                                <p class="poppins-regular-president">President/CEO</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <p>
+                        Seamless Execution & Collaboration The entire process, from concept to execution, was smooth and well-managed. The team understood our
+                        vision and translated it into a brand identity and website that truly elevate CycloneRCM. We couldn’t be happier with the outcome!
+                        <br><br><br>
+                    </p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/avatar-3.png" class="SLC-logo" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Basil Xavier</p>
+                                <p class="poppins-regular-president">President/CEO</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
+</section>
+
+<!-- ******************** -->
+
+<app-accordion></app-accordion>
+<app-contact-form></app-contact-form>
+<app-footer></app-footer>
