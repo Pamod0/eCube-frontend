@@ -13,6 +13,8 @@ import { SrilankaCricketComponent } from './layout/our-projects/srilanka-cricket
 import { MepaComponent } from './layout/our-projects/mepa/mepa.component';
 import { SLBasketballComponent } from './layout/our-projects/sl-basketball/sl-basketball.component';
 import { NOHSCOPComponent } from './layout/our-projects/nohscop/nohscop.component';
+import { CycloneRCMComponent } from './layout/our-projects/cyclone-rcm/cyclone-rcm.component';
+import { TourpillComponent } from './layout/our-projects/tourpill/tourpill.component';
 
 
 export const routes: Routes = [
@@ -78,5 +80,13 @@ export const routes: Routes = [
     {
         path: 'nohscop',
         component: NOHSCOPComponent
+    },
+    {
+        path: 'cyclone',
+        component: CycloneRCMComponent
+    },
+    {
+        path: 'tourpill',
+        component: TourpillComponent
     }
 ];
