@@ -10,6 +10,10 @@ import { MatIconModule } from '@angular/material/icon';
     styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+    scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scrolling to the top
+    }
+
     ngAfterViewInit() {
         const radios = document.querySelectorAll<HTMLInputElement>("input[name='slider']");
         const prevBtn = document.getElementById('prevBtn');
