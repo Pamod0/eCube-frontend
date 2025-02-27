@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PaginatorIntlService } from './paginator-intl.service';
+import { ProjectService } from './project.service';
 
-describe('PaginatorIntlService', () => {
-  let service: PaginatorIntlService;
+describe('ProjectService', () => {
+  let service: ProjectService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(PaginatorIntlService);
+    service = TestBed.inject(ProjectService);
   });
 
   it('should be created', () => {

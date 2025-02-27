@@ -1,0 +1,261 @@
+<!--Image and contents-->
+
+<section class="poppins-regular">
+    <!--1st Section-->
+
+    <div class="SLC-section">
+        <div></div>
+
+        <div>
+            <div>
+                <div class="SLC-txt poppins-regular">Sri Lanka Cricket</div>
+
+                <!-- Headers with Aurthor details -->
+
+                <div class="header">
+                    <div class="header-left">
+                        <h1 class="poppins-bold-Cricket">{{ project.company }}</h1>
+                        <h5 class="poppins-regular-Vendor">{{ project.title }}</h5>
+                    </div>
+                    <div class="header-right">
+                        <img src="{{ project.companyLogo }}" class="SLC-logo" alt="logo" />
+                        <div class="Details">
+                            <p class="poppins-regular-Powered">Powered by</p>
+                            <p class="poppins-regular-Ecube">Ecube Digital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image with Content -->
+
+                <div class="SLC-img">
+                    <img src="{{ project.mainImage }}" class="img" alt="SLC-Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--2nd Section-->
+
+    <div class="about-us">
+        <div></div>
+
+        <div>
+            <div>
+                <div class="about-txt poppins-regular">System Requirement</div>
+                <h1 class="poppins-bold-Struggles">From Manual Struggles</h1>
+                <h2 class="poppins-bold-Excellence">to Digital Excellence<span>.</span></h2>
+            </div>
+            <div>
+                <button class="btn UIUX">UI/UX Design</button>
+                <button class="btn Software">Software Development</button>
+                <br />
+                <button class="btn Web">Web Design</button>
+            </div>
+
+            <div>
+                <p class="poppins-regular-content">Used technologies</p>
+                <div class="technologies">
+                    <img src="/assets/images/projects/SLC/Figma.png" class="tech-one" alt="Figma" />
+                    <img src="/assets/images/projects/SLC/Angular.png" class="tech-two" alt="Angular" />
+                    <img src="/assets/images/projects/SLC/Vector.png" class="tech-three" alt="Vector" />
+                    <img src="/assets/images/projects/SLC/Mongodb.png" class="tech-four" alt="MongoDB" />
+                </div>
+                <h6>Completed within 4 weeks</h6>
+            </div>
+        </div>
+        <div class="Description">
+            <br />
+            <div>
+                <h3 class="poppins-semibold-project">Project Description<span>.</span></h3>
+            </div>
+            <div class="poppins-regular-content">
+                <p>
+                    Sri Lanka Cricket's vendor management process relies heavily on manual paperwork, leading to delays, inefficiencies, and a lack of
+                    transparency. Tasks like vendor registration, contract approvals, and payment tracking are time-consuming and prone to errors, disrupting
+                    operations and accountability. Without a centralized system, tracking vendor performance and ensuring timely payments becomes challenging
+                </p>
+                <p>
+                    Traditional communication methods such as emails and phone calls further slow down coordination, causing miscommunication and data
+                    inconsistencies. As Sri Lanka Cricket expands, the current system struggles to scale, making it difficult to manage a growing number of
+                    vendors. A streamlined digital solution is essential to enhance efficiency, accuracy, and overall vendor management.
+                </p>
+            </div>
+            <div>
+                <a href="https://vms.mycricket.com.lk" target="_blank">
+                    <button class="Visit-Website">
+                        Visit Website
+                        <mat-icon aria-hidden="false" fontIcon="north_east"> </mat-icon>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <!--3rd Section-->
+
+    <div class="measurable-container">
+        <div></div>
+        <!-- Left side - Measurables -->
+        <div class="measurable-grid">
+            <div class="metric-card">
+                <h2>85%</h2>
+                <p>Faster</p>
+                <h6>Procurement</h6>
+            </div>
+            <div class="metric-card">
+                <h2>24/7</h2>
+                <p>Real-Time Vendor</p>
+                <h6>Tracking</h6>
+            </div>
+            <div class="metric-card">
+                <h2>400+</h2>
+                <p>Vendor</p>
+                <h6>Onboarding</h6>
+            </div>
+            <div class="metric-card">
+                <h2>100%</h2>
+                <p>Transparency in</p>
+                <h6>Transactions</h6>
+            </div>
+        </div>
+
+        <!-- Right side - VMS Content -->
+        <div class="vms-content">
+            <h1>
+                Measurable Impact <br />
+                of Our VMS
+            </h1>
+            <p>Our Vendor Management System has driven significant improvements across operations, showcasing the power of digital transformation.</p>
+            <!-- <a class="read-more">
+                Read More
+                <mat-icon>north_east</mat-icon>
+            </a> -->
+        </div>
+
+        <div></div>
+    </div>
+
+    <!--4th Section-->
+
+    <div class="team-section">
+        <div></div>
+        <div>
+            <div>
+                <div class="services-txt poppins-regular">Team Members</div>
+                <div class="header">
+                    <h1 class="poppins-bold">
+                        The Minds Behind the<br />
+                        Innovation<span>.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="team-grid">
+                @for(member of teamMembers; track member.name) {
+                <div class="team-member">
+                    <img src="{{ member.image }}" alt="{{ member.name }}" />
+                    <div class="info">
+                        <h3 class="poppins-bold">{{ member.name }}</h3>
+                        <p class="poppins-regular">{{ member.position }}</p>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <!--5th Section-->
+
+    <div class="testimonial-section">
+        <div></div>
+        <div>
+            <div>
+                <div class="services-txt poppins-regular">Customer Testimonials</div>
+                <div class="header">
+                    <h1 class="poppins-bold">
+                        In Their Own Words, <br />
+                        Sri Lanka Cricket's Experience<span>.</span>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="container-one">
+                <div class="left-side">
+                    <img src="/assets/images/projects/SLC/Shammi Silva.png" alt="Image" />
+                </div>
+                <div class="right-side">
+                    <p>
+                        The Vendor Management System has transformed our operations, bringing efficiency, transparency, and seamless vendor management. This
+                        innovation is a game-changer for Sri Lanka Cricket’s growth.
+                    </p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/mr-shammi.png" class="avatar-img" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Shammi Silva</p>
+                                <p class="poppins-regular-president">President - Sri Lanka Cricket</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-two">
+                <div class="content-grid">
+                    <p>A streamlined system that has made vendor onboarding and procurement faster and more efficient.</p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/mr-shammi.png" class="avatar-img" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Shammi Silva</p>
+                                <p class="poppins-regular-president">President - Sri Lanka Cricket</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <p>Brings transparency and organization, making vendor management hassle-free.</p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/mr-shammi.png" class="avatar-img" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Shammi Silva</p>
+                                <p class="poppins-regular-president">President - Sri Lanka Cricket</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <p>Brings transparency and organization, making vendor management hassle-free.</p>
+                    <div class="author-role">
+                        <div class="author-img">
+                            <img src="/assets/images/mr-shammi.png" class="avatar-img" alt="logo" />
+                            <div class="name-role">
+                                <p class="poppins-bold-shammi">Shammi Silva</p>
+                                <p class="poppins-regular-president">President - Sri Lanka Cricket</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <a href="https://v17.angular.io/start"><img src="/assets/images/projects/SLC/Linkdin.png" class="linkdin-logo" alt="logo" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
+</section>
+
+<!-- ******************** -->

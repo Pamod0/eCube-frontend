@@ -1,0 +1,11 @@
+{
+    "slc-srs": {
+        "title": "Sri Lanka Cricket Supplier Registration System",
+        "breadcrumb": "SLC-SRS",
+        "company": "Sri Lanka Cricket",
+        "projectName": "Supplier Registration System",
+        "companyLogo": "/assets/images/projects/SLC/SLC.logo.jpg",
+        "mainImage": "/assets/images/projects/SLC/SL Cricket.jpg",
+        "systemRequirement": "From Manual Struggles to Digital Excellence"
+    }
+}
