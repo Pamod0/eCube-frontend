@@ -1,0 +1,21 @@
+.projects {
+    display: grid;
+    grid-template-columns: 0.5fr 11fr 0.5fr;
+    gap: 2rem;
+    padding: 80px;
+    background: #070707;
+}
+.services-txt {
+    color: #6f6f6f;
+}
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+}

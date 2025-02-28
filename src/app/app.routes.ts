@@ -17,6 +17,7 @@ import { CycloneRCMComponent } from './layout/our-projects/cyclone-rcm/cyclone-r
 import { TourpillComponent } from './layout/our-projects/tourpill/tourpill.component';
 import { TestPageComponent } from './pages/test-page/test-page.component';
 import { ProjectInnerComponent } from './pages/project-inner/project-inner.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 export const routes: Routes = [
     {
@@ -26,6 +27,10 @@ export const routes: Routes = [
             {
                 path: '',
                 component: HomeComponent
+            },
+            {
+                path: 'projects-list',
+                component: ProjectsComponent
             },
             {
                 path: 'projects/:project',
