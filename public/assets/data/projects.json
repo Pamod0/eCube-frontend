@@ -6,6 +6,10 @@
         "projectName": "Supplier Registration System",
         "companyLogo": "/assets/images/projects/SLC/SLC.logo.jpg",
         "mainImage": "/assets/images/projects/SLC/SL Cricket.jpg",
-        "systemRequirement": "From Manual Struggles to Digital Excellence"
+        "systemRequirement": "From Manual Struggles to Digital Excellence",
+        "slogan": {
+            "lineOne": "From Manual Struggles",
+            "lineTwo": "to Digital Excellence"
+        }
     }
 }

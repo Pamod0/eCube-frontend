@@ -15,8 +15,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
     border-radius: 50%;
     height: 45px;
     width: 45px;
@@ -77,5 +77,15 @@ p {
         height: 45px;
         flex-shrink: 0;
         border-radius: 512px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    :host ::ng-deep {
+        .p-carousel-item {
+            > div {
+                padding: 0 !important;
+            }
+        }
     }
 }
