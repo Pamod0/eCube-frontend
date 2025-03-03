@@ -1,7 +1,5 @@
 import { Component, inject } from '@angular/core';
-
 import { MatIconModule } from '@angular/material/icon';
-
 import { ProjectService } from './project.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -31,9 +29,41 @@ export class ProjectInnerComponent {
             // this.projects = Object.values(data); // Convert object to array
             console.log(this.projects);
 
+            // this.route.paramMap.subscribe((params) => {
+            //     const serviceKey = params.get('project');
+            //     this.project = this.projects[serviceKey || 'slc-srs'];
+            //     this.project = this.projects[serviceKey || 'meps-srs'];
+            //     this.project = this.projects[serviceKey || 'basketball-srs'];
+            //     this.project = this.projects[serviceKey || 'nohscop-srs'];
+            //     this.project = this.projects[serviceKey || 'cyclone-srs'];
+            //     this.project = this.projects[serviceKey || 'nohscop-srs'];
+            // });
+
             this.route.paramMap.subscribe((params) => {
                 const serviceKey = params.get('project');
-                this.project = this.projects[serviceKey || 'slc-srs'];
+
+                switch (serviceKey) {
+                    case 'slc-srs':
+                        this.project = this.projects['slc-srs'];
+                        break;
+                    case 'meps-srs':
+                        this.project = this.projects['meps-srs'];
+                        break;
+                    case 'basketball-srs':
+                        this.project = this.projects['basketball-srs'];
+                        break;
+                    case 'nohscop-srs':
+                        this.project = this.projects['nohscop-srs'];
+                        break;
+                    case 'cyclone-srs':
+                        this.project = this.projects['cyclone-srs'];
+                        break;
+                    case 'tourpill-srs':
+                        this.project = this.projects['tourpill-srs'];
+                        break;
+                    default:
+                        this.project = this.projects['meps-srs'];
+                }
             });
 
             console.log(this.project);
