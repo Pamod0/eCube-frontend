@@ -144,4 +144,35 @@ h1 {
     .our-projects-inner {
         flex-direction: column;
     }
+    .projects {
+        > div {
+            padding: 2rem !important;
+        }
+        .top-wrapper {
+            flex-direction: column;
+            .container-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .logo {
+                    width: 64px !important;
+                    height: 64px !important;
+                }
+                h2 {
+                    margin-left: 1rem;
+                    font-size: 20px;
+                }
+            }
+            a {
+                display: flex;
+                justify-content: end;
+            }
+        }
+        p {
+            font-size: 14px !important;
+        }
+        .avatar-container {
+            display: none;
+        }
+    }
 }

@@ -17,3 +17,20 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+
+// Media Queries
+
+@media only screen and (max-width: 430px) {
+    .reviews {
+        overflow: hidden;
+        gap: 1rem;
+        padding: 0 0 40px 0;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .reviews-inner {
+        flex-direction: column;
+    }
+}
