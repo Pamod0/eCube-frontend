@@ -11,8 +11,14 @@
         </div>
 
         <div class="tiles">
-            @for (item of projects; track $index) {
-                <div></div>
+            @for (project of projects; track $index) {
+                <div [routerLink]="[project.link]" class="tile">
+                    <img src="{{project.image}}" alt="">
+                    <div class="details">
+                        <img src="{{project.logo}}" alt="">
+                        <h2 class="poppins-bold" [innerHTML]="project.name"></h2>
+                    </div>
+                </div>
             }
         </div>
     </div>
