@@ -22,39 +22,39 @@ export class ProjectsComponent {
             {
                 name: 'Sri Lanka Cricket <br> Vendor Management System',
                 logo: '/assets/images/projects/logo-slc.png',
-                image: '/assets/images/projects/oceanwatch.png',
+                image: '/assets/images/projects/slc.png',
                 link: '/SLC'
             },
             {
                 name: 'OceanWatch | MEPA - Beach Cleanup <br> Booking Management System',
                 logo: '/assets/images/projects/logo-mepa.png',
                 image: '/assets/images/projects/oceanwatch.png',
-                link: '/SLC'
+                link: '/mepa'
             },
             {
-                name: 'Basketball Sri Lanka Website & Players Management System',
+                name: 'Basketball Sri Lanka Website & Players <br> Management System',
                 logo: '/assets/images/projects/logo-slbf.png',
-                image: '/assets/images/projects/oceanwatch.png',
-                link: '/SLC'
+                image: '/assets/images/projects/slbf.png',
+                link: '/sl-basketball'
             },
             {
-                name: 'Sri Lanka Cricket <br> Vendor Management System',
-                logo: '/assets/images/projects/logo-slc.png',
-                image: '/assets/images/projects/oceanwatch.png',
-                link: '/SLC'
+                name: 'NOHSCOPE | MEPA <br> Monitoring System',
+                logo: '/assets/images/projects/logo-mepa.png',
+                image: '/assets/images/projects/noscop.png',
+                link: '/nohscop'
             },
             {
-                name: 'Sri Lanka Cricket <br> Vendor Management System',
-                logo: '/assets/images/projects/logo-slc.png',
-                image: '/assets/images/projects/oceanwatch.png',
-                link: '/SLC'
+                name: 'CycloneRCM <br> Brand Identity + Website',
+                logo: '/assets/images/projects/logo-cyclone.png',
+                image: '/assets/images/projects/cyclone.png',
+                link: '/cyclone'
             },
             {
-                name: 'Sri Lanka Cricket <br> Vendor Management System',
-                logo: '/assets/images/projects/logo-slc.png',
-                image: '/assets/images/projects/oceanwatch.png',
-                link: '/SLC'
-            },
+                name: 'TOURPILL Website & <br> Tours Management System',
+                logo: '/assets/images/projects/logo-tp.png',
+                image: '/assets/images/projects/tp.png',
+                link: '/tourpill'
+            }
         ];
     }
 }
