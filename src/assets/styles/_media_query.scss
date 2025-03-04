@@ -53,3 +53,17 @@
         width: 40%; /* Adjust layout for even narrower example-class width on large desktops */
     }
 }
+
+// #####################################################################
+
+/* Actual Breackpoints */
+
+/* Small Screens (Mobile) */
+@media only screen and (max-width: 576px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    .show-mobile {
+        display: block !important;
+    }
+}
