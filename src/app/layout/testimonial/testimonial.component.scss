@@ -80,7 +80,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 576px) {
     :host ::ng-deep {
         .p-carousel-item {
             > div {
