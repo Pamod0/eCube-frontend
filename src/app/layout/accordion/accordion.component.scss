@@ -21,7 +21,7 @@
 .right {
     margin-top: 8rem;
     margin-bottom: 8rem;
-    background-color: #1235ec;;
+    background-color: #1235ec;
     color: white;
     display: flex;
     justify-content: center;
@@ -77,4 +77,28 @@ input[type='checkbox']:checked + .accordion-label .arrow {
 input[type='checkbox']:checked ~ .accordion-content {
     max-height: 100px;
     padding: 10px 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    .accordion-section {
+        grid-template-columns: 0.5fr 11fr 0.5fr;
+        padding: 0;
+    }
+    .right {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin: 0;
+    }
+    .accordion {
+        width: 100%;
+        > h1 {
+            margin-top: 0;
+            padding: 15px;
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
 }
