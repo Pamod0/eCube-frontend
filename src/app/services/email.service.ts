@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
     providedIn: 'root'
 })
 export class EmailService {
-    private apiUrl = 'https://localhost:7123/api/email/send';
+    private apiUrl = 'https://ecube-c3eehhhqfjgtcqge.canadacentral-01.azurewebsites.net/api/email/send';
 
     constructor(private http: HttpClient) {}
 
