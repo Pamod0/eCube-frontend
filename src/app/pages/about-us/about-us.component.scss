@@ -1,0 +1,343 @@
+@use '@angular/material' as mat;
+
+.Aboutus-section {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.5fr 11fr 0.5fr;
+    gap: 2rem;
+    padding: 80px;
+    background: #070707;
+
+    .Aboutus-txt {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #6f6f6f;
+    }
+
+    .container-One {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px auto;
+
+        .grid-item.heading {
+            color: white;
+        }
+
+        .grid-item .Empowering-Businesses {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: -2%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-item .with {
+            font-size: 30px;
+            font-family: Poppins;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-item .highlight {
+            font-family: Poppins;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 30px;
+            letter-spacing: -2%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-item .Solutions {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: -2%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-item.descriptionOne {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 25.6px;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: white;
+        }
+    }
+
+    .Aboutus-img {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 24px;
+            margin: 30px auto;
+        }
+    }
+
+    .container-Two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 40px auto;
+
+        .grid-item .Together-we {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: -2%;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-item .are-Strong {
+            font-size: 30px;
+            font-family: Poppins;
+            font-weight: 700;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-item.descriptionTwo {
+            color: white;
+            margin: 0 auto;
+        }
+
+        .grid-item .Strength {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: -2%;
+            text-align: justify;
+            margin: 0;
+        }
+
+        .grid-item .ParagraphOne {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 25.6px;
+            letter-spacing: -2%;
+            text-align: justify;
+        }
+
+        .grid-item .ParagraphTwo {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 25.6px;
+            letter-spacing: -2%;
+            text-align: justify;
+        }
+    }
+
+    .container-Three {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        gap: 40px;
+
+        /* Left side of the header */
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+        }
+
+        .Details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .avatar-name,
+        .avatar-role {
+            font-family: Poppins, sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: -2%;
+            color: #fff;
+            margin: 0;
+        }
+
+        /* Image */
+        img.SLC-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        /* Right side of the header */
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .Success,
+        .innovation,
+        .highlightTwo,
+        .future {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 64px;
+            letter-spacing: -2%;
+            color: white;
+            margin: 0;
+        }
+
+        .highlightTwo {
+            font-family: Poppins;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 30px;
+            line-height: 64px;
+            letter-spacing: -2%;
+            color: white;
+            margin: 0;
+        }
+    }
+
+    .container-Four {
+        margin: 60px 0;
+
+        .team,
+        .world-class {
+            color: #ffffff;
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: -2%;
+            margin: 0;
+        }
+
+        .highlightThree,
+        .highlightFour {
+            color: #ffffff;
+            font-family: Poppins;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 30px;
+            letter-spacing: -2%;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .info {
+            margin-top: 10px;
+        }
+
+        .info h3 {
+            margin-bottom: 0;
+            color: #ffffff;
+            font-size: 16.5px;
+            font-weight: 600;
+        }
+
+        .info p {
+            margin-top: 0;
+            font-size: 11px;
+            color: #ffffff;
+        }
+    }
+
+    .container-Five {
+.timeline-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.timeline-event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.date {
+    width: 120px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;  
+    color: white;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.marker {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    z-index: 1;  /* Ensure marker stays above the vertical line */
+}
+
+.description {
+    max-width: 500px;
+    color: white;
+    margin: 20px 0;
+}
+
+.timeline-event:before {
+    content: '';
+    position: absolute;
+    right: 82%;
+    top: 0;
+    height: 115%;
+    border-left: 1px solid #ffffff;
+    z-index: 0;  /* The line stays behind the marker and event */
+    width: 0;
+    transform: translateY(50%);
+}
+
+
+
+    }
+}

@@ -18,6 +18,7 @@ import { TourpillComponent } from './layout/our-projects/tourpill/tourpill.compo
 import { TestPageComponent } from './pages/test-page/test-page.component';
 import { ProjectInnerComponent } from './pages/project-inner/project-inner.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 export const routes: Routes = [
     {
@@ -41,6 +42,10 @@ export const routes: Routes = [
     {
         path: 'careers',
         component: CareersComponent
+    },
+    {
+        path: 'About-us',
+        component: AboutUsComponent
     },
     {
         path: 'blog',
