@@ -158,6 +158,8 @@
             align-items: center;
             gap: 10px;
             color: #fff;
+            position: relative;
+            top: -100px;
         }
 
         .Details {
@@ -188,11 +190,13 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            text-align: left;
         }
 
         .Success,
         .innovation,
         .highlightTwo,
+        .vision,
         .future {
             font-family: Poppins;
             font-weight: 600;
@@ -275,69 +279,207 @@
     }
 
     .container-Five {
-.timeline-container {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
+        margin: 100px auto;
 
-.timeline {
-    position: relative;
-    width: 80%;
-    max-width: 1200px;
-}
+        .Journey {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 56px;
+            letter-spacing: -2%;
+            color: white;
+            margin: 0;
+        }
 
-.timeline-event {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    position: relative;
-}
+        .Collaboration {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25.6px;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: white;
+            margin-bottom: -20px;
+        }
 
-.date {
-    width: 120px;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;  
-    color: white;
-}
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            font-family: poppins;
 
-.event {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
+            &::before {
+                content: '';
+                position: absolute;
+                top: 10%;
+                bottom: 0;
+                width: 3px;
+                background-color: #ddd;
+                left: 20%;
+                margin-left: -2px;
+            }
+        }
 
-.marker {
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin-right: 15px;
-    position: relative;
-    z-index: 1;  /* Ensure marker stays above the vertical line */
-}
+        .timeline-event {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
 
-.description {
-    max-width: 500px;
-    color: white;
-    margin: 20px 0;
-}
+            &::after {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: rgb(255, 255, 255);
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                left: 20%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
 
-.timeline-event:before {
-    content: '';
-    position: absolute;
-    right: 82%;
-    top: 0;
-    height: 115%;
-    border-left: 1px solid #ffffff;
-    z-index: 0;  /* The line stays behind the marker and event */
-    width: 0;
-    transform: translateY(50%);
-}
+            &:first-child::after {
+                background-color: #1235ec;
+                border-color: #1235ec;
+            }
+        }
 
+        .event-date {
+            flex: 1;
+            text-align: left;
+            padding-right: 60px;
+            font-weight: bold;
+            font-family: Poppins;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 33.6px;
+            letter-spacing: -2%;
+            color: white;
+        }
 
+        .event-content {
+            flex: 5;
+            padding-left: 60px;
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: 50px;
 
+            h3 {
+                margin-top: 0;
+                color: white;
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 33.6px;
+                letter-spacing: -2%;
+            }
+
+            p {
+                margin: 0;
+                color: white;
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 25.6px;
+                letter-spacing: -2%;
+                // text-align: justify;
+            }
+        }
+    }
+
+    .container-Six {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .grid-item {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item h2 {
+            color: white;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 40px;
+            letter-spacing: -2%;
+            text-align: justify;
+            margin-bottom: -5px;
+        }
+
+        .grid-item p {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: white;
+            margin: 0;
+        }
+    }
+
+    .container-Seven {
+        margin: 100px auto;
+
+        .Team-Gallery {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 56px;
+            letter-spacing: -2%;
+            color: white;
+            margin: 0;
+        }
+
+        .transformation {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25.6px;
+            letter-spacing: -2%;
+            text-align: justify;
+            color: white;
+            bottom: 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            .image-container {
+                flex-basis: 45%;
+                padding: 10px;
+
+                img {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .image-one {
+                flex: 4;
+            }
+
+            .image-two {
+                flex: 8;
+            }
+
+            .image-three {
+                flex: 8;
+            }
+
+            .image-four {
+                flex: 4;
+            }
+        }
     }
 }

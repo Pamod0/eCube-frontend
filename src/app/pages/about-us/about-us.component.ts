@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from "../../layout/header/header.component";
+import { FooterExtendedComponent } from "../../layout/footer-extended/footer-extended.component";
 
 
 interface TeamMember {
@@ -11,7 +12,7 @@ interface TeamMember {
 
 @Component({
     selector: 'app-about-us',
-    imports: [HeaderComponent],
+    imports: [HeaderComponent, FooterExtendedComponent],
     templateUrl: './about-us.component.html',
     styleUrl: './about-us.component.scss'
 })
