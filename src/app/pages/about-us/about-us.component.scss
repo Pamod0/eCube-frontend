@@ -348,10 +348,10 @@
         &::before {
             content: '';
             position: absolute;
-            top: 12%;
+            top: 11%;
             bottom: 0;
             width: 3px;
-            height: 145vh;
+            height: 138vh;
             background-color: #ddd;
             left: 20%;
             margin-left: -2px;
@@ -723,11 +723,11 @@
         }
 
         .row {
-            flex-direction: column;
-            align-items: center;
+            // flex-direction: column;
+            // align-items: center;
 
             .image-container {
-                flex-basis: 100%;
+                flex-basis: 45%;
                 padding: 5px;
 
                 img {
@@ -736,12 +736,20 @@
                 }
             }
 
-            .image-one,
-            .image-two,
-            .image-three,
+            .image-one {
+                flex: 4;
+            }
+    
+            .image-two {
+                flex: 8;
+            }
+    
+            .image-three {
+                flex: 8;
+            }
+    
             .image-four {
-                flex: 1;
-                margin-bottom: 15px;
+                flex: 4;
             }
         }
     }
