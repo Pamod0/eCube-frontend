@@ -44,7 +44,7 @@ export const routes: Routes = [
         component: CareersComponent
     },
     {
-        path: 'About-us',
+        path: 'about-us',
         component: AboutUsComponent
     },
     {
