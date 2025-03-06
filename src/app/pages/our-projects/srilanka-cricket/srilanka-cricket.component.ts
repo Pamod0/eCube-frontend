@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../header/header.component';
+import { HeaderComponent } from '../../../layout/header/header.component';
 import { MatIconModule } from '@angular/material/icon';
-import { AccordionComponent } from "../../accordion/accordion.component";
-import { ContactFormComponent } from "../../contact-form/contact-form.component";
-import { FooterComponent } from "../../footer/footer.component";
+import { AccordionComponent } from '../../../layout/accordion/accordion.component';
+import { ContactFormComponent } from '../../../layout/contact-form/contact-form.component';
+import { FooterComponent } from '../../../layout/footer/footer.component';
 
 interface TeamMember {
     image: string;

@@ -43,26 +43,26 @@ export class ProjectInnerComponent {
                 const serviceKey = params.get('project');
 
                 switch (serviceKey) {
-                    case 'slc-srs':
-                        this.project = this.projects['slc-srs'];
+                    case 'slcvms':
+                        this.project = this.projects['slcvms'];
                         break;
-                    case 'meps-srs':
-                        this.project = this.projects['meps-srs'];
+                    case 'oceanwatch':
+                        this.project = this.projects['oceanwatch'];
                         break;
-                    case 'basketball-srs':
-                        this.project = this.projects['basketball-srs'];
+                    case 'slbf':
+                        this.project = this.projects['slbf'];
                         break;
-                    case 'nohscop-srs':
-                        this.project = this.projects['nohscop-srs'];
+                    case 'nohscop':
+                        this.project = this.projects['nohscop'];
                         break;
-                    case 'cyclone-srs':
-                        this.project = this.projects['cyclone-srs'];
+                    case 'cyclone':
+                        this.project = this.projects['cyclone'];
                         break;
-                    case 'tourpill-srs':
-                        this.project = this.projects['tourpill-srs'];
+                    case 'tourpill':
+                        this.project = this.projects['tourpill'];
                         break;
                     default:
-                        this.project = this.projects['meps-srs'];
+                        this.project = this.projects['slcvms'];
                 }
             });
 

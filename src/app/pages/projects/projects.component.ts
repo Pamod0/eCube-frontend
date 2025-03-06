@@ -5,7 +5,7 @@ interface Project {
     name: string;
     logo: string;
     image: string;
-    link?: string;
+    link?: string[];
 }
 
 @Component({
@@ -23,37 +23,37 @@ export class ProjectsComponent {
                 name: 'Sri Lanka Cricket <br> Vendor Management System',
                 logo: '/assets/images/projects/logo-slc.png',
                 image: '/assets/images/projects/slc.png',
-                link: '/SLC'
+                link: ['/projects', 'slcvms']
             },
             {
                 name: 'OceanWatch | MEPA - Beach Cleanup <br> Booking Management System',
                 logo: '/assets/images/projects/logo-mepa.png',
                 image: '/assets/images/projects/oceanwatch.png',
-                link: '/mepa'
+                link: ['/projects', 'oceanwatch']
             },
             {
                 name: 'Basketball Sri Lanka Website & Players <br> Management System',
                 logo: '/assets/images/projects/logo-slbf.png',
                 image: '/assets/images/projects/slbf.png',
-                link: '/sl-basketball'
+                link: ['/projects', 'slbf']
             },
             {
                 name: 'NOHSCOPE | MEPA <br> Monitoring System',
                 logo: '/assets/images/projects/logo-mepa.png',
                 image: '/assets/images/projects/noscop.png',
-                link: '/nohscop'
+                link: ['/projects', 'nohscop']
             },
             {
                 name: 'CycloneRCM <br> Brand Identity + Website',
                 logo: '/assets/images/projects/logo-cyclone.png',
                 image: '/assets/images/projects/cyclone.png',
-                link: '/cyclone'
+                link: ['/projects', 'cyclone']
             },
             {
                 name: 'TOURPILL Website & <br> Tours Management System',
                 logo: '/assets/images/projects/logo-tp.png',
                 image: '/assets/images/projects/tp.png',
-                link: '/tourpill'
+                link: ['/projects', 'tourpill']
             }
         ];
     }
