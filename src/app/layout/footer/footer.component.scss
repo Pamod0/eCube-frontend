@@ -78,6 +78,9 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .footer-wrapper {
+        padding: 1rem;
+    }
     .footer {
         padding: 30px;
         flex-direction: column;
