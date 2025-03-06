@@ -62,7 +62,6 @@ h1 {
 
 // Media Queries
 @media only screen and (max-width: 1023px) {
-
 }
 
 @media only screen and (max-width: 576px) {
@@ -75,5 +74,28 @@ h1 {
     .about-us {
         grid-template-columns: 12fr;
         padding: 40px 1.2rem;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+
+    .accelerated {
+        span,
+        p {
+            font-size: 14px;
+        }
+        span {
+            font-size: 24px;
+        }
+    }
+    .btn-2 {
+        margin: 20px 10px 10px 0;
+        padding: 7px 18px;
+        font-size: 14px;
+        font-weight: 600;
     }
 }

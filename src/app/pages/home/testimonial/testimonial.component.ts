@@ -8,8 +8,8 @@ import { TagModule } from 'primeng/tag';
 import { GalleriaModule } from 'primeng/galleria';
 import { ImageModule } from 'primeng/image';
 
-import { Product, ProductService } from '../../shared/services/product.service';
-import { PhotoService } from '../../shared/services/photo.service';
+import { Product, ProductService } from '../../../shared/services/product.service';
+import { PhotoService } from '../../../shared/services/photo.service';
 
 interface Review {
     company: string;
