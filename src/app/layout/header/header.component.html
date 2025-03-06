@@ -31,7 +31,7 @@
 </nav>
 
 <!-- The overlay -->
-<div id="myNav" class="overlay">
+<div id="myNav" class="overlay poppins-medium">
     <!-- Button to close the overlay navigation -->
     <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
 
@@ -40,8 +40,7 @@
         <li><a (click)="closeNav()" href="#about-us">About</a></li>
         <li><a (click)="closeNav()" href="#services">Services</a></li>
         <li><a (click)="closeNav()" href="#our-projects">Our Work</a></li>
-        <li><a (click)="closeNav()" href="#">Products</a></li>
-        <li><a (click)="closeNav()" href="#blog">Blogs</a></li>
-        <li><a (click)="closeNav()" href="#">Careers</a></li>
+        <li><a (click)="closeNav()" routerLink="/blog">Blogs</a></li>
+        <li><a (click)="closeNav()" routerLink="/careers">Careers</a></li>
     </div>
 </div>

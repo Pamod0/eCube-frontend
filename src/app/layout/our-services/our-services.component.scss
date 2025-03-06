@@ -97,7 +97,18 @@ h1 {
         grid-template-columns: 12fr;
         padding: 40px 1.2rem;
     }
+    h1 {
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 35px;
+    }
     .tiles {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        .tile {
+            .text-1 {
+                margin-bottom: 18px;
+                font-size: 24px;
+            }
+        }
     }
 }

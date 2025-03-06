@@ -130,7 +130,10 @@ h1 {
         display: block;
     }
     .btn-2 {
-        margin: 10px 10px 10px 0;
+        margin: 20px 10px 10px 0;
+        padding: 7px 18px;
+        font-size: 14px;
+        font-weight: 600;
     }
     .our-projects {
         grid-template-columns: 12fr;
@@ -138,8 +141,8 @@ h1 {
     }
     h1 {
         color: #ffffff;
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 30px;
+        line-height: 35px;
     }
     .our-projects-inner {
         flex-direction: column;

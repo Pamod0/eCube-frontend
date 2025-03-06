@@ -62,7 +62,7 @@
 
 /* Contact Button */
 .contact-btn {
-    background-color: #1235ec; /* Blue */
+    background-color: #1235ec;
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -72,7 +72,7 @@
 }
 
 .contact-btn:hover {
-    background-color: #1e40af; /* Darker blue */
+    background-color: #1e40af;
 }
 
 /* Hamburger Menu */
@@ -93,42 +93,39 @@
 
 /* The Overlay (background) */
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
+    position: fixed;
+    z-index: 9999; 
     left: 0;
     top: 0;
-    background-color: rgb(0, 0, 0); /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: #070707;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #ffffff;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
+
 .overlay a:hover,
 .overlay a:focus {
-    color: #f1f1f1;
+    color: #949494;
 }
 
 /* Position the close button (top right corner) */
@@ -138,8 +135,6 @@
     right: 45px;
     font-size: 60px;
 }
-
-
 
 // Media Query
 @media only screen and (min-width: 1024px) and (max-width: 1400px) {
