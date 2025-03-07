@@ -80,12 +80,69 @@ p {
     }
 }
 
-@media only screen and (max-width: 576px) {
-    :host ::ng-deep {
-        .p-carousel-item {
-            > div {
-                padding: 0 !important;
-            }
+// @media only screen and (max-width: 576px) {
+//     :host ::ng-deep {
+//         .p-carousel-item {
+//             > div {
+//                 padding: 0 !important;
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 576px) {
+    .project {
+        padding: 0.8rem;
+        min-height: auto;
+        border-radius: 16px;
+    }
+
+    .icon-container-2 {
+        width: 35px;
+        height: 35px;
+    }
+
+    .top-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-top {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 15px;
+        line-height: 21px;
+
+        span {
+            font-size: 10px;
+            line-height: 0px;
         }
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .avatar-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        font-size: 10px;
+        text-align: center;
+
+        span {
+        }
+    }
+
+    .avatar-img {
+        width: 40px;
+        height: 40px;
     }
 }
