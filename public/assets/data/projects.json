@@ -1,5 +1,5 @@
 {
-    "slc-srs": {
+    "slcvms": {
         "Header": "Home/Projects/Sri Lanka Cricket",
         "company": "Sri Lanka Cricket",
         "title": "Vendor Management System",
@@ -65,7 +65,7 @@
         "linkdinlogo": "/assets/images/projects/SLC/Linkdin.png"
     },
 
-    "meps-srs": {
+    "oceanwatch": {
         "Header": "Home/Projects/Mepa",
         "company": "OceanWatch | MEPA - Beach Cleanup",
         "title": "Booking Management System",
@@ -131,7 +131,7 @@
         "linkdinlogo": "/assets/images/projects/SLC/Linkdin.png"
     },
 
-    "basketball-srs": {
+    "slbf": {
         "Header": "Home/Projects/Sri Lankan Basketball",
         "company": "Basketball Sri Lanka Website &",
         "title": "Players Management System",
@@ -197,7 +197,7 @@
         "linkdinlogo": "/assets/images/projects/SLC/Linkdin.png"
     },
 
-    "nohscop-srs": {
+    "nohscop": {
         "Header": "Home/Projects/NOHSCOP",
         "company": "NOHSCOP | MEPA - Monitoring",
         "title": "Monitoring System",
@@ -263,7 +263,7 @@
         "linkdinlogo": "/assets/images/projects/SLC/Linkdin.png"
     },
 
-    "cyclone-srs": {
+    "cyclone": {
         "Header": "Home/Projects/CycloneRCM",
         "company": "CycloneRCM",
         "title": "Brand Identity + Website",
@@ -329,7 +329,7 @@
         "linkdinlogo": "/assets/images/projects/SLC/Linkdin.png"
     },
 
-    "tourpill-srs": {
+    "tourpill": {
         "Header": "Home/Projects/TOURPILL",
         "company": "TOURPILL Website &",
         "title": "Tours Management System",

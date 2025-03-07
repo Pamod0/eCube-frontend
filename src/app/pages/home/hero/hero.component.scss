@@ -14,7 +14,6 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 32px;
-    min-height: 670px;
     padding: 1.5rem 4rem;
     background-color: #1235ec;
 }
@@ -235,11 +234,6 @@ video {
     transition: 0.3s;
 }
 
-// .indicator.active {
-//     background: black;
-//     transform: scale(1.2);
-// }
-
 // Media Queries
 
 @media only screen and (min-width: 1920px) {
@@ -343,8 +337,8 @@ video {
         padding: 1rem 0.5rem;
     }
     .hero-content h1 {
-        font-size: 44px;
-        line-height: 50px;
+        font-size: 40px;
+        line-height: 46px;
         padding: 0 1rem;
     }
     .hero-content p {

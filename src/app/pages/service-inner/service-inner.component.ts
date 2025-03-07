@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { HeaderComponent } from '../../layout/header/header.component';
 import { FooterExtendedComponent } from '../../layout/footer-extended/footer-extended.component';
-import { ReviewsComponent } from '../../layout/reviews/reviews.component';
+import { ReviewsComponent } from '../home/reviews/reviews.component';
 import { Carousel } from './carousel.model';
 
 @Component({
