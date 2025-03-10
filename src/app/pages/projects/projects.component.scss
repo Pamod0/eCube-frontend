@@ -53,3 +53,15 @@ h1 {
         line-height: 16px;
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .projects {
+        grid-template-columns: 12fr;
+        padding: 40px 1.2rem;
+    }
+    h1 {
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
