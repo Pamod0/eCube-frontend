@@ -4,7 +4,7 @@
     <!--1st Section-->
 
     <div class="SLC-section">
-        <div></div>
+        <div class="hide-mobile"></div>
 
         <div>
             <div>
@@ -20,8 +20,8 @@
                     <div class="header-right">
                         <img src="{{ project.companyLogo }}" class="SLC-logo" alt="logo" />
                         <div class="Details">
-                            <p class="poppins-regular-Powered">Powered by</p>
-                            <p class="poppins-regular-Ecube">Ecube Digital</p>
+                            <h3 class="poppins-regular-Powered">Powered by</h3>
+                            <h3 class="poppins-regular-Ecube">Ecube Digital</h3>
                         </div>
                     </div>
                 </div>
@@ -33,6 +33,7 @@
                 </div>
             </div>
         </div>
+        <div class="hide-mobile"></div>
     </div>
 
     <!--2nd Section-->
@@ -42,9 +43,13 @@
 
         <div>
             <div>
-                <div class="about-txt poppins-regular">{{ project.systemdetails }}</div>
-                <h1 class="poppins-bold-Struggles">{{ project.slogan.lineOne }}</h1>
-                <h2 class="poppins-bold-Excellence">{{ project.slogan.lineTwo }} <span>.</span></h2>
+                <h1 class="about-txt poppins-regular">{{ project.systemdetails }}</h1>
+                <!-- <div class="about-txt poppins-regular">{{ project.systemdetails }}</div> -->
+                <h1 class="poppins-bold-Struggles">
+                    {{ project.slogan.lineOne }} <br />
+                    {{ project.slogan.lineTwo }}
+                </h1>
+                <!-- <h2 class="poppins-bold-Excellence">{{ project.slogan.lineTwo }} <span>.</span></h2> -->
             </div>
             <div>
                 <button class="btn UIUX">{{ project.btn1 }}</button>
@@ -165,32 +170,30 @@
         <div></div>
         <div>
             <div>
-                <div class="services-txt poppins-regular"> {{project.Testimonials}}</div>
+                <div class="services-txt poppins-regular">{{ project.Testimonials }}</div>
                 <div class="header">
-                    <h1 class="poppins-bold">
-                     {{project.Experience}}<span>.</span>
-                    </h1>
+                    <h1 class="poppins-bold">{{ project.Experience }}<span>.</span></h1>
                 </div>
             </div>
 
             <div class="container-one">
                 <div class="left-side">
-                    <img src="{{project.shamiimg}}" alt="Image" />
+                    <img src="{{ project.shamiimg }}" alt="Image" />
                 </div>
                 <div class="right-side">
                     <p>
-                        {{project.imgparagraphOne}}
+                        {{ project.imgparagraphOne }}
                     </p>
                     <div class="author-role">
                         <div class="author-img">
-                            <img src="{{project.avatarimg}}" class="avatar-img" alt="logo" />
+                            <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
                             <div class="name-role">
-                                <p class="poppins-bold-shammi">{{project.avatarname}}</p>
-                                <p class="poppins-regular-president">{{project.avatarrole}}</p>
+                                <p class="poppins-bold-shammi">{{ project.avatarname }}</p>
+                                <p class="poppins-regular-president">{{ project.avatarrole }}</p>
                             </div>
                         </div>
                         <div class="icon">
-                            <img src="{{project.linkdinlogo}}"  class="linkdin-logo" alt="logo" />
+                            <img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" />
                         </div>
                     </div>
                 </div>
@@ -198,47 +201,47 @@
 
             <div class="container-two">
                 <div class="content-grid">
-                    <p>{{project.imgparagraphTwo}}</p>
+                    <p>{{ project.imgparagraphTwo }}</p>
                     <div class="author-role">
                         <div class="author-img">
-                            <img src="{{project.avatarimg}}" class="avatar-img" alt="logo" />
+                            <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
                             <div class="name-role">
-                                <p class="poppins-bold-shammi">{{project.avatarname}}</p>
-                                <p class="poppins-regular-president">{{project.avatarrole}}</p>
+                                <p class="poppins-bold-shammi">{{ project.avatarname }}</p>
+                                <p class="poppins-regular-president">{{ project.avatarrole }}</p>
                             </div>
                         </div>
                         <div class="icon">
-                            <a href="https://v17.angular.io/start"><img src="{{project.linkdinlogo}}" class="linkdin-logo" alt="logo" /></a>
+                            <a href="https://v17.angular.io/start"><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" /></a>
                         </div>
                     </div>
                 </div>
                 <div class="content-grid">
-                    <p>{{project.imgparagraphThree}}</p>
+                    <p>{{ project.imgparagraphThree }}</p>
                     <div class="author-role">
                         <div class="author-img">
-                            <img src="{{project.avatarimg}}" class="avatar-img" alt="logo" />
+                            <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
                             <div class="name-role">
-                                <p class="poppins-bold-shammi">{{project.avatarname}}</p>
-                                <p class="poppins-regular-president">{{project.avatarrole}}</p>
+                                <p class="poppins-bold-shammi">{{ project.avatarname }}</p>
+                                <p class="poppins-regular-president">{{ project.avatarrole }}</p>
                             </div>
                         </div>
                         <div class="icon">
-                            <a href="https://v17.angular.io/start"><img src="{{project.linkdinlogo}}" class="linkdin-logo" alt="logo" /></a>
+                            <a href="https://v17.angular.io/start"><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" /></a>
                         </div>
                     </div>
                 </div>
                 <div class="content-grid">
-                    <p>{{project.imgparagraphFour}}</p>
+                    <p>{{ project.imgparagraphFour }}</p>
                     <div class="author-role">
                         <div class="author-img">
                             <img src="/assets/images/mr-shammi.png" class="avatar-img" alt="logo" />
                             <div class="name-role">
-                                <p class="poppins-bold-shammi">{{project.avatarname}}</p>
-                                <p class="poppins-regular-president">{{project.avatarrole}}</p>
+                                <p class="poppins-bold-shammi">{{ project.avatarname }}</p>
+                                <p class="poppins-regular-president">{{ project.avatarrole }}</p>
                             </div>
                         </div>
                         <div class="icon">
-                            <a href="https://v17.angular.io/start"><img src="{{project.linkdinlogo}}" class="linkdin-logo" alt="logo" /></a>
+                            <a href="https://v17.angular.io/start"><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" /></a>
                         </div>
                     </div>
                 </div>
@@ -246,7 +249,7 @@
         </div>
     </div>
 
-    <div></div>
+    <div class="hide-mobile"></div>
 </section>
 
 <!-- ******************** -->

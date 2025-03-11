@@ -9,7 +9,8 @@
 
         <!-- Navigation Links -->
         <ul class="nav-links">
-            <li><a href="#about-us">About</a></li>
+            <li><a routerLink="/">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#our-projects">Our Work</a></li>
             <!-- <li><a href="javascript:void(0)">Products</a></li> -->
@@ -37,7 +38,8 @@
 
     <!-- Overlay content -->
     <div class="overlay-content">
-        <li><a (click)="closeNav()" href="#about-us">About</a></li>
+        <li><a (click)="closeNav()" routerLink="/">Home</a></li>
+        <li><a (click)="closeNav()" href="#about-us">About Us</a></li>
         <li><a (click)="closeNav()" href="#services">Services</a></li>
         <li><a (click)="closeNav()" href="#our-projects">Our Work</a></li>
         <li><a (click)="closeNav()" routerLink="/blog">Blogs</a></li>

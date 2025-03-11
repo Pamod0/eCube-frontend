@@ -27,7 +27,7 @@
             "One": "Sri Lanka Cricket's vendor management process relies heavily on manual paperwork, leading to delays, inefficiencies, and a lack of transparency. Tasks like vendor registration, contract approvals, and payment tracking are time-consuming and prone to errors, disrupting operations and accountability. Without a centralized system, tracking vendor performance and ensuring timely payments becomes challenging",
             "Two": "Traditional communication methods such as emails and phone calls further slow down coordination, causing miscommunication and data inconsistencies. As Sri Lanka Cricket expands, the current system struggles to scale, making it difficult to manage a growing number of vendors. A streamlined digital solution is essential to enhance efficiency, accuracy, and overall vendor management."
         },
-        "VisitWebsite": "VisitWebsite",
+        "VisitWebsite": "Visit Website",
         "value": {
             "One": "85%",
             "Two": "24/7",
@@ -93,7 +93,7 @@
             "One": "OceanWatch | Mepa - Beach Cleanup Booking Management System aims to revolutionize the way beach cleanups are organized, tracked, and executed. Currently, managing volunteer participation, scheduling cleanup events, and coordinating with local teams is a fragmented and manual process, leading to inefficiencies and missed opportunities for greater environmental impact. Tasks such as volunteer registration, event coordination, and resource allocation are time-consuming and prone to errors, which hampers the overall effectiveness of beach cleanup efforts.",
             "Two": "Traditional communication methods and paper-based systems create delays in confirming bookings and sharing crucial event details, leading to confusion and coordination issues. As the scale of beach cleanup efforts grows, managing numerous volunteers, tracking the progress of cleanups, and ensuring all logistical aspects are handled smoothly becomes increasingly complex."
         },
-        "VisitWebsite": "VisitWebsite",
+        "VisitWebsite": "Visit Website",
         "value": {
             "One": "85%",
             "Two": "24/7",
@@ -159,7 +159,7 @@
             "One": "Basketball Sri Lanka | Player & Event Management System aims to transform the way basketball events, player performance, and team coordination are managed. Currently, the management of player registration, event scheduling, and team rosters is a disjointed and cumbersome process. With numerous teams, events, and player stats to track, the current system is prone to errors, inefficiencies, and missed opportunities for development and growth in the sport.",
             "Two": "Manual paperwork and outdated communication methods often delay important updates, creating confusion and making it harder for teams and organizers to stay aligned. Whether it's managing tournament schedules, tracking player performance, or communicating event details, the existing processes struggle to keep up with the growing demand for organized basketball events"
         },
-        "VisitWebsite": "VisitWebsite",
+        "VisitWebsite": "Visit Website",
         "value": {
             "One": "85%",
             "Two": "24/7",
@@ -225,7 +225,7 @@
             "One": "Nohscope | Mepa Monitoring System is transforming the way Sri Lanka protects its marine environment from ship-related damage. Currently, monitoring vessel activity, tracking potential threats, and responding to environmental risks is a fragmented and reactive process, often resulting in delayed actions and missed opportunities for swift intervention. Traditional methods of monitoring are time-consuming, prone to errors, and lack real-time visibility, which hinders the effectiveness of maritime protection efforts.",
             "Two": "By digitizing and automating the entire monitoring process, Nohscope provides a seamless, real-time solution for tracking ships, detecting potential environmental hazards, and ensuring rapid response to prevent damage.With Nohscope, maritime authorities can make proactive decisions, minimizing risks to Sri Lanka’s vital marine ecosystems and ensuring a safer, more sustainable environment for generations to come."
         },
-        "VisitWebsite": "VisitWebsite",
+        "VisitWebsite": "Visit Website",
         "value": {
             "One": "85%",
             "Two": "24/7",
@@ -291,7 +291,7 @@
             "One": "CycloneRCM, a leader in Workers’ Compensation Copy Service Billing, needed a brand identity that truly reflected its innovative, technology-driven approach. Our goal was to transform their branding from outdated and fragmented to a cohesive, modern, and high-impact identity that resonates with their audience.",
             "Two": "Through strategic brand positioning, refined messaging, and a sleek visual identity, we developed a design system that embodies CycloneRCM’s commitment to efficiency, accuracy, and automation. From a refreshed logo and color palette to a seamless digital experience, our work ensures that CycloneRCM stands out in the industry as a trusted and forward-thinking solution."
         },
-        "VisitWebsite": "VisitWebsite",
+        "VisitWebsite": "Visit Website",
         "value": {
             "One": "85%",
             "Two": "24/7",
@@ -357,7 +357,7 @@
             "One": "Tourpill, a premier Sri Lankan tour agency, is experiencing significant challenges with its current manual processes, hindering its ability to provide seamless and timely services. The agency relies on traditional paperwork for booking confirmations, itinerary planning, customer communications, and payment tracking, which leads to delays, human errors, and a lack of real-time updates. This fragmented approach often results in booking mismanagement, slow response times, and frustrated clients.",
             "Two": "Moreover, the absence of a centralized digital platform complicates the management of tour packages, customer preferences, and feedback. The agency struggles to coordinate effectively between its sales team, tour operators, and clients, leading to missed opportunities and inefficiencies."
         },
-        "VisitWebsite": "VisitWebsite",
+        "VisitWebsite": "Visit Website",
         "value": {
             "One": "85%",
             "Two": "24/7",
@@ -394,5 +394,4 @@
         "imgparagraphFour": "From inception to implementation, the journey with TOURPILL has been seamless. Our team understood the complexities of Torus management and translated them into a simple, efficient platform.",
         "linkdinlogo": "/assets/images/projects/SLC/Linkdin.png"
     }
-
 }

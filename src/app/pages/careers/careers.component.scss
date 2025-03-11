@@ -219,3 +219,53 @@ h1 {
         }
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .team-section {
+        grid-template-columns: 12fr;
+        padding: 40px 1.2rem;
+    }
+    .header {
+        h1 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .info h3 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .our-projects {
+        grid-template-columns: 12fr;
+        padding: 40px 1.2rem;
+        .projects {
+            h2 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 18px;
+            }   
+        }
+        .top-wrapper {
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            .btn-2 {
+                margin-top: 10PX;
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+            a {
+                display: flex;
+            }
+        }
+    }
+}
