@@ -1,8 +1,8 @@
 section {
     background: #070707;
-    gap: 2rem;
+    // gap: 2rem;
     padding: 80px;
-    grid-template-columns: 0.5fr 11fr 0.5fr;
+    // grid-template-columns: 0.5fr 11fr 0.5fr;
 
     // 1st content section
     .SLC-section {
@@ -36,7 +36,7 @@ section {
                 right: 0;
                 font-family: Poppins;
                 font-weight: 700;
-                font-size: 35px;
+                font-size: 40px;
                 line-height: 56px;
                 letter-spacing: -2%;
                 margin-bottom: 0;
@@ -44,11 +44,12 @@ section {
 
             .poppins-regular-Vendor {
                 margin-top: 0;
+                margin-bottom: 3rem;
                 font-family: Poppins;
                 font-weight: 400;
                 font-style: italic;
-                font-size: 35px;
-                line-height: 45px;
+                font-size: 40px;
+                line-height: 48px;
                 letter-spacing: -2%;
                 text-align: justify;
             }
@@ -78,6 +79,7 @@ section {
                 text-align: justify;
                 color: #ffffffff;
                 margin-top: 0;
+                margin-bottom: 5px;
             }
 
             .poppins-regular-Ecube {
@@ -100,6 +102,7 @@ section {
         }
 
         .SLC-img {
+            margin-bottom: 3rem;
             position: relative;
             overflow: hidden;
 
@@ -123,32 +126,34 @@ section {
         background: #070707;
 
         .about-txt {
-            font-family: 'Poppins', sans-serif;
             font-weight: 400;
             font-size: 16px;
-            color: #6f6f6f;
+            color: #c0c0c0;
         }
 
         .about-left {
-            color: #6f6f6f;
+            
             left: 0;
         }
 
         .poppins-bold-Struggles {
+            // margin-top: 1.5rem;
+            // margin-bottom: 1.5rem;
             color: #ffffff;
             font-family: Poppins;
             font-weight: 700;
-            font-size: 35px;
-            line-height: 15px;
+            font-size: 40px;
+            line-height: 50px;
             letter-spacing: -2%;
         }
 
         .poppins-bold-Excellence {
+            margin-bottom: 1.5rem;
             color: #ffffff;
             font-family: Poppins;
             font-weight: 700;
-            font-size: 35px;
-            line-height: 5px;
+            font-size: 40px;
+            line-height: 50px;
             letter-spacing: -2%;
         }
 
@@ -244,7 +249,7 @@ section {
             h3 {
                 font-family: Poppins;
                 font-weight: 600;
-                font-size: 20px;
+                font-size: 24px;
                 line-height: 28.8px;
                 letter-spacing: -2%;
                 color: #ffffff;
@@ -253,7 +258,7 @@ section {
                 color: #ffffff;
                 font-family: Poppins;
                 font-weight: 400;
-                font-size: 14px;
+                font-size: 16x;
                 line-height: 25.6px;
                 letter-spacing: -2%;
                 text-align: justify;
@@ -279,7 +284,7 @@ section {
             border-radius: 7px;
             background-color: #1235ec;
             color: #ffffff;
-            font-size: 13px;
+            font-size: 18px;
             font-weight: 500;
             cursor: pointer;
             transition: 0.3s;
@@ -319,7 +324,7 @@ section {
                 color: #ffffff;
                 text-align: center;
                 border-radius: 10px;
-                padding: 40px;
+                padding-right: 40px;
                 transition: transform 0.3s ease-in-out;
                 cursor: pointer;
 
@@ -751,5 +756,19 @@ section {
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section {
+        grid-template-columns: 12fr;
+        padding: 30px 1.2rem;
+    }
+    .SLC-section {
+        grid-template-columns: 12fr !important;
+    }
+    .poppins-bold-Cricket, .poppins-regular-Vendor{
+        font-size: 30px !important;
+        line-height: 35px !important;
     }
 }

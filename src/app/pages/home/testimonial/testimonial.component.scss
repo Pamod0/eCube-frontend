@@ -1,5 +1,5 @@
 .project {
-    min-height: 460px;
+    min-height: 480px;
     display: flex;
     flex-direction: column;
     border: 2px solid #003dad;
@@ -92,6 +92,7 @@ p {
 
 @media (max-width: 576px) {
     .project {
+        min-height: 420px !important;
         padding: 0.8rem;
         min-height: auto;
         border-radius: 16px;
