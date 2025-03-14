@@ -1,4 +1,4 @@
-export interface Blog {
+export interface blog {
     image: string;
     name: string;
     subject: string;
@@ -14,3 +14,4 @@ interface BlogButton {
     href: string;
     class: string;
 }
+
