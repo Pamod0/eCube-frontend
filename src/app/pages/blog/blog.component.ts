@@ -1,29 +1,37 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../layout/header/header.component';
 
-import { PaginatorIntlService } from './paginator-intl.service';
+import { PaginatorIntlService } from '../../services/paginator-intl.service';
 
-import { Blog } from './blog.interface';
+import {RouterModule} from '@angular/router';
+
+import { blog } from './blog.interface';
 
 import { MatPaginatorIntl, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { MatIconModule } from '@angular/material/icon';
 
-import Blogs from './blogs.json';
+import Blogs from './blog.json';
+
 import { FooterExtendedComponent } from "../../layout/footer-extended/footer-extended.component";
 
 
 @Component({
     selector: 'app-blog',
-    imports: [MatPaginatorModule, MatIconModule, HeaderComponent, FooterExtendedComponent],
+    imports: [MatPaginatorModule, RouterModule, MatIconModule, HeaderComponent, FooterExtendedComponent],
     templateUrl: './blog.component.html',
     styleUrl: './blog.component.scss',
     providers: [{ provide: MatPaginatorIntl, useClass: PaginatorIntlService }]
 })
 export class BlogComponent {
+
+    scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    }
+
     currentPage = 0;
     pageSize = 10;
 
-    blogs: Blog[] = Blogs;
+    blogs: blog[] = Blogs;
     paginatedBlogs = this.blogs.slice(0, this.pageSize);
 
     handlePageEvent(pageEvent: PageEvent) {
