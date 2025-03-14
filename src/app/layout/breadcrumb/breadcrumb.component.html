@@ -1,17 +1,10 @@
-<div class="card flex justify-center poppins-regular">
-  <p-breadcrumb class="max-w-full" [model]="items">
-    <ng-template #item let-item>
-      <ng-container *ngIf="item.route; else elseBlock">
-        <a [routerLink]="item.route" class="p-breadcrumb-item-link">
-          <span [ngClass]="[item.icon ? item.icon : '', 'text-color']"></span>
-          <span class="text-selected font-semibold">{{ item.label }}</span>
-        </a>
-      </ng-container>
-      <ng-template #elseBlock>
-        <a [href]="item.url">
-          <span class="text-color">{{ item.label }}</span>
-        </a>
-      </ng-template>
-    </ng-template>
-  </p-breadcrumb>
-</div>
+<nav class="poppins-regular" style="color: #6f6f6f;">
+  <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
+    <ng-container *ngIf="!last">
+      <a [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a> &gt;
+    </ng-container>
+    <ng-container *ngIf="last">
+      {{ breadcrumb.label }}
+    </ng-container>
+  </ng-container>
+</nav>

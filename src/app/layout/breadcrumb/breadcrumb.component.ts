@@ -1,25 +1,20 @@
 import { Component } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { Breadcrumb } from 'primeng/breadcrumb';
-import { RouterModule } from '@angular/router';
+import { BreadcrumbService } from '../../services/breadcrumb.service';
+import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-breadcrumb',
-  imports: [Breadcrumb, RouterModule, CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './breadcrumb.component.html',
   styleUrl: './breadcrumb.component.scss',
 })
 export class BreadcrumbComponent {
-  items: MenuItem[] | undefined;
+  breadcrumbs: Array<{ label: string; url: string }> = [];
 
-  home: MenuItem | undefined;
+  constructor(private breadcrumbService: BreadcrumbService) {}
 
-  ngOnInit() {
-    this.items = [
-      // { icon: 'pi pi-home', route: '/' },
-      { label: 'Home', route: '/' },
-      { label: 'Careers', route: '/careers' },
-    ];
+  ngOnInit(): void {
+    this.breadcrumbs = this.breadcrumbService.breadcrumbs;
   }
 }
