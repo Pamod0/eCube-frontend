@@ -183,6 +183,7 @@
     transition: 0.3s;
     font-family: Poppins;
     gap: 15px;
+    cursor: pointer;
 
     a {
         padding: 0.5rem 1rem;
@@ -194,6 +195,7 @@
         border: 1px solid #ffffff;
         border-radius: 20px;
         transition: background-color 0.3s ease;
+        cursor: pointer;
 
         &.btn-1 {
             background: #ffffff00;
@@ -237,5 +239,8 @@
     .mat-mdc-select-arrow svg {
         fill: #ffffff;
     }
-}
 
+    .icon-container-2 {
+        cursor: pointer;
+    }
+}

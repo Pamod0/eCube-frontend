@@ -20,6 +20,7 @@ import { ProjectInnerComponent } from './pages/project-inner/project-inner.compo
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 
+
 export const routes: Routes = [
     {
         path: '',
@@ -50,6 +51,15 @@ export const routes: Routes = [
     {
         path: 'blog',
         component: BlogComponent
+    },
+    {
+        path: 'blog',
+        children: [
+            {
+                path: 'blog-page',
+                component: BlogPageComponent
+            },
+        ]
     },
     {
         path: 'test',

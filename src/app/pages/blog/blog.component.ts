@@ -3,6 +3,7 @@ import { HeaderComponent } from '../../layout/header/header.component';
 
 import { PaginatorIntlService } from '../../services/paginator-intl.service';
 
+import {RouterModule} from '@angular/router';
 
 import { blog } from './blog.interface';
 
@@ -16,12 +17,17 @@ import { FooterExtendedComponent } from "../../layout/footer-extended/footer-ext
 
 @Component({
     selector: 'app-blog',
-    imports: [MatPaginatorModule, MatIconModule, HeaderComponent, FooterExtendedComponent],
+    imports: [MatPaginatorModule, RouterModule, MatIconModule, HeaderComponent, FooterExtendedComponent],
     templateUrl: './blog.component.html',
     styleUrl: './blog.component.scss',
     providers: [{ provide: MatPaginatorIntl, useClass: PaginatorIntlService }]
 })
 export class BlogComponent {
+
+    scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    }
+
     currentPage = 0;
     pageSize = 10;
 
