@@ -5,69 +5,82 @@
 <!--Image and contents-->
 
 <div class="blog-section">
-    <div></div>
+  <div class="hide-mobile"></div>
 
+  <div>
     <div>
-        <div>
-            <div class="blog-txt poppins-regular">Blogs</div>
-            <div class="header">
-                <h1 class="poppins-bold">Writings from our team</h1>
-                <p class="poppins-regular">The latest industry news, interviews, technologies, and resources.</p>
-            </div>
+      <div class="blog-txt poppins-regular">Blogs</div>
+      <div class="header">
+        <h1 class="poppins-bold">Writings from our team</h1>
+        <p class="poppins-regular">The latest industry news, interviews, technologies, and resources.</p>
+      </div>
 
-            <div class="blog-grid">
-                <div class="blog-img">
-                    <img src="/assets/images/blog/pexels-cottonbro.jpg" class="img" alt="Blog Image" />
-                    <div class="img-content">
-                        <h6 class="poppins-regular">Malith Weeramuni 20 January 2025</h6>
-                        <h1 class="poppins-bold">Human-Robot Interaction</h1>
-                        <p class="poppins-regular">How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+      <div class="blog-grid">
+        <div class="blog-img">
+          <img src="/assets/images/blog/pexels-cottonbro.jpg" class="img" alt="Blog Image" />
+          <div class="img-content">
+            <h6 class="poppins-regular">Malith Weeramuni 20 January 2025</h6>
+            <h1 class="poppins-bold">Human-Robot Interaction</h1>
+            <p class="poppins-regular">
+              How do you create compelling presentations that wow your colleagues and impress your managers?
+            </p>
 
-                        <div class="blog-buttons">
-                            <button class="btn primary-one">UI/UX</button>
-                            <button class="btn primary-two">Research</button>
-                            <button class="btn primary-three">Presentation</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="blog-buttons">
+              <button class="btn primary-one">UI/UX</button>
+              <button class="btn primary-two">Research</button>
+              <button class="btn primary-three">Presentation</button>
             </div>
+          </div>
         </div>
-
-        <!--pagination-->
-
-        <div class="blog-grid">
-            @for(number of paginatedBlogs; track number.name) {
-            <div class="blog">
-                <img src="{{ number.image }}" alt="{{ number.name }}" />
-                <div class="info">
-                    <h6 class="poppins-regular">{{ number.name }}</h6>
-                    <h3 class="poppins-bold">
-                        {{ number.subject }}
-                        <a href="javascript:void(0)" target="_blank">
-                            <mat-icon class="icon-container-right" style="color: #c0c0c0" aria-hidden="false" fontIcon="north_east"></mat-icon>
-                        </a>
-                    </h3>
-                    <p class="poppins-regular">{{ number.content }}</p>
-                    <div class="blog-buttons poppins-regular">
-                        <a href="javascript:void(0)" class="{{ number.button1.class }}" target="_blank">{{ number.button1.label }}</a>
-                        <a href="javascript:void(0)" class="{{ number.button2.class }}" target="_blank">{{ number.button2.label }}</a>
-                        <a href="javascript:void(0)" class="{{ number.button3.class }}" target="_blank">{{ number.button3.label }}</a>
-                    </div>
-                </div>
-            </div>
-            }
-        </div>
-        <mat-paginator
-            [length]="blogs.length"
-            [pageSize]="10"
-            [showFirstLastButtons]="true"
-            [pageSizeOptions]="[5, 10, 25, 100]"
-            [pageIndex]="currentPage"
-            (page)="handlePageEvent($event)"
-            aria-label="Select page"
-        >
-        </mat-paginator>
+      </div>
     </div>
+
+    <!--pagination-->
+
+    <div class="blog-grid">
+      @for(number of paginatedBlogs; track number.name) {
+      <div class="blog">
+        <img src="{{ number.image }}" alt="{{ number.name }}" />
+        <div class="info">
+          <h6 class="poppins-regular">{{ number.name }}</h6>
+          <h3 class="poppins-bold">
+            {{ number.subject }}
+            <a href="javascript:void(0)" target="_blank">
+              <mat-icon
+                class="icon-container-right"
+                style="color: #c0c0c0"
+                aria-hidden="false"
+                fontIcon="north_east"
+              ></mat-icon>
+            </a>
+          </h3>
+          <p class="poppins-regular">{{ number.content }}</p>
+          <div class="blog-buttons poppins-regular">
+            <a href="javascript:void(0)" class="{{ number.button1.class }}" target="_blank">{{
+              number.button1.label
+            }}</a>
+            <a href="javascript:void(0)" class="{{ number.button2.class }}" target="_blank">{{
+              number.button2.label
+            }}</a>
+            <a href="javascript:void(0)" class="{{ number.button3.class }}" target="_blank">{{
+              number.button3.label
+            }}</a>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+    <mat-paginator
+      [length]="blogs.length"
+      [pageSize]="10"
+      [showFirstLastButtons]="true"
+      [pageSizeOptions]="[5, 10, 25, 100]"
+      [pageIndex]="currentPage"
+      (page)="handlePageEvent($event)"
+      aria-label="Select page"
+    >
+    </mat-paginator>
+  </div>
 </div>
 
 <app-footer-extended></app-footer-extended>
