@@ -19,93 +19,103 @@ import { TestPageComponent } from './pages/test-page/test-page.component';
 import { ProjectInnerComponent } from './pages/project-inner/project-inner.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { JobVacancyComponent } from './pages/job-vacancy/job-vacancy.component';
+import { JobApplicationFormComponent } from './pages/job-vacancy/job-application-form/job-application-form.component';
 
 export const routes: Routes = [
-    {
+  {
+    path: '',
+    component: DefaultLayoutComponent,
+    children: [
+      {
         path: '',
-        component: DefaultLayoutComponent,
-        children: [
-            {
-                path: '',
-                component: HomeComponent
-            },
-            {
-                path: 'projects-list',
-                component: ProjectsComponent
-            },
-            {
-                path: 'projects/:project',
-                component: ProjectInnerComponent
-            }
-        ]
-    },
-    {
-        path: 'careers',
-        component: CareersComponent
-    },
-    {
-        path: 'about-us',
-        component: AboutUsComponent
-    },
-    {
-        path: 'blog',
-        component: BlogComponent
-    },
-    {
-        path: 'test',
-        component: TestComponent
-    },
-    {
-        path: 'services',
-        children: [
-            {
-                path: 'software',
-                component: SoftwareServiceComponent
-            },
-            {
-                path: 'web-design',
-                component: WebDesignServiceComponent
-            },
-            {
-                path: 'ui-ux-design',
-                component: UiUxDesignServiceComponent
-            },
-            {
-                path: 'brand-identity',
-                component: BrandIdentityServiceComponent
-            }
-        ]
-    },
-    {
-        path: 'blog-page',
-        component: BlogPageComponent
-    },
-    // {
-    //     path: 'SLC',
-    //     component: SrilankaCricketComponent
-    // },
-    // {
-    //     path: 'mepa',
-    //     component: MepaComponent
-    // },
-    // {
-    //     path: 'sl-basketball',
-    //     component: SLBasketballComponent
-    // },
-    // {
-    //     path: 'nohscop',
-    //     component: NOHSCOPComponent
-    // },
-    // {
-    //     path: 'cyclone',
-    //     component: CycloneRCMComponent
-    // },
-    // {
-    //     path: 'tourpill',
-    //     component: TourpillComponent
-    // },
-    {
-        path: 'services/:service',
-        component: TestPageComponent
-    }
+        component: HomeComponent,
+      },
+      {
+        path: 'projects-list',
+        component: ProjectsComponent,
+      },
+      {
+        path: 'projects/:project',
+        component: ProjectInnerComponent,
+      },
+      {
+        path: 'vacancies',
+        component: JobVacancyComponent,
+      },
+    ],
+  },
+  {
+    path: 'careers',
+    component: CareersComponent,
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
+  },
+  {
+    path: 'test',
+    component: TestComponent,
+  },
+  {
+    path: 'services',
+    children: [
+      {
+        path: 'software',
+        component: SoftwareServiceComponent,
+      },
+      {
+        path: 'web-design',
+        component: WebDesignServiceComponent,
+      },
+      {
+        path: 'ui-ux-design',
+        component: UiUxDesignServiceComponent,
+      },
+      {
+        path: 'brand-identity',
+        component: BrandIdentityServiceComponent,
+      },
+    ],
+  },
+  {
+    path: 'blog-page',
+    component: BlogPageComponent,
+  },
+  {
+    path: 'form',
+    component: JobApplicationFormComponent
+  },
+  // {
+  //     path: 'SLC',
+  //     component: SrilankaCricketComponent
+  // },
+  // {
+  //     path: 'mepa',
+  //     component: MepaComponent
+  // },
+  // {
+  //     path: 'sl-basketball',
+  //     component: SLBasketballComponent
+  // },
+  // {
+  //     path: 'nohscop',
+  //     component: NOHSCOPComponent
+  // },
+  // {
+  //     path: 'cyclone',
+  //     component: CycloneRCMComponent
+  // },
+  // {
+  //     path: 'tourpill',
+  //     component: TourpillComponent
+  // },
+  {
+    path: 'services/:service',
+    component: TestPageComponent,
+  },
 ];
