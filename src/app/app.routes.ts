@@ -20,6 +20,7 @@ export const routes: Routes = [
   {
     path: '',
     component: DefaultLayoutComponent,
+    data: { breadcrumb: 'Home' },
     children: [
       {
         path: '',
@@ -29,6 +30,7 @@ export const routes: Routes = [
       {
         path: 'projects-list',
         component: ProjectsComponent,
+        data: { breadcrumb: 'Our Work' },
       },
       {
         path: 'projects/:project',
