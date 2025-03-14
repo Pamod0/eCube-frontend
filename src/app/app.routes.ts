@@ -58,6 +58,15 @@ export const routes: Routes = [
     component: BlogComponent,
   },
   {
+    path: 'blog',
+    children: [
+      {
+        path: 'blog-page',
+        component: BlogPageComponent,
+      },
+    ],
+  },
+  {
     path: 'test',
     component: TestComponent,
   },
@@ -88,7 +97,7 @@ export const routes: Routes = [
   },
   {
     path: 'form',
-    component: JobApplicationFormComponent
+    component: JobApplicationFormComponent,
   },
   // {
   //     path: 'SLC',
