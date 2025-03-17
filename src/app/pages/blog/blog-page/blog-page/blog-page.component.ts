@@ -6,7 +6,7 @@ import { ContactFormComponent } from '../../../../layout/contact-form/contact-fo
 import { FooterComponent } from '../../../../layout/footer/footer.component';
 import { ActivatedRoute } from '@angular/router';
 import { BlogpageService } from './blogpage.service';
-import { BlogPage } from './blogpage.interface';
+
 
 @Component({
     selector: 'app-blog-page',
@@ -15,8 +15,10 @@ import { BlogPage } from './blogpage.interface';
     styleUrl: './blog-page.component.scss'
 })
 export class BlogPageComponent {
-    Blogpages: BlogPage[];
-    Blogpage: BlogPage;
+    Blogpages: any;
+    Blogpage: any;
+
+    
 
     private route = inject(ActivatedRoute);
     private _blogpageService = inject(BlogpageService);
@@ -27,7 +29,7 @@ export class BlogPageComponent {
             console.log(this.Blogpages);
 
             this.route.paramMap.subscribe((params) => {
-                const serviceKey = params.get('Blog');
+                const serviceKey = params.get('blog');
 
                 switch (serviceKey) {
                     case 'pageone':
@@ -36,15 +38,13 @@ export class BlogPageComponent {
                     case 'pagetwo':
                         this.Blogpage = this.Blogpages['pagetwo'];
                         break;
-                    case 'pagethree':
-                        this.Blogpage = this.Blogpages['pagethree'];
-                        break;
-                    default:
-                        this.Blogpage = this.Blogpages['pageone'];
                 }
             });
 
             console.log(this.Blogpage);
         });
     }
+    
+    
 }
+

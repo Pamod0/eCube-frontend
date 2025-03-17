@@ -3,6 +3,7 @@
         "image": "/assets/images/blog/pagin-01.jpg",
         "name": "Malith Weeramuni 20 January 2025",
         "subject": "Human-Robot Interaction",
+        "link?": "pageone",
         "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
         "iconHref": "https://www.oceanwatch.lk",
         "button1": {
@@ -25,6 +26,7 @@
         "image": "/assets/images/blog/pagin-02.jpg",
         "name": "Divya Perera",
         "subject": "Head of Digital",
+        "link": "pagetwo",
         "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
         "iconHref": "https://www.oceanwatch.lk",
         "button1": {
