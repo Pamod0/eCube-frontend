@@ -49,6 +49,7 @@
     "image": "/assets/images/blog/pagin-03.jpg",
     "name": "Divya Perera",
     "subject": "Head of Digital",
+    "link": "pagethree",
     "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
     "iconHref": "https://www.oceanwatch.lk",
     "button1": {
@@ -71,6 +72,7 @@
     "image": "/assets/images/blog/pagin-04.jpg",
     "name": "Divya Perera",
     "subject": "Head of Digital",
+    "link": "pagefour",
     "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
     "iconHref": "https://www.oceanwatch.lk",
     "button1": {
@@ -93,6 +95,7 @@
     "image": "/assets/images/blog/pagin-05.jpg",
     "name": "Divya Perera",
     "subject": "Head of Digital",
+    "link": "pagefive",
     "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
     "iconHref": "https://www.oceanwatch.lk",
     "button1": {
@@ -115,6 +118,7 @@
     "image": "/assets/images/blog/pagin-06.jpg",
     "name": "Divya Perera",
     "subject": "Head of Digital",
+    "link": "pagesix",
     "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
     "iconHref": "https://www.oceanwatch.lk",
     "button1": {
@@ -137,6 +141,7 @@
     "image": "/assets/images/blog/pagin-01.jpg",
     "name": "Malith Weeramuni 20 January 2025",
     "subject": "Human-Robot Interaction",
+    "link": "pageseven",
     "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
     "iconHref": "https://www.oceanwatch.lk",
     "button1": {
@@ -159,6 +164,7 @@
     "image": "/assets/images/blog/pagin-02.jpg",
     "name": "Divya Perera",
     "subject": "Head of Digital",
+    "link": "pageeight",
     "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
     "iconHref": "https://www.oceanwatch.lk",
     "button1": {
@@ -181,6 +187,7 @@
     "image": "/assets/images/blog/pagin-03.jpg",
     "name": "Divya Perera",
     "subject": "Head of Digital",
+    "link": "pagenine",
     "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
     "iconHref": "https://www.oceanwatch.lk",
     "button1": {
@@ -203,6 +210,7 @@
     "image": "/assets/images/blog/pagin-04.jpg",
     "name": "Divya Perera",
     "subject": "Head of Digital",
+    "link": "pageten",
     "content": "How do you create compelling presentations that wow your colleagues and impress your managers?",
     "iconHref": "https://www.oceanwatch.lk",
     "button1": {
