@@ -1,48 +1,66 @@
 <nav class="navbar">
-    <div></div>
-    <!-- Logo -->
-    <div class="navbar-inner">
-        <div routerLink="/" class="logo">
-            <img src="/assets/images/ecube-logo.png" alt="Logo" class="logo-img" />
-            <!-- <span class="logo-text">ecube<span class="dot">.</span></span> -->
-        </div>
-
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-            <li><a routerLink="/">Home</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#our-projects">Our Work</a></li>
-            <!-- <li><a href="javascript:void(0)">Products</a></li> -->
-            <!-- <li><a href="#">Blogs</a></li> -->
-            <li><a routerLink="/blog">Blogs</a></li>
-            <li><a routerLink="/careers">Careers</a></li>
-        </ul>
-        <!-- Contact Button -->
-        <a href="#contact-us" class="contact-btn">Contact us</a>
-
-        <!-- Hamburger Menu -->
-        <div class="hamburger" (click)="openNav()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+  <div></div>
+  <!-- Logo -->
+  <div class="navbar-inner">
+    <div routerLink="/" class="logo">
+      <img src="/assets/images/ecube-logo.png" alt="Logo" class="logo-img" />
+      <!-- <span class="logo-text">ecube<span class="dot">.</span></span> -->
     </div>
-    <div></div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a routerLink="/">Home</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <!-- <li><a href="#services">Services</a></li> -->
+      <li class="dropdown">
+        <a href="#services">Services<fa-icon style="margin-left: 0.5rem" [icon]="faCaretDown"></fa-icon></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/services/web-design">Web Design</a></li>
+          <li><a routerLink="/services/software">Software Development</a></li>
+          <li><a routerLink="/services/ui-ux-design">UI/UX Design</a></li>
+          <li><a routerLink="/services/brand-identity">Brand Identity</a></li>
+        </ul>
+      </li>
+      <li><a href="#our-projects">Our Work</a></li>
+      <!-- <li><a href="javascript:void(0)">Products</a></li> -->
+      <!-- <li><a href="#">Blogs</a></li> -->
+      <li><a routerLink="/blogs">Blogs</a></li>
+      <li><a routerLink="/careers">Careers</a></li>
+    </ul>
+    <!-- Contact Button -->
+    <a href="#contact-us" class="contact-btn">Contact us</a>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger" (click)="openNav()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+  <div></div>
 </nav>
 
 <!-- The overlay -->
 <div id="myNav" class="overlay poppins-medium">
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
 
-    <!-- Overlay content -->
-    <div class="overlay-content">
-        <li><a (click)="closeNav()" routerLink="/">Home</a></li>
-        <li><a (click)="closeNav()" href="#about-us">About Us</a></li>
-        <li><a (click)="closeNav()" href="#services">Services</a></li>
-        <li><a (click)="closeNav()" href="#our-projects">Our Work</a></li>
-        <li><a (click)="closeNav()" routerLink="/blog">Blogs</a></li>
-        <li><a (click)="closeNav()" routerLink="/careers">Careers</a></li>
-    </div>
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <li><a (click)="closeNav()" routerLink="/">Home</a></li>
+    <li><a (click)="closeNav()" href="#about-us">About Us</a></li>
+    <li class="mobile-dropdown" (click)="toggleDropdown()" [ngClass]="{ active: isDropdownOpen }">
+      <a>Services<fa-icon style="margin-left: 0.5rem" [icon]="faCaretDown"></fa-icon></a>
+      <ul class="mobile-dropdown-menu">
+        <li><a routerLink="/services/web-design">Web Design</a></li>
+        <li><a routerLink="/services/software">Software Development</a></li>
+        <li><a routerLink="/services/ui-ux-design">UI/UX Design</a></li>
+        <li><a routerLink="/services/brand-identity">Brand Identity</a></li>
+      </ul>
+    </li>
+    <!-- <li><a (click)="closeNav()" href="#services">Services</a></li> -->
+    <li><a (click)="closeNav()" href="#our-projects">Our Work</a></li>
+    <li><a (click)="closeNav()" routerLink="/blogs">Blogs</a></li>
+    <li><a (click)="closeNav()" routerLink="/careers">Careers</a></li>
+  </div>
 </div>

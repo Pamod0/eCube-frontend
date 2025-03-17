@@ -15,8 +15,8 @@ import { BlogpageService } from './blogpage.service';
     styleUrl: './blog-page.component.scss'
 })
 export class BlogPageComponent {
-    Blogpages: any;
-    Blogpage: any;
+    blogpages: any;
+    blogpage: any;
 
     
 
@@ -25,23 +25,23 @@ export class BlogPageComponent {
 
     ngOnInit() {
         this._blogpageService.getBlogPages().subscribe((data) => {
-            this.Blogpages = data;
-            console.log(this.Blogpages);
+            this.blogpages = data;
+            console.log(this.blogpages);
 
             this.route.paramMap.subscribe((params) => {
                 const serviceKey = params.get('blog');
 
                 switch (serviceKey) {
                     case 'pageone':
-                        this.Blogpage = this.Blogpages['pageone'];
+                        this.blogpage = this.blogpages['pageone'];
                         break;
                     case 'pagetwo':
-                        this.Blogpage = this.Blogpages['pagetwo'];
+                        this.blogpage = this.blogpages['pagetwo'];
                         break;
                 }
             });
 
-            console.log(this.Blogpage);
+            console.log(this.blogpage);
         });
     }
     

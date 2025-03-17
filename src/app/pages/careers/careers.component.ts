@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../layout/header/header.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterExtendedComponent } from "../../layout/footer-extended/footer-extended.component";
+import { BreadcrumbComponent } from "../../layout/breadcrumb/breadcrumb.component";
 
 interface TeamMember {
     image: string;
@@ -17,7 +18,7 @@ interface Vacency {
 
 @Component({
     selector: 'app-careers',
-    imports: [HeaderComponent, MatIconModule, FooterExtendedComponent],
+    imports: [HeaderComponent, MatIconModule, FooterExtendedComponent, BreadcrumbComponent],
     templateUrl: './careers.component.html',
     styleUrl: './careers.component.scss'
 })

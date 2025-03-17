@@ -3,10 +3,11 @@ import { HeaderComponent } from '../../layout/header/header.component';
 import { FooterExtendedComponent } from '../../layout/footer-extended/footer-extended.component';
 import { ReviewsComponent } from '../home/reviews/reviews.component';
 import { Carousel } from './carousel.model';
+import { BreadcrumbComponent } from "../../layout/breadcrumb/breadcrumb.component";
 
 @Component({
     selector: 'app-service-inner',
-    imports: [HeaderComponent, FooterExtendedComponent, ReviewsComponent],
+    imports: [HeaderComponent, FooterExtendedComponent, ReviewsComponent, BreadcrumbComponent],
     templateUrl: './service-inner.component.html',
     styleUrl: './service-inner.component.scss'
 })

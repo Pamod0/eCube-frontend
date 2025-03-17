@@ -1,169 +1,256 @@
 /* Header Styles */
 .navbar {
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    gap: 2rem;
-    background-color: #070707;
-    color: white;
-    align-items: center;
-    padding: 16px 0px;
-    font-family: 'Poppins', serif;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  gap: 2rem;
+  background-color: #070707;
+  color: white;
+  align-items: center;
+  padding: 16px 0px;
+  font-family: "Poppins", serif;
 }
 .navbar-inner {
-    background-color: #070707;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // padding: 16px 120px;
-    font-family: 'Poppins', serif;
+  background-color: #070707;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 16px 120px;
+  font-family: "Poppins", serif;
 }
 
 /* Logo */
 .logo {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .logo-img {
-    height: 40px;
-    margin-right: 8px;
+  height: 40px;
+  margin-right: 8px;
 }
 
 .logo-text {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .dot {
-    color: #3b82f6; /* Blue color */
+  color: #3b82f6; /* Blue color */
 }
 
 /* Navigation Links */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-    color: #bbbbbb;
+  color: #bbbbbb;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #070707;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  // min-width: 180px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  color: #bbbbbb;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* Contact Button */
 .contact-btn {
-    background-color: #1235ec;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 6px 16px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+  background-color: #1235ec;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
 .contact-btn:hover {
-    background-color: #1e40af;
+  background-color: #1e40af;
 }
 
 /* Hamburger Menu */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
 }
 
 .hamburger .bar {
-    width: 30px;
-    height: 3px;
-    border-radius: 32px;
-    background-color: #ffffff;
-    transition: 0.3s;
+  width: 30px;
+  height: 3px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  transition: 0.3s;
 }
 
 /* The Overlay (background) */
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 9999; 
-    left: 0;
-    top: 0;
-    background-color: #070707;
-    overflow-x: hidden;
-    transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  background-color: #070707;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+  position: relative;
+  top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+//   gap: 1rem;
+  align-items: start;
+  padding: 0 2rem;
+  list-style: none;
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-    text-decoration: none;
-    font-size: 36px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
 }
-
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #949494;
+  color: #949494;
+}
+
+.overlay-content {
+  /* Mobile Dropdown Menu */
+  .mobile-dropdown {
+    position: relative;
+  }
+
+  .mobile-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #070707;
+    list-style: none;
+    text-align: start;
+    padding: 10px 0;
+    margin: 0;
+    // min-width: 180px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-dropdown-menu li {
+    padding: 8px 20px;
+  }
+
+  .mobile-dropdown-menu li a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s;
+  }
+
+  .mobile-dropdown-menu li a:active {
+    color: #bbbbbb;
+  }
+
+  /* Show the dropdown menu on hover */
+  .mobile-dropdown:active .mobile-dropdown-menu {
+    display: block;
+  }
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 2rem;
+  font-size: 60px;
 }
 
 // Media Query
 @media only screen and (min-width: 1024px) and (max-width: 1400px) {
-    .navbar {
-        grid-template-columns: 1fr 10fr 1fr;
-        gap: 1rem;
-    }
+  .navbar {
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 1rem;
+  }
 }
 @media (max-width: 1023px) {
-    .navbar {
-        grid-template-columns: 0fr 11fr 0fr !important;
-    }
+  .navbar {
+    grid-template-columns: 0fr 11fr 0fr !important;
+  }
 }
 @media (max-width: 991px) {
-    .navbar {
-        grid-template-columns: 1fr 10fr 1fr !important;
-        gap: 1rem;
-        padding: 16px 25px;
-    }
-    .nav-links,
-    .contact-btn {
-        display: none;
-    }
-    .hamburger {
-        display: flex;
-    }
+  .navbar {
+    grid-template-columns: 1fr 10fr 1fr !important;
+    gap: 1rem;
+    padding: 16px 25px;
+  }
+  .nav-links,
+  .contact-btn {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
 }
 @media only screen and (max-width: 576px) {
-    .navbar {
-        padding: 16px 0px;
-    }
+  .navbar {
+    padding: 16px 0px;
+  }
 }
