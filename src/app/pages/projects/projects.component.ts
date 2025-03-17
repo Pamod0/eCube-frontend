@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { BreadcrumbComponent } from "../../layout/breadcrumb/breadcrumb.component";
 
 interface Project {
     name: string;
@@ -10,7 +11,7 @@ interface Project {
 
 @Component({
     selector: 'app-projects',
-    imports: [RouterLink],
+    imports: [RouterLink, BreadcrumbComponent],
     templateUrl: './projects.component.html',
     styleUrl: './projects.component.scss'
 })

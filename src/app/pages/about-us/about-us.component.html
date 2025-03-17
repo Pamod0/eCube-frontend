@@ -1,183 +1,183 @@
-<app-header></app-header>
-
 <div class="Aboutus-section">
-    <div></div>
+  <div></div>
 
+  <div>
     <div>
-        <div>
-            <div class="Aboutus-txt poppins-regular">Home/About Us</div>
+      <!-- <div class="Aboutus-txt poppins-regular">About Us</div> -->
+      <app-breadcrumb></app-breadcrumb>
 
-            <div class="container-One">
-                <div class="grid-item heading">
-                    <h1 class="Empowering-Businesses">Empowering Businesses</h1>
-                    <h2 class="with">with <span class="highlight">Smart, Scalable</span></h2>
-                    <h3 class="Solutions">Solutions</h3>
-                </div>
-
-                <div class="grid-item descriptionOne">
-                    <p>
-                        At our core, we empower businesses with smart, scalable solutions that drive efficiency and growth. Our expertise in technology and
-                        digital transformation helps streamline operations, enhance productivity, and ensure long-term success in a rapidly evolving digital
-                        world.
-                    </p>
-                </div>
-            </div>
-
-            <div class="Aboutus-img">
-                <img src="/assets/images/About-us/About_us-01.jpg" class="img" alt="Aboutus Image" />
-            </div>
-
-            <div class="container-Two">
-                <div class="grid-item heading">
-                    <h1 class="Together-we">Together we</h1>
-                    <h2 class="are-Strong">are Strong!</h2>
-                </div>
-
-                <div class="grid-item descriptionTwo">
-                    <h6 class="Strength">Strength comes from unity, and success is built through collaboration.</h6>
-                    <p class="ParagraphOne">
-                        Collaboration is at the heart of everything we do. By uniting our expertise, creativity, and innovation, we build solutions that drive
-                        success and transformation. We believe that great achievements are made possible through teamwork, where every idea, effort, and
-                        contribution plays a vital role. Together, we overcome challenges, push boundaries, and create a future that is smarter, stronger, and
-                        more connected.
-                    </p>
-                    <p class="ParagraphTwo">
-                        Our commitment to teamwork extends beyond our organization—it’s the foundation of every project we undertake. We work closely with our
-                        partners, clients, and stakeholders to develop solutions that are not only effective but also scalable and future-ready. By fostering
-                        trust, transparency, and a shared vision, we continue to drive meaningful impact and long-term success.
-                    </p>
-                </div>
-            </div>
-
-            <div class="container-Three">
-                <div class="header-left">
-                    <img src="/assets/images/avatar-1.png" class="SLC-logo" alt="logo" />
-                    <div class="Details">
-                        <p class="avatar-name">Divya Perera</p>
-                        <p class="avatar-role">CEO/Manager</p>
-                    </div>
-                </div>
-                <div class="header-right">
-                    <h1 class="Success">"Success isn’t just about</h1>
-                    <h2 class="innovation">innovation, it’s about</h2>
-                    <h3 class="highlightTwo">collaboration, adaptability,</h3>
-                    <h4 class="vision">and a shared vision for the</h4>
-                    <h5 class="future">future."</h5>
-                </div>
-            </div>
-
-            <div class="container-Four">
-                <h1 class="team">Meet our team of <span class="highlightThree">developers, designers</span></h1>
-                <h2 class="world-class">and world-class <span class="highlightFour">problem solvers</span></h2>
-
-                <div class="team-grid">
-                    @for(member of teamMembers; track member.name) {
-                    <div class="team-member">
-                        <img src="{{ member.image }}" alt="{{ member.name }}" />
-                        <div class="info">
-                            <h3 class="poppins-bold">{{ member.name }}</h3>
-                            <p class="poppins-regular">{{ member.position }}</p>
-                        </div>
-                    </div>
-                    }
-                </div>
-            </div>
-
-            <div class="container-Five">
-                <h1 class="Journey">Our Journey</h1>
-                <p class="Collaboration">
-                    Collaboration is at the heart of everything we do. By uniting our expertise, creativity, and innovation, we build solutions that drive
-                    success and transformation.
-                </p>
-                <div class="timeline">
-                    <div class="timeline-event">
-                        <div class="event-date">2023 Sep</div>
-                        <div class="event-content">
-                            <h3>Founded Ecube</h3>
-                            <p>
-                                Discover the humble beginnings of Ecube, where a vision to innovate and excel took root. Learn how our journey began with a
-                                passion for creating impactful solutions and a commitment to making a difference in the industry.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-event">
-                        <div class="event-date">2024 Jan</div>
-                        <div class="event-content">
-                            <h3>First Major Client</h3>
-                            <p>
-                                A pivotal moment in Ecube's history—our first major client marked the start of our reputation for delivering excellence. This
-                                milestone showcased our ability to meet and exceed expectations, setting the foundation for future success.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-event">
-                        <div class="event-date">2024 July</div>
-                        <div class="event-content">
-                            <h3>Expanded Team</h3>
-                            <p>
-                                As Ecube grew, so did our family. With the expansion of our team, we brought together diverse talents and expertise, fostering a
-                                culture of collaboration and innovation that continues to drive us forward.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-event">
-                        <div class="event-date">2024 Sep</div>
-                        <div class="event-content">
-                            <h3>First National Level State Project</h3>
-                            <p>
-                                A defining achievement for Ecube, our first national-level state project was a testament to our capabilities and dedication.
-                                This project not only elevated our standing but also demonstrated our ability to handle large-scale, impactful initiatives with
-                                precision and excellence.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-Six">
-                <div class="grid-item">
-                    <h2>20+</h2>
-                    <p>Years of Experience</p>
-                </div>
-                <div class="grid-item">
-                    <h2>200+</h2>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="grid-item">
-                    <h2>400+</h2>
-                    <p>Completed Projects</p>
-                </div>
-                <div class="grid-item">
-                    <h2>20+</h2>
-                    <p>High Skilled Staff</p>
-                </div>
-            </div>
-
-            <div class="container-Seven">
-                <h1 class="Team-Gallery">Team Gallery</h1>
-                <p class="transformation">
-                    Collaboration is at the heart of everything we do. By uniting our expertise, creativity, and innovation, we build solutions that drive
-                    success and transformation.
-                </p>
-                <div class="row">
-                    <div class="image-container image-one">
-                        <img src="/assets/images/About-us/Team-Gallery01.jpg" alt="Image 1" />
-                    </div>
-                    <div class="image-container image-two">
-                        <img src="/assets/images/About-us/Team-Gallery02.jpg" alt="Image 2" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="image-container image-three">
-                        <img src="/assets/images/About-us/Team-Gallery03.jpg" alt="Image 3" />
-                    </div>
-                    <div class="image-container image-four">
-                        <img src="/assets/images/About-us/Team-Gallery04.jpg" alt="Image 4" />
-                    </div>
-                </div>
-            </div>
+      <div class="container-One">
+        <div class="grid-item heading">
+          <h1 class="Empowering-Businesses">Empowering Businesses</h1>
+          <h2 class="with">with <span class="highlight">Smart, Scalable</span></h2>
+          <h3 class="Solutions">Solutions</h3>
         </div>
-    </div>
-</div>
 
-<app-footer-extended></app-footer-extended>
+        <div class="grid-item descriptionOne">
+          <p>
+            At our core, we empower businesses with smart, scalable solutions that drive efficiency and growth. Our
+            expertise in technology and digital transformation helps streamline operations, enhance productivity, and
+            ensure long-term success in a rapidly evolving digital world.
+          </p>
+        </div>
+      </div>
+
+      <div class="Aboutus-img">
+        <img src="/assets/images/About-us/About_us-01.jpg" class="img" alt="Aboutus Image" />
+      </div>
+
+      <div class="container-Two">
+        <div class="grid-item heading">
+          <h1 class="Together-we">Together we</h1>
+          <h2 class="are-Strong">are Strong!</h2>
+        </div>
+
+        <div class="grid-item descriptionTwo">
+          <h6 class="Strength">Strength comes from unity, and success is built through collaboration.</h6>
+          <p class="ParagraphOne">
+            Collaboration is at the heart of everything we do. By uniting our expertise, creativity, and innovation, we
+            build solutions that drive success and transformation. We believe that great achievements are made possible
+            through teamwork, where every idea, effort, and contribution plays a vital role. Together, we overcome
+            challenges, push boundaries, and create a future that is smarter, stronger, and more connected.
+          </p>
+          <p class="ParagraphTwo">
+            Our commitment to teamwork extends beyond our organization—it’s the foundation of every project we
+            undertake. We work closely with our partners, clients, and stakeholders to develop solutions that are not
+            only effective but also scalable and future-ready. By fostering trust, transparency, and a shared vision, we
+            continue to drive meaningful impact and long-term success.
+          </p>
+        </div>
+      </div>
+
+      <div class="container-Three">
+        <div class="header-left">
+          <img src="/assets/images/avatar-1.png" class="SLC-logo" alt="logo" />
+          <div class="Details">
+            <p class="avatar-name">Divya Perera</p>
+            <p class="avatar-role">CEO/Manager</p>
+          </div>
+        </div>
+        <div class="header-right">
+          <h1 class="Success">"Success isn’t just about</h1>
+          <h2 class="innovation">innovation, it’s about</h2>
+          <h3 class="highlightTwo">collaboration, adaptability,</h3>
+          <h4 class="vision">and a shared vision for the</h4>
+          <h5 class="future">future."</h5>
+        </div>
+      </div>
+
+      <div class="container-Four">
+        <h1 class="team">Meet our team of <span class="highlightThree">developers, designers</span></h1>
+        <h2 class="world-class">and world-class <span class="highlightFour">problem solvers</span></h2>
+
+        <div class="team-grid">
+          @for(member of teamMembers; track member.name) {
+          <div class="team-member">
+            <img src="{{ member.image }}" alt="{{ member.name }}" />
+            <div class="info">
+              <h3 class="poppins-bold">{{ member.name }}</h3>
+              <p class="poppins-regular">{{ member.position }}</p>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+
+      <div class="container-Five">
+        <h1 class="Journey">Our Journey</h1>
+        <p class="Collaboration">
+          Collaboration is at the heart of everything we do. By uniting our expertise, creativity, and innovation, we
+          build solutions that drive success and transformation.
+        </p>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="event-date">2023 Sep</div>
+            <div class="event-content">
+              <h3>Founded Ecube</h3>
+              <p>
+                Discover the humble beginnings of Ecube, where a vision to innovate and excel took root. Learn how our
+                journey began with a passion for creating impactful solutions and a commitment to making a difference in
+                the industry.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2024 Jan</div>
+            <div class="event-content">
+              <h3>First Major Client</h3>
+              <p>
+                A pivotal moment in Ecube's history—our first major client marked the start of our reputation for
+                delivering excellence. This milestone showcased our ability to meet and exceed expectations, setting the
+                foundation for future success.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2024 July</div>
+            <div class="event-content">
+              <h3>Expanded Team</h3>
+              <p>
+                As Ecube grew, so did our family. With the expansion of our team, we brought together diverse talents
+                and expertise, fostering a culture of collaboration and innovation that continues to drive us forward.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2024 Sep</div>
+            <div class="event-content">
+              <h3>First National Level State Project</h3>
+              <p>
+                A defining achievement for Ecube, our first national-level state project was a testament to our
+                capabilities and dedication. This project not only elevated our standing but also demonstrated our
+                ability to handle large-scale, impactful initiatives with precision and excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-Six">
+        <div class="grid-item">
+          <h2>20+</h2>
+          <p>Years of Experience</p>
+        </div>
+        <div class="grid-item">
+          <h2>200+</h2>
+          <p>Happy Clients</p>
+        </div>
+        <div class="grid-item">
+          <h2>400+</h2>
+          <p>Completed Projects</p>
+        </div>
+        <div class="grid-item">
+          <h2>20+</h2>
+          <p>High Skilled Staff</p>
+        </div>
+      </div>
+
+      <div class="container-Seven">
+        <h1 class="Team-Gallery">Team Gallery</h1>
+        <p class="transformation">
+          Collaboration is at the heart of everything we do. By uniting our expertise, creativity, and innovation, we
+          build solutions that drive success and transformation.
+        </p>
+        <div class="row">
+          <div class="image-container image-one">
+            <img src="/assets/images/About-us/Team-Gallery01.jpg" alt="Image 1" />
+          </div>
+          <div class="image-container image-two">
+            <img src="/assets/images/About-us/Team-Gallery02.jpg" alt="Image 2" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="image-container image-three">
+            <img src="/assets/images/About-us/Team-Gallery03.jpg" alt="Image 3" />
+          </div>
+          <div class="image-container image-four">
+            <img src="/assets/images/About-us/Team-Gallery04.jpg" alt="Image 4" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
