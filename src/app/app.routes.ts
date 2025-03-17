@@ -28,6 +28,11 @@ export const routes: Routes = [
         data: { breadcrumb: 'Home' },
       },
       {
+        path: 'about-us',
+        component: AboutUsComponent,
+        data: { breadcrumb: 'About Us' },
+      },
+      {
         path: 'projects-list',
         component: ProjectsComponent,
         data: { breadcrumb: 'Our Work' },
@@ -35,6 +40,7 @@ export const routes: Routes = [
       {
         path: 'projects/:project',
         component: ProjectInnerComponent,
+        data: { breadcrumb: 'Projects' },
       },
       {
         path: 'vacancies',
@@ -45,10 +51,6 @@ export const routes: Routes = [
   {
     path: 'careers',
     component: CareersComponent,
-  },
-  {
-    path: 'about-us',
-    component: AboutUsComponent,
   },
   {
     path: 'blog',
@@ -105,10 +107,6 @@ export const routes: Routes = [
   {
     path: 'form',
     component: JobApplicationFormComponent,
-  },
-  {
-    path: 'services/:service',
-    component: TestPageComponent,
   },
   {
     path: '**',
