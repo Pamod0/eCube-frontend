@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectService } from './project.service';
 import { ActivatedRoute } from '@angular/router';
+import { BreadcrumbComponent } from "../../layout/breadcrumb/breadcrumb.component";
 
 interface TeamMember {
     image: string;
@@ -11,7 +12,7 @@ interface TeamMember {
 
 @Component({
     selector: 'app-project-inner',
-    imports: [MatIconModule],
+    imports: [MatIconModule, BreadcrumbComponent],
     templateUrl: './project-inner.component.html',
     styleUrl: './project-inner.component.scss'
 })
