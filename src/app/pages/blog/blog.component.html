@@ -48,7 +48,8 @@
                             <mat-icon class="icon-container-right" style="color: #c0c0c0" aria-hidden="false" fontIcon="north_east"></mat-icon>
                         </a> -->
 
-                        <div routerLink="/blog/blog-page" (click)="scrollToTop()">
+                        <!-- routerLink="/blog/blog-page" -->
+                                <div [routerLink]="['/blog', number.link]" (click)="scrollToTop()">
                             <div class="icon-container-2"><mat-icon style="color: #c0c0c0" aria-hidden="false" fontIcon="north_east"></mat-icon></div>
                         </div>
                     </h3>
