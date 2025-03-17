@@ -53,18 +53,22 @@ export const routes: Routes = [
     component: CareersComponent,
   },
   {
-    path: 'blog',
+    path: 'blogs',
     component: BlogComponent,
   },
   {
-    path: 'blog',
-    children: [
-      {
-        path: 'blog-page',
-        component: BlogPageComponent,
-      },
-    ],
+    path: 'blog/:blog',
+    component: BlogPageComponent,
   },
+  // {
+  //   path: 'blog',
+  //   children: [
+  //     {
+  //       path: 'blog-page',
+  //       component: BlogPageComponent,
+  //     },
+  //   ],
+  // },
   {
     path: 'test',
     component: TestComponent,

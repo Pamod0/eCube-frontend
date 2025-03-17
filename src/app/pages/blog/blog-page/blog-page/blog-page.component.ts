@@ -6,7 +6,7 @@ import { ContactFormComponent } from '../../../../layout/contact-form/contact-fo
 import { FooterComponent } from '../../../../layout/footer/footer.component';
 import { ActivatedRoute } from '@angular/router';
 import { BlogpageService } from './blogpage.service';
-import { BlogPage } from './blogpage.interface';
+
 
 @Component({
     selector: 'app-blog-page',
@@ -15,36 +15,36 @@ import { BlogPage } from './blogpage.interface';
     styleUrl: './blog-page.component.scss'
 })
 export class BlogPageComponent {
-    Blogpages: BlogPage[];
-    Blogpage: BlogPage;
+    blogpages: any;
+    blogpage: any;
+
+    
 
     private route = inject(ActivatedRoute);
     private _blogpageService = inject(BlogpageService);
 
     ngOnInit() {
         this._blogpageService.getBlogPages().subscribe((data) => {
-            this.Blogpages = data;
-            console.log(this.Blogpages);
+            this.blogpages = data;
+            console.log(this.blogpages);
 
             this.route.paramMap.subscribe((params) => {
-                const serviceKey = params.get('Blog');
+                const serviceKey = params.get('blog');
 
                 switch (serviceKey) {
                     case 'pageone':
-                        this.Blogpage = this.Blogpages['pageone'];
+                        this.blogpage = this.blogpages['pageone'];
                         break;
                     case 'pagetwo':
-                        this.Blogpage = this.Blogpages['pagetwo'];
+                        this.blogpage = this.blogpages['pagetwo'];
                         break;
-                    case 'pagethree':
-                        this.Blogpage = this.Blogpages['pagethree'];
-                        break;
-                    default:
-                        this.Blogpage = this.Blogpages['pageone'];
                 }
             });
 
-            console.log(this.Blogpage);
+            console.log(this.blogpage);
         });
     }
+    
+    
 }
+

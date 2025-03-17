@@ -1,24 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { BlogPage } from './blogpage.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BlogpageService {
-  [x: string]: any;
-  private _url: string = 'assets/data/blogpage.json';
-
+  private dataUrl = 'assets/data/blogpage.json';
 
   constructor(private http: HttpClient) {}
 
-  getBlogPages(): Observable<any> {
-      return this.http.get<any>(this._url);
+  getBlogPages(): Observable<BlogPage[]> {
+    return this.http.get<BlogPage[]>(this.dataUrl);
   }
 }
-
-
-
-
-
-
