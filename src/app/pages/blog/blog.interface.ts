@@ -2,6 +2,7 @@ export interface blog {
     image: string;
     name: string;
     subject: string;
+    link?: string;
     content: string;
     iconHref: string;
     button1: BlogButton;
@@ -14,4 +15,7 @@ interface BlogButton {
     href: string;
     class: string;
 }
+
+
+
 

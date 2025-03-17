@@ -6,45 +6,69 @@ import { ContactFormComponent } from '../../../../layout/contact-form/contact-fo
 import { FooterComponent } from '../../../../layout/footer/footer.component';
 import { ActivatedRoute } from '@angular/router';
 import { BlogpageService } from './blogpage.service';
-import { BlogPage } from './blogpage.interface';
 
 @Component({
-    selector: 'app-blog-page',
-    imports: [HeaderComponent, MatIconModule, AccordionComponent, ContactFormComponent, FooterComponent],
-    templateUrl: './blog-page.component.html',
-    styleUrl: './blog-page.component.scss'
+  selector: 'app-blog-page',
+  imports: [
+    HeaderComponent,
+    MatIconModule,
+    AccordionComponent,
+    ContactFormComponent,
+    FooterComponent,
+  ],
+  templateUrl: './blog-page.component.html',
+  styleUrl: './blog-page.component.scss',
 })
 export class BlogPageComponent {
-    Blogpages: BlogPage[];
-    Blogpage: BlogPage;
+  blogpages: any;
+  blogpage: any;
 
-    private route = inject(ActivatedRoute);
-    private _blogpageService = inject(BlogpageService);
+  private route = inject(ActivatedRoute);
+  private _blogpageService = inject(BlogpageService);
 
-    ngOnInit() {
-        this._blogpageService.getBlogPages().subscribe((data) => {
-            this.Blogpages = data;
-            console.log(this.Blogpages);
+  ngOnInit() {
+    this._blogpageService.getBlogPages().subscribe((data) => {
+      this.blogpages = data;
+      console.log(this.blogpages);
 
-            this.route.paramMap.subscribe((params) => {
-                const serviceKey = params.get('Blog');
+      this.route.paramMap.subscribe((params) => {
+        const serviceKey = params.get('blog');
 
-                switch (serviceKey) {
-                    case 'pageone':
-                        this.Blogpage = this.Blogpages['pageone'];
-                        break;
-                    case 'pagetwo':
-                        this.Blogpage = this.Blogpages['pagetwo'];
-                        break;
-                    case 'pagethree':
-                        this.Blogpage = this.Blogpages['pagethree'];
-                        break;
-                    default:
-                        this.Blogpage = this.Blogpages['pageone'];
-                }
-            });
+        switch (serviceKey) {
+          case 'pageone':
+            this.blogpage = this.blogpages['pageone'];
+            break;
+          case 'pagetwo':
+            this.blogpage = this.blogpages['pagetwo'];
+            break;
+          case 'pagethree':
+            this.blogpage = this.blogpages['pagethree'];
+            break;
+          case 'pagefour':
+            this.blogpage = this.blogpages['pagefour'];
+            break;
+          case 'pagefive':
+            this.blogpage = this.blogpages['pagefive'];
+            break;
+          case 'pagesix':
+            this.blogpage = this.blogpages['pagesix'];
+            break;
+          case 'pageseven':
+            this.blogpage = this.blogpages['pageseven'];
+            break;
+          case 'pageeight':
+            this.blogpage = this.blogpages['pageeight'];
+            break;
+          case 'pagenine':
+            this.blogpage = this.blogpages['pagenine'];
+            break;
+          case 'pageten':
+            this.blogpage = this.blogpages['pageten'];
+            break;
+        }
+      });
 
-            console.log(this.Blogpage);
-        });
-    }
+      console.log(this.blogpage);
+    });
+  }
 }
