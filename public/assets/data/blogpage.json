@@ -1,5 +1,5 @@
 {
-  "pageone": {
+  "1": {
     "title": "blog",
     "heading": "Building your API Stack",
     "subheading": "20 January 2025 | Colombo - Sri Lanka",
@@ -24,7 +24,7 @@
     "headerthree": "Conclusion",
     "contentseven": "Start building your API stack today and unlock the full potential of your applications. Whether it's for web development, mobile applications, or IoT devices, a strong API foundation ensures seamless interoperability and integration across various platforms. The growing reliance on APIs in modern software development makes investing in a well-structured and efficient API stack essential for driving innovation and achieving business success. As technology advances, APIs will continue to play a critical role in shaping digital ecosystems, making it more important than ever to stay informed and adopt best practices for API development."
   },
-  "pagetwo": {
+  "2": {
     "title": "blog",
     "heading": "Why is UI/UX Important for Your Business?",
     "subheading": "20 January 2025 | Colombo - Sri Lanka",
@@ -49,10 +49,9 @@
     "headerthree": "Conclusion",
     "contentseven": "Start building your API stack today and unlock the full potential of your applications. Whether it's for web development, mobile applications, or IoT devices, a strong API foundation ensures seamless interoperability and integration across various platforms. The growing reliance on APIs in modern software development makes investing in a well-structured and efficient API stack essential for driving innovation and achieving business success. As technology advances, APIs will continue to play a critical role in shaping digital ecosystems, making it more important than ever to stay informed and adopt best practices for API development."
   },
-  "pagethree": {
+  "3": {
     "title": "blog",
     "heading": "How to Get Your Business Online in Just 7 Days",
-    "subheading": "Written by Asmaa Kharposh",
     "avatar": "/assets/images/avatar-1.png",
     "author": {
       "detailone": "Written by",
@@ -74,7 +73,7 @@
     "headerthree": "Conclusion",
     "contentseven": "Getting your business online in just seven days is not only possible but also highly effective when done strategically. The key is to stay consistent, optimize your digital presence, and actively engage with your audience. As the online marketplace continues to evolve, maintaining an adaptable approach will ensure long-term success. Take the first step today and watch your business grow beyond boundaries!"
   },
-  "pagefour": {
+  "4": {
     "title": "blog",
     "heading": "Why Sri Lankan Businesses Need a Website in 2025",
     "subheading": "17 March 2025 | Colombo - Sri Lanka",
@@ -83,7 +82,7 @@
       "detailone": "Written by",
       "detailtwo": "Asmaa Kharposh"
     },
-    "banner": "/assets/images/blog/banner.jpg",
+    "banner": "/assets/images/blog/pagin-02.jpg",
     "contentone": "In today’s fast-paced digital world, having a website is no longer optional for businesses—it’s essential. In Sri Lanka, where consumer behavior is shifting rapidly towards online interactions, a well-designed website can make the difference between thriving and falling behind. Whether you run a small local store or a large enterprise, an online presence is key to attracting customers, improving credibility, and staying ahead of the competition. If your business doesn’t have a website yet, now is the time to build one. The good news? It’s easier and faster than ever.",
     "headerone": "The Growing Need for Digital Presence",
     "contentwo": "The way Sri Lankans shop and interact with businesses has evolved dramatically over the past few years. With internet penetration growing and mobile usage at an all-time high, customers expect to find businesses online before making a purchase decision. A website serves as your 24/7 storefront, allowing potential clients to learn about your products or services, contact you, and even make purchases without needing to visit a physical location. Beyond accessibility, a website builds trust. Many consumers hesitate to engage with businesses that lack an online presence, perceiving them as outdated or less credible.",
@@ -99,7 +98,7 @@
     "headerthree": "Conclusion",
     "contentseven": "As 2025 approaches, Sri Lankan businesses that embrace digital transformation will have a competitive edge. A well-optimized website not only attracts new customers but also enhances customer loyalty and brand authority. The process of building one has never been easier, with accessible tools and affordable solutions available to businesses of all sizes. If you’re ready to take your business online but don’t know where to start, Ecube is here to help. From website creation to digital marketing, we provide the expertise needed to launch and grow your online presence successfully. Don’t wait—get your business online today and unlock endless opportunities!"
   },
-  "pagefive": {
+  "5": {
     "title": "blog",
     "heading": "The Rise of No-Code & Low-Code Development",
     "subheading": "20 January 2025 | Colombo - Sri Lanka",
@@ -124,7 +123,7 @@
     "headerthree": "Conclusion",
     "contentseven": "The rise of no-code and low-code is a game-changer for businesses looking to innovate quickly. It democratizes software development, making it accessible to a wider audience while significantly reducing the time and cost associated with building applications. As more Sri Lankan businesses recognize the potential of these platforms, we can expect a surge in digital solutions built by entrepreneurs, small businesses, and enterprises alike. If your business is ready to embrace this transformation, Ecube can guide you in leveraging the right tools to build, automate, and scale effortlessly. The future of development is here—are you ready to take advantage of it?"
   },
-  "pagesix": {
+  "6": {
     "title": "blog",
     "heading": "Cybersecurity for Small Businesses",
     "subheading": "20 March 2025 | Sri Lanka",
@@ -133,7 +132,7 @@
       "detailone": "Written by",
       "detailtwo": "Asmaa Kharposh"
     },
-    "banner": "/assets/images/blog/cybersecurity.jpg",
+    "banner": "/assets/images/blog/pagin-02.jpg",
     "contentone": "In an increasingly digital world, small businesses are more vulnerable than ever to cyber threats. Many business owners assume that hackers only target large corporations, but in reality, small businesses are prime targets due to weaker security defenses. A single cyberattack can lead to financial losses, data breaches, and reputational damage—often forcing small businesses to shut down. As businesses in Sri Lanka and beyond shift to online operations, prioritizing cybersecurity is no longer optional—it’s essential. Understanding the risks and implementing strong security measures can make the difference between thriving and becoming another victim of cybercrime.",
     "headerone": "Introduction",
     "contentwo": "One of the biggest cybersecurity threats facing small businesses is phishing. Phishing attacks involve cybercriminals impersonating legitimate organizations to trick employees into revealing sensitive information, such as passwords or financial details. These attacks often come in the form of deceptive emails, fake websites, or even phone calls. Ransomware is another growing threat, where hackers encrypt a business’s data and demand a ransom for its release. Without proper backups and security protocols, businesses can lose access to critical files, leading to operational shutdowns.",
@@ -149,7 +148,7 @@
     "headerthree": "Conclusion",
     "contentseven": "In today’s digital landscape, cybersecurity is a business necessity, not a luxury. Small businesses that fail to protect their digital assets risk financial loss, reputational damage, and legal consequences. By implementing strong security measures—such as employee training, MFA, firewalls, data backups, and security audits—businesses can safeguard their operations and build customer trust. At Ecube, we help small businesses develop robust cybersecurity strategies to stay secure in an ever-changing digital world. Don’t wait for an attack to happen—take action now and protect your business from cyber threats."
   },
-  "pageseven": {
+  "7": {
     "title": "SEO for Sri Lankan Businesses",
     "heading": "SEO for Sri Lankan Businesses",
     "subheading": "20 March 2025 | Colombo - Sri Lanka",
@@ -158,7 +157,7 @@
       "detailone": "Written by",
       "detailtwo": "Asmaa Kharposh"
     },
-    "banner": "/assets/images/blog/seobanner.jpg",
+    "banner": "/assets/images/blog/pagin-02.jpg",
     "contentone": "In today’s highly competitive digital landscape, having a website is just the first step for any business. What truly sets successful businesses apart is how easily potential customers can find them online. This is where Search Engine Optimization (SEO) comes into play. SEO is the process of optimizing your website so that it ranks higher in search engine results, such as Google, when users search for relevant keywords. For Sri Lankan businesses aiming to expand their online presence and increase traffic, understanding and implementing SEO is critical.",
     "headerone": "The Importance of SEO for Sri Lankan Businesses",
     "contenttwo": "With the rise of mobile internet usage and increasing e-commerce activity in Sri Lanka, having a website is no longer enough. Your website needs to be visible and easily discoverable by search engines to reach new customers. Whether you’re a local shop, a service provider, or an online retailer, SEO can help you appear in the top search results when people look for the products or services you offer. Think about it: How often do you go past the first page of Google when searching for something? Most users don’t. Therefore, the higher your website ranks, the more likely it is that customers will click on it, visit your site, and eventually convert into paying clients.",
@@ -176,7 +175,7 @@
     "quoteauthor": "— Asmaa Kharposh",
     "contenteight": "Conclusion: SEO is not a one-time task—it’s an ongoing process that requires time, effort, and dedication. However, the rewards are well worth it. By implementing effective SEO strategies, Sri Lankan businesses can boost their visibility, attract more traffic, and ultimately convert visitors into loyal customers. At Ecube, we specialize in helping businesses build and optimize their websites to improve search engine rankings and enhance online visibility. If you’re ready to take your business to the next level, get in touch with us today and start your SEO journey."
   },
-  "pageeight": {
+  "8": {
     "title": "blog",
     "heading": "The Importance of Scalable Web Solutions for Growing Businesses",
     "subheading": "20 March 2025 | Colombo - Sri Lanka",
@@ -185,7 +184,7 @@
       "detailone": "Written by",
       "detailtwo": "Asmaa Kharposh"
     },
-    "banner": "/assets/images/blog/scalable-web-solutions.jpg",
+    "banner": "/assets/images/blog/pagin-02.jpg",
     "contentone": "As businesses expand, their digital needs evolve. One of the key factors in ensuring long-term success is having a scalable web solution—a website or online platform that can grow and adapt alongside your business. A scalable web solution allows businesses to seamlessly accommodate increased traffic, add new features, and improve user experiences without facing downtime or major disruptions. In today’s competitive market, where digital presence is crucial, businesses must build web systems that can not only support current operations but also be ready to evolve with changing demands.",
     "headerone": "Why Scalability Matters for Businesses",
     "contentwo": "For small and medium-sized businesses in Sri Lanka, scalability isn’t just about preparing for growth—it’s about future-proofing your business in an increasingly digital world. With e-commerce, online services, and mobile app usage skyrocketing, having a scalable web solution ensures that your business is able to meet customer demands efficiently. Whether you’re planning to increase your product offerings, expand into new markets, or handle larger volumes of customer interactions, a scalable web solution provides the flexibility you need. Without scalability, your website might face performance issues, slow loading times, and the inability to handle spikes in traffic, leading to lost sales and frustrated customers.",
@@ -203,7 +202,7 @@
     "headerfour": "Conclusion",
     "contenteight": "Scalable web solutions are critical for businesses that plan to grow, especially in today’s fast-paced, ever-changing digital landscape. Whether you're a Sri Lankan startup aiming for long-term growth or an established business expanding into new markets, building a scalable web infrastructure ensures your website remains agile and capable of handling increased demands. At Ecube, we specialize in creating scalable, cloud-based web solutions tailored to your business’s needs, enabling you to stay ahead in a competitive market. Let us help you future-proof your online presence with a website that evolves as your business grows."
   },
-  "pagenine": {
+  "9": {
     "title": "blog",
     "heading": "The Importance of Scalable Web Solutions for Growing Businesses",
     "subheading": "17 March 2025 | Colombo - Sri Lanka",
@@ -228,7 +227,7 @@
     "headerthree": "Conclusion",
     "contentseven": "Mobile optimization is more than just a design trend; it’s an essential strategy for businesses looking to improve user experience, increase engagement, and boost conversions. By ensuring that your website is optimized for mobile devices, you can capture the attention of a growing mobile user base, enhance the overall user experience, and ultimately drive business success. With the growing reliance on mobile internet access, it’s crucial to stay ahead of the curve and provide an accessible and effective mobile experience for your customers."
   },
-  "pageten": {
+  "10": {
     "title": "blog",
     "heading": "How to Generate More Leads Online",
     "subheading": "March 17, 2025 | Colombo - Sri Lanka",
