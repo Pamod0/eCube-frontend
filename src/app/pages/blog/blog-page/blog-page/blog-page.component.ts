@@ -35,35 +35,35 @@ export class BlogPageComponent {
         const serviceKey = params.get('blog');
 
         switch (serviceKey) {
-          case 'pageone':
-            this.blogpage = this.blogpages['pageone'];
+          case '1':
+            this.blogpage = this.blogpages['1'];
             break;
-          case 'pagetwo':
-            this.blogpage = this.blogpages['pagetwo'];
+          case '2':
+            this.blogpage = this.blogpages['2'];
             break;
-          case 'pagethree':
-            this.blogpage = this.blogpages['pagethree'];
+          case '3':
+            this.blogpage = this.blogpages['3'];
             break;
-          case 'pagefour':
-            this.blogpage = this.blogpages['pagefour'];
+          case '4':
+            this.blogpage = this.blogpages['4'];
             break;
-          case 'pagefive':
-            this.blogpage = this.blogpages['pagefive'];
+          case '5':
+            this.blogpage = this.blogpages['5'];
             break;
-          case 'pagesix':
-            this.blogpage = this.blogpages['pagesix'];
+          case '6':
+            this.blogpage = this.blogpages['6'];
             break;
-          case 'pageseven':
-            this.blogpage = this.blogpages['pageseven'];
+          case '7':
+            this.blogpage = this.blogpages['7'];
             break;
-          case 'pageeight':
-            this.blogpage = this.blogpages['pageeight'];
+          case '8':
+            this.blogpage = this.blogpages['8'];
             break;
-          case 'pagenine':
-            this.blogpage = this.blogpages['pagenine'];
+          case '9':
+            this.blogpage = this.blogpages['9'];
             break;
-          case 'pageten':
-            this.blogpage = this.blogpages['pageten'];
+          case '10':
+            this.blogpage = this.blogpages['10'];
             break;
         }
       });
