@@ -53,14 +53,14 @@ export class AboutUsComponent {
                 position: 'Trainee Software Engineer'
             },
             {
-                image: '/assets/images/careers/sarujan.png',
-                name: 'Suthagar Sarujan',
-                position: 'Trainee Software Engineer'
+                image: '/assets/images/careers/chanindu.png',
+                name: 'Chanidu Sandaruwan',
+                position: 'Business Development Executive'
             },
             {
-                image: '/assets/images/careers/sarujan.png',
-                name: 'Suthagar Sarujan',
-                position: 'Trainee Software Engineer'
+                image: '/assets/images/careers/aqeel.png',
+                name: 'Aqeel Shafy',
+                position: 'Associate UI/UX Designer'
             }
         ];
     }
