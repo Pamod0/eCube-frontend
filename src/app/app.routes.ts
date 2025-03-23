@@ -110,7 +110,8 @@ export const routes: Routes = [
   },
   {
     path: 'form',
-    component: JobApplicationFormComponent,
+    // component: JobApplicationFormComponent,
+    component: JobVacancyComponent,
   },
   {
     path: '**',
