@@ -1,86 +1,98 @@
 <section class="hero">
-    <div class="hide-mobile"></div>
-    <div class="hero-content">
-        <h1>
-            <span>Innovative.</span><br />
-            Streamlined.<br />
-            AI-Driven.
-        </h1>
-        <p>We harness AI to build high-quality websites and software in record time. Let’s accelerate your success.</p>
-        <div class="hero-buttons">
-            <a href="#contact-us" (click)="scrollToTop()" class="btn primary">Get in touch</a>
-            <a href="#services" (click)="scrollToTop()" class="btn secondary">Explore our services</a>
-        </div>
+  <div class="hide-mobile"></div>
+  <div class="hero-content">
+    <h1>
+      <span>Innovative.</span><br />
+      Streamlined.<br />
+      AI-Driven.
+    </h1>
+    <p>We harness AI to build high-quality websites and software in record time. Let’s accelerate your success.</p>
+    <div class="hero-buttons">
+      <a href="#contact-us" (click)="scrollToTop()" class="btn primary">Get in touch</a>
+      <a href="#services" (click)="scrollToTop()" class="btn secondary">Explore our services</a>
     </div>
+  </div>
 
-    <!-- <div></div> -->
+  <!-- <div></div> -->
 
-    <div class="hero-image-container">
+  <div class="hero-image-container">
+    <div class="carousel">
+      <div class="carousel-container">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <input type="radio" name="slider" id="item-4" />
+        <div class="slides">
+          <div class="overlay poppins-regular">
+            <h1>
+              <span style="color: #7386e7">Our Work.</span> <br />
+              Their Words.
+            </h1>
+            <h1 class="details">
+              {{ testimonialContent[carouselIndex()].name }} <br />
+              <span style="color: #ffffff">{{ testimonialContent[carouselIndex()].designation }}</span>
+            </h1>
 
-        <div class="carousel">
-            <div class="carousel-container">
-                <input type="radio" name="slider" id="item-1" checked />
-                <input type="radio" name="slider" id="item-2" />
-                <input type="radio" name="slider" id="item-3" />
-                <input type="radio" name="slider" id="item-4" />
-                <div class="slides">
-                    <div class="overlay poppins-regular">
-                        <h1>
-                            <span style="color: #7386e7;">Our Work.</span> <br />
-                            Their Words.
-                        </h1>
-                        <h1 class="details">
-                            Jason Reynolds <br />
-                            <span style="color: #ffffff;">CEO, NextGen Technologies</span>
-                        </h1>
-            
-                        <!-- <div class="indicators">
+            <!-- <div class="indicators">
                             <span for="item-1" id="song-1" class="indicator active"></span>
                             <span for="item-2" id="song-2" class="indicator"></span>
                             <span for="item-3" id="song-3" class="indicator"></span>
                         </div> -->
-            
-                        <div>
-                            <mat-icon click id="nextBtn" class="mat-icon-1" style="color: #c0c0c0" aria-hidden="false" fontIcon="arrow_forward_ios"></mat-icon>
-                            <mat-icon id="prevBtn" class="mat-icon-2" style="color: #c0c0c0" aria-hidden="false" fontIcon="arrow_back_ios"></mat-icon>
-                        </div>
-                        <!-- <div class="carousel-buttons">
+
+            <div>
+              <mat-icon
+                click
+                id="nextBtn"
+                class="mat-icon-1"
+                style="color: #c0c0c0"
+                aria-hidden="false"
+                fontIcon="arrow_forward_ios"
+              ></mat-icon>
+              <mat-icon
+                id="prevBtn"
+                class="mat-icon-2"
+                style="color: #c0c0c0"
+                aria-hidden="false"
+                fontIcon="arrow_back_ios"
+              ></mat-icon>
+            </div>
+            <!-- <div class="carousel-buttons">
                             <button id="prevBtn">Previous</button>
                             <button id="nextBtn">Next</button>
                         </div> -->
-                    </div>
-                    <label class="slide" for="item-1" id="song-1">
-                        <img src="/assets/images/hero-12.png" alt="" />
-                        <!-- <video autoplay muted loop playsinline width="" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+          </div>
+          <label class="slide" for="item-1" id="song-1">
+            <img src="/assets/images/hero-12.png" alt="" />
+            <!-- <video autoplay muted loop playsinline width="" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
                             <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video> -->
-                    </label>
-                    <label class="slide" for="item-2" id="song-2">
-                        <img src="/assets/images/hero-13.png" alt="" />
-                        <!-- <video autoplay muted loop playsinline width="" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+          </label>
+          <label class="slide" for="item-2" id="song-2">
+            <img src="/assets/images/hero-13.png" alt="" />
+            <!-- <video autoplay muted loop playsinline width="" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
                             <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video> -->
-                    </label>
-                    <label class="slide" for="item-3" id="song-3">
-                        <img src="/assets/images/hero-6.png" alt="" />
-                        <!-- <video autoplay muted loop playsinline width="" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+          </label>
+          <label class="slide" for="item-3" id="song-3">
+            <img src="/assets/images/hero-6.png" alt="" />
+            <!-- <video autoplay muted loop playsinline width="" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
                             <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video> -->
-                    </label>
-                    <label class="slide" for="item-4" id="song-4">
-                        <img src="/assets/images/hero-6.png" alt="" />
-                        <!-- <video autoplay muted loop playsinline width="" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+          </label>
+          <label class="slide" for="item-4" id="song-4">
+            <img src="/assets/images/hero-6.png" alt="" />
+            <!-- <video autoplay muted loop playsinline width="" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
                             <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video> -->
-                    </label>
-                </div>
-            </div>
+          </label>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="hide-mobile"></div>
+  <div class="hide-mobile"></div>
 </section>
