@@ -60,8 +60,8 @@
         <li><a routerLink="/services/brand-identity">Brand Identity</a></li>
       </ul>
     </li> -->
-    <li><a (click)="closeNav()" href="#services">Services</a></li>
-    <li><a (click)="closeNav()" href="#our-projects">Our Work</a></li>
+    <li><a (click)="closeNav()" (click)="scrollToSection('services')">Services</a></li>
+    <li><a (click)="closeNav()" (click)="scrollToSection('our-projects')">Our Work</a></li>
     <li><a (click)="closeNav()" routerLink="/blogs">Blogs</a></li>
     <li><a (click)="closeNav()" routerLink="/careers">Careers</a></li>
   </div>
