@@ -4,6 +4,7 @@ import {
   Component,
   ElementRef,
   Renderer2,
+  signal,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,13 +19,40 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hero.component.scss',
 })
 export class HeroComponent implements AfterViewInit {
-  private currentIndex = 0;
+  carouselIndex = signal(0);
+  currentIndex = 0;
   private radios: NodeListOf<HTMLInputElement> | null = null;
+
+  testimonialContent: { name: string; designation: string }[];
+
+  name: string = 'Jason Reynolds';
+  designation: string = 'CEO, NextGen Technologies';
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {}
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  ngOnInit(): void {
+    this.testimonialContent = [
+      {
+      name: 'Sarah Johnson',
+      designation: 'CEO, Quantum Innovations',
+      },
+      {
+      name: 'David Park',
+      designation: 'CTO, CloudSphere Technologies',
+      },
+      {
+      name: 'Emily Chen',
+      designation: 'COO, Digital Horizon',
+      },
+      {
+      name: 'Marcus Williams',
+      designation: 'CFO, Synergy Solutions',
+      },
+    ];
   }
 
   ngAfterViewInit(): void {
@@ -60,8 +88,10 @@ export class HeroComponent implements AfterViewInit {
 
     if (direction === 'next') {
       this.currentIndex = (this.currentIndex + 1) % totalSlides;
+      this.carouselIndex.set(this.currentIndex);
     } else {
       this.currentIndex = (this.currentIndex - 1 + totalSlides) % totalSlides;
+      this.carouselIndex.set(this.currentIndex);
     }
 
     this.updateSlide();

@@ -14,7 +14,6 @@ import { ProjectInnerComponent } from './pages/project-inner/project-inner.compo
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { JobVacancyComponent } from './pages/job-vacancy/job-vacancy.component';
-import { JobApplicationFormComponent } from './pages/job-vacancy/job-application-form/job-application-form.component';
 
 export const routes: Routes = [
   {
@@ -110,7 +109,8 @@ export const routes: Routes = [
   },
   {
     path: 'form',
-    component: JobApplicationFormComponent,
+    // component: JobApplicationFormComponent,
+    component: JobVacancyComponent,
   },
   {
     path: '**',
