@@ -1,262 +1,268 @@
 <!--Image and contents-->
 
 <section class="poppins-regular">
-    <!--1st Section-->
+  <!--1st Section-->
 
-    <div class="SLC-section">
-        <div class="hide-mobile"></div>
+  <div class="SLC-section">
+    <div class="hide-mobile"></div>
 
-        <div>
-            <div>
-                <!-- <div class="SLC-txt poppins-regular">{{ project.Header }}</div> -->
-                <app-breadcrumb></app-breadcrumb>
+    <div>
+      <div>
+        <!-- <div class="SLC-txt poppins-regular">{{ project.Header }}</div> -->
+        <app-breadcrumb></app-breadcrumb>
 
-                <!-- Headers with Aurthor details -->
+        <!-- Headers with Aurthor details -->
 
-                <div class="header">
-                    <div class="header-left">
-                        <h1 class="poppins-bold">
-                            {{ project.company }} <br />
-                            <span class="poppins-regular">{{ project.title }}</span>
-                        </h1>
-                        <!-- <h5 class="poppins-regular">{{ project.title }}</h5> -->
-                    </div>
-                    <div class="header-right">
-                        <img src="{{ project.companyLogo }}" class="SLC-logo" alt="logo" />
-                        <div class="Details">
-                            <h3 class="poppins-regular">
-                                Powered by <br />
-                                <span class="poppins-medium">Ecube Digital</span>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <br />
-
-                <!-- Image with Content -->
-
-                <div class="SLC-img">
-                    <img src="{{ project.mainImage }}" class="img" alt="SLC-Image" />
-                </div>
-            </div>
-        </div>
-        <div class="hide-mobile"></div>
-    </div>
-
-    <!--2nd Section-->
-
-    <div class="about-us">
-        <div></div>
-
-        <div>
-            <div>
-                <h1 class="about-txt poppins-regular">{{ project.systemdetails }}</h1>
-                <!-- <div class="about-txt poppins-regular">{{ project.systemdetails }}</div> -->
-                <h1 class="poppins-bold-Struggles">
-                    {{ project.slogan.lineOne }} <br />
-                    {{ project.slogan.lineTwo }}
-                </h1>
-                <!-- <h2 class="poppins-bold-Excellence">{{ project.slogan.lineTwo }} <span>.</span></h2> -->
-            </div>
-            <div>
-                <button class="btn UIUX">{{ project.btn1 }}</button>
-                <button class="btn Software">{{ project.btn2 }}</button>
-                <br />
-                <button class="btn Web">{{ project.btn3 }}</button>
-            </div>
-
-            <div>
-                <p class="poppins-regular-content">{{ project.technologies }}</p>
-                <div class="technologies">
-                    <img src=" {{ project.techone }} " class="tech-one" alt="Figma" />
-                    <img src=" {{ project.techtwo }} " class="tech-two" alt="Angular" />
-                    <img src=" {{ project.techthree }} " class="tech-three" alt="Vector" />
-                    <img src=" {{ project.techfour }} " class="tech-four" alt="MongoDB" />
-                </div>
-                <h6>{{ project.duration }}</h6>
-            </div>
-        </div>
-        <div class="Description">
-            <br />
-            <div>
-                <h3 class="poppins-semibold-project">{{ project.description }} <span>.</span></h3>
-            </div>
-            <div class="poppins-regular-content">
-                <p>
-                    {{ project.paragraph.One }}
-                </p>
-                <p>
-                    {{ project.paragraph.Two }}
-                </p>
-            </div>
-            <div>
-                <a href="https://vms.mycricket.com.lk" target="_blank">
-                    <button class="Visit-Website">
-                        {{ project.VisitWebsite }}
-                        <mat-icon aria-hidden="false" fontIcon="north_east"> </mat-icon>
-                    </button>
-                </a>
-            </div>
-        </div>
-        <div></div>
-    </div>
-
-    <!--3rd Section-->
-
-    <div class="measurable-container">
-        <div></div>
-        <!-- Left side - Measurables -->
-        <div class="measurable-grid">
-            <div class="metric-card">
-                <h2>{{ project.value.One }}</h2>
-                <p>{{ project.detail.One }}</p>
-                <h6>{{ project.label.One }}</h6>
-            </div>
-            <div class="metric-card">
-                <h2>{{ project.value.Two }}</h2>
-                <p>{{ project.detail.Two }}</p>
-                <h6>{{ project.label.Two }}</h6>
-            </div>
-            <div class="metric-card">
-                <h2>{{ project.value.Three }}</h2>
-                <p>{{ project.detail.Three }}</p>
-                <h6>{{ project.label.Three }}</h6>
-            </div>
-            <div class="metric-card">
-                <h2>{{ project.value.Four }}</h2>
-                <p>{{ project.detail.Four }}</p>
-                <h6>{{ project.label.Four }}</h6>
-            </div>
-        </div>
-
-        <!-- Right side - VMS Content -->
-        <div class="vms-content">
-            <h1>
-                {{ project.vmsContent }}
-                <!-- Measurable Impact <br /> of Our VMS -->
+        <div class="header">
+          <div class="header-left">
+            <h1 class="poppins-bold">
+              {{ project.company }} <br />
+              <span class="poppins-regular">{{ project.title }}</span>
             </h1>
-            <p>{{ project.vmsParagraph }}</p>
-            <!-- <a class="read-more">
+            <!-- <h5 class="poppins-regular">{{ project.title }}</h5> -->
+          </div>
+          <div class="header-right">
+            <img src="{{ project.companyLogo }}" class="SLC-logo" alt="logo" />
+            <div class="Details">
+              <h3 class="poppins-regular">
+                Powered by <br />
+                <span class="poppins-medium">Ecube Digital</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- Image with Content -->
+
+        <div class="SLC-img">
+          <img src="{{ project.mainImage }}" class="img" alt="SLC-Image" />
+        </div>
+      </div>
+    </div>
+    <div class="hide-mobile"></div>
+  </div>
+
+  <!--2nd Section-->
+
+  <div class="about-us">
+    <div></div>
+
+    <div>
+      <div>
+        <h1 class="about-txt poppins-regular">{{ project.systemdetails }}</h1>
+        <!-- <div class="about-txt poppins-regular">{{ project.systemdetails }}</div> -->
+        <h1 class="poppins-bold-Struggles">
+          {{ project.slogan.lineOne }} <br />
+          {{ project.slogan.lineTwo }}
+        </h1>
+        <!-- <h2 class="poppins-bold-Excellence">{{ project.slogan.lineTwo }} <span>.</span></h2> -->
+      </div>
+      <div>
+        <button class="btn UIUX">{{ project.btn1 }}</button>
+        <button class="btn Software">{{ project.btn2 }}</button>
+        <br />
+        <button class="btn Web">{{ project.btn3 }}</button>
+      </div>
+
+      <div>
+        <p class="poppins-regular-content">{{ project.technologies }}</p>
+        <div class="technologies">
+          <img src=" {{ project.techone }} " class="tech-one" alt="Figma" />
+          <img src=" {{ project.techtwo }} " class="tech-two" alt="Angular" />
+          <img src=" {{ project.techthree }} " class="tech-three" alt="Vector" />
+          <img src=" {{ project.techfour }} " class="tech-four" alt="MongoDB" />
+        </div>
+        <h6>{{ project.duration }}</h6>
+      </div>
+    </div>
+    <div class="Description">
+      <br />
+      <div>
+        <h3 class="poppins-semibold-project">{{ project.description }} <span>.</span></h3>
+      </div>
+      <div class="poppins-regular-content">
+        <p>
+          {{ project.paragraph.One }}
+        </p>
+        <p>
+          {{ project.paragraph.Two }}
+        </p>
+      </div>
+      <div>
+        <a href="https://vms.mycricket.com.lk" target="_blank">
+          <button class="Visit-Website">
+            {{ project.VisitWebsite }}
+            <mat-icon aria-hidden="false" fontIcon="north_east"> </mat-icon>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div></div>
+  </div>
+
+  <!--3rd Section-->
+
+  <div class="measurable-container">
+    <div></div>
+    <!-- Left side - Measurables -->
+    <div class="measurable-grid">
+      <div class="metric-card">
+        <h2>{{ project.value.One }}</h2>
+        <p>{{ project.detail.One }}</p>
+        <h6>{{ project.label.One }}</h6>
+      </div>
+      <div class="metric-card">
+        <h2>{{ project.value.Two }}</h2>
+        <p>{{ project.detail.Two }}</p>
+        <h6>{{ project.label.Two }}</h6>
+      </div>
+      <div class="metric-card">
+        <h2>{{ project.value.Three }}</h2>
+        <p>{{ project.detail.Three }}</p>
+        <h6>{{ project.label.Three }}</h6>
+      </div>
+      <div class="metric-card">
+        <h2>{{ project.value.Four }}</h2>
+        <p>{{ project.detail.Four }}</p>
+        <h6>{{ project.label.Four }}</h6>
+      </div>
+    </div>
+
+    <!-- Right side - VMS Content -->
+    <div class="vms-content">
+      <h1>
+        {{ project.vmsContent }}
+        <!-- Measurable Impact <br /> of Our VMS -->
+      </h1>
+      <p>{{ project.vmsParagraph }}</p>
+      <!-- <a class="read-more">
                 Read More
                 <mat-icon>north_east</mat-icon>
             </a> -->
-        </div>
-
-        <div></div>
     </div>
 
-    <!--4th Section-->
+    <div></div>
+  </div>
 
-    <div class="team-section">
-        <div></div>
-        <div>
-            <div>
-                <div class="services-txt poppins-regular">{{ project.teamMembers }}</div>
-                <div class="header">
-                    <h1 class="poppins-bold">{{ project.teamMembersHeader }}<span>.</span></h1>
-                </div>
-            </div>
-            <div class="team-grid">
-                @for(member of teamMembers; track member.name) {
-                <div class="team-member">
-                    <img src="{{ member.image }}" alt="{{ member.name }}" />
-                    <div class="info">
-                        <h3 class="poppins-bold">{{ member.name }}</h3>
-                        <p class="poppins-regular">{{ member.position }}</p>
-                    </div>
-                </div>
-                }
-            </div>
+  <!--4th Section-->
+
+  <div class="team-section">
+    <div></div>
+    <div>
+      <div>
+        <div class="services-txt poppins-regular">{{ project.teamMembers }}</div>
+        <div class="header">
+          <h1 class="poppins-bold">{{ project.teamMembersHeader }}<span>.</span></h1>
         </div>
-        <div></div>
-    </div>
-
-    <!--5th Section-->
-
-    <div class="testimonial-section">
-        <div></div>
-        <div>
-            <div>
-                <div class="services-txt poppins-regular">{{ project.Testimonials }}</div>
-                <div class="header">
-                    <h1 class="poppins-bold">{{ project.Experience }}<span>.</span></h1>
-                </div>
-            </div>
-
-            <div class="container-one">
-                <div class="left-side">
-                    <img src="{{ project.shamiimg }}" alt="Image" />
-                </div>
-                <div class="right-side">
-                    <p>
-                        {{ project.imgparagraphOne }}
-                    </p>
-                    <div class="author-role">
-                        <div class="author-img">
-                            <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
-                            <div class="name-role">
-                                <p class="poppins-bold">{{ project.avatarname }}</p>
-                                <p class="poppins-regular">{{ project.avatarrole }}</p>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-two">
-                <div class="content-grid">
-                    <p>{{ project.imgparagraphTwo }}</p>
-                    <div class="author-role">
-                        <div class="author-img">
-                            <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
-                            <div class="name-role">
-                                <p class="poppins-bold">{{ project.avatarname }}</p>
-                                <p class="poppins-regular">{{ project.avatarrole }}</p>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <a href="https://v17.angular.io/start"><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-grid">
-                    <p>{{ project.imgparagraphThree }}</p>
-                    <div class="author-role">
-                        <div class="author-img">
-                            <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
-                            <div class="name-role">
-                                <p class="poppins-bold">{{ project.avatarname }}</p>
-                                <p class="poppins-regular">{{ project.avatarrole }}</p>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <a href="https://v17.angular.io/start"><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-grid">
-                    <p>{{ project.imgparagraphFour }}</p>
-                    <div class="author-role">
-                        <div class="author-img">
-                            <img src="/assets/images/mr-shammi.png" class="avatar-img" alt="logo" />
-                            <div class="name-role">
-                                <p class="poppins-bold">{{ project.avatarname }}</p>
-                                <p class="poppins-regular">{{ project.avatarrole }}</p>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <a href="https://v17.angular.io/start"><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="team-grid">
+        @for(member of teamMembers; track member.name) {
+        <div class="team-member">
+          <img src="{{ member.image }}" alt="{{ member.name }}" />
+          <div class="info">
+            <h3 class="poppins-bold">{{ member.name }}</h3>
+            <p class="poppins-regular">{{ member.position }}</p>
+          </div>
         </div>
+        }
+      </div>
     </div>
+    <div></div>
+  </div>
 
-    <div class="hide-mobile"></div>
+  <!--5th Section-->
+
+  <div class="testimonial-section">
+    <div></div>
+    <div>
+      <div>
+        <div class="services-txt poppins-regular">{{ project.Testimonials }}</div>
+        <div class="header">
+          <h1 class="poppins-bold">{{ project.Experience }}<span>.</span></h1>
+        </div>
+      </div>
+
+      <div class="container-one">
+        <div class="left-side">
+          <img src="{{ project.shamiimg }}" alt="Image" />
+        </div>
+        <div class="right-side">
+          <p>
+            {{ project.imgparagraphOne }}
+          </p>
+          <div class="author-role">
+            <div class="author-img">
+              <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
+              <div class="name-role">
+                <p class="poppins-bold">{{ project.avatarname }}</p>
+                <p class="poppins-regular">{{ project.avatarrole }}</p>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-two">
+        <div class="content-grid">
+          <p>{{ project.imgparagraphTwo }}</p>
+          <div class="author-role">
+            <div class="author-img">
+              <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
+              <div class="name-role">
+                <p class="poppins-bold">{{ project.avatarname }}</p>
+                <p class="poppins-regular">{{ project.avatarrole }}</p>
+              </div>
+            </div>
+            <div class="icon">
+              <a href="https://v17.angular.io/start"
+                ><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="content-grid">
+          <p>{{ project.imgparagraphThree }}</p>
+          <div class="author-role">
+            <div class="author-img">
+              <img src="{{ project.avatarimg }}" class="avatar-img" alt="logo" />
+              <div class="name-role">
+                <p class="poppins-bold">{{ project.avatarname }}</p>
+                <p class="poppins-regular">{{ project.avatarrole }}</p>
+              </div>
+            </div>
+            <div class="icon">
+              <a href="https://v17.angular.io/start"
+                ><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="content-grid">
+          <p>{{ project.imgparagraphFour }}</p>
+          <div class="author-role">
+            <div class="author-img">
+              <img src="/assets/images/mr-shammi.png" class="avatar-img" alt="logo" />
+              <div class="name-role">
+                <p class="poppins-bold">{{ project.avatarname }}</p>
+                <p class="poppins-regular">{{ project.avatarrole }}</p>
+              </div>
+            </div>
+            <div class="icon">
+              <a href="https://v17.angular.io/start"
+                ><img src="{{ project.linkdinlogo }}" class="linkdin-logo" alt="logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hide-mobile"></div>
 </section>
 
 <!-- ******************** -->
