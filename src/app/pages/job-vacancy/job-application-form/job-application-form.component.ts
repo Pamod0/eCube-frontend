@@ -4,6 +4,9 @@ import { MessageService } from 'primeng/api';
 import { FileUpload } from 'primeng/fileupload';
 import { ToastModule } from 'primeng/toast';
 import { CommonModule } from '@angular/common';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 interface UploadEvent {
   originalEvent: Event;
@@ -12,7 +15,15 @@ interface UploadEvent {
 
 @Component({
   selector: 'app-job-application-form',
-  imports: [FileUploadModule, FileUpload, ToastModule, CommonModule],
+  imports: [
+    FileUploadModule,
+    FileUpload,
+    ToastModule,
+    CommonModule,
+    MatSelectModule,
+    MatInputModule,
+    MatFormFieldModule,
+  ],
   templateUrl: './job-application-form.component.html',
   styleUrl: './job-application-form.component.scss',
   providers: [MessageService],

@@ -1,21 +1,39 @@
-<div class="card">
-  <p-toast />
-  <p-fileupload
-    name="demo[]"
-    url="https://www.primefaces.org/cdn/api/upload.php"
-    (onUpload)="onUpload($any($event))"
-    [multiple]="true"
-    accept="image/*"
-    maxFileSize="1000000"
-    mode="advanced"
-  >
-    <ng-template #empty>
-      <div>Drag and drop files to here to upload.</div>
-    </ng-template>
-    <ng-template #content>
-      <ul *ngIf="uploadedFiles.length">
-        <li *ngFor="let file of uploadedFiles">{{ file.name }} - {{ file.size }} bytes</li>
-      </ul>
-    </ng-template>
-  </p-fileupload>
-</div>
+<form>
+  <mat-form-field appearance="outline">
+    <mat-label>Input</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Select</mat-label>
+    <mat-select>
+      <mat-option value="one">First option</mat-option>
+      <mat-option value="two">Second option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Textarea</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+
+  <div class="card">
+    <p-toast />
+    <p-fileupload
+      name="demo[]"
+      url="https://www.primefaces.org/cdn/api/upload.php"
+      (onUpload)="onUpload($any($event))"
+      [multiple]="true"
+      accept="image/*"
+      maxFileSize="1000000"
+      mode="advanced"
+    >
+      <ng-template #empty>
+        <div>Drag and drop files to here to upload.</div>
+      </ng-template>
+      <ng-template #content>
+        <ul *ngIf="uploadedFiles.length">
+          <li *ngFor="let file of uploadedFiles">{{ file.name }} - {{ file.size }} bytes</li>
+        </ul>
+      </ng-template>
+    </p-fileupload>
+  </div>
+</form>

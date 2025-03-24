@@ -1,0 +1,41 @@
+@use "@angular/material" as mat;
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+:host ::ng-deep {
+  // form
+  .mat-mdc-text-field-wrapper {
+  }
+  .mat-mdc-text-field-wrapper::hover {
+    border-color: #070707;
+  }
+  // file upload
+  .p-fileupload-advanced {
+    background: #070707;
+    color: #ffffff;
+  }
+  .p-button {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+  }
+  .p-button-label {
+    color: #070707;
+  }
+  .p-icon {
+    color: #070707;
+  }
+}
+
+:host ::ng-deep {
+  @include mat.form-field-overrides(
+    (
+      outlined-caret-color: #070707,
+
+      outlined-label-text-color: #ffffff,
+    )
+  );
+}

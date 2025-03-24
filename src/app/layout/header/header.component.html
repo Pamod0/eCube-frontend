@@ -10,10 +10,12 @@
     <!-- Navigation Links -->
     <ul class="nav-links">
       <li><a routerLink="/">Home</a></li>
-      <li><a href="#about-us">About Us</a></li>
+      <li><a (click)="scrollToSection('about-us')">About Us</a></li>
       <!-- <li><a href="#services">Services</a></li> -->
       <li class="dropdown">
-        <a href="#services">Services<fa-icon style="margin-left: 0.5rem" [icon]="faCaretDown"></fa-icon></a>
+        <a (click)="scrollToSection('services')"
+          >Services<fa-icon style="margin-left: 0.5rem" [icon]="faCaretDown"></fa-icon
+        ></a>
         <ul class="dropdown-menu">
           <li><a routerLink="/services/web-design">Web Design</a></li>
           <li><a routerLink="/services/software">Software Development</a></li>
@@ -21,14 +23,14 @@
           <li><a routerLink="/services/brand-identity">Brand Identity</a></li>
         </ul>
       </li>
-      <li><a href="#our-projects">Our Work</a></li>
+      <li><a (click)="scrollToSection('our-projects')">Our Work</a></li>
       <!-- <li><a href="javascript:void(0)">Products</a></li> -->
       <!-- <li><a href="#">Blogs</a></li> -->
       <li><a routerLink="/blogs">Blogs</a></li>
       <li><a routerLink="/careers">Careers</a></li>
     </ul>
     <!-- Contact Button -->
-    <a href="#contact-us" class="contact-btn">Contact us</a>
+    <a (click)="scrollToSection('contact-us')" class="contact-btn">Contact us</a>
 
     <!-- Hamburger Menu -->
     <div class="hamburger" (click)="openNav()">
@@ -48,7 +50,7 @@
   <!-- Overlay content -->
   <div class="overlay-content">
     <li><a (click)="closeNav()" routerLink="/">Home</a></li>
-    <li><a (click)="closeNav()" href="#about-us">About Us</a></li>
+    <li><a (click)="closeNav(); scrollToSection('about-us')">About Us</a></li>
     <!-- <li class="mobile-dropdown" (click)="toggleDropdown()" [ngClass]="{ active: isDropdownOpen }">
       <a>Services<fa-icon style="margin-left: 0.5rem" [icon]="faCaretDown"></fa-icon></a>
       <ul class="mobile-dropdown-menu">
@@ -58,8 +60,8 @@
         <li><a routerLink="/services/brand-identity">Brand Identity</a></li>
       </ul>
     </li> -->
-    <li><a (click)="closeNav()" href="#services">Services</a></li>
-    <li><a (click)="closeNav()" href="#our-projects">Our Work</a></li>
+    <li><a (click)="closeNav()" (click)="scrollToSection('services')">Services</a></li>
+    <li><a (click)="closeNav()" (click)="scrollToSection('our-projects')">Our Work</a></li>
     <li><a (click)="closeNav()" routerLink="/blogs">Blogs</a></li>
     <li><a (click)="closeNav()" routerLink="/careers">Careers</a></li>
   </div>
