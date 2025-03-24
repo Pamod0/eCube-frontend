@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Inject, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,6 +14,12 @@ export class HeaderComponent {
   faCaretDown = faCaretDown;
   isDropdownOpen = false;
 
+  scrollToSection(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   /* Open when someone clicks on the span element */
   openNav() {
     document.getElementById('myNav').style.width = '100%';
