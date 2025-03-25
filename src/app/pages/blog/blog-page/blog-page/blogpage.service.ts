@@ -7,7 +7,7 @@ import { BlogPage } from './blogpage.interface';
   providedIn: 'root',
 })
 export class BlogpageService {
-  private dataUrl = 'assets/data/Blogpage.json';
+  private dataUrl = '/assets/data/blogpage.json';
 
   constructor(private http: HttpClient) {}
 
