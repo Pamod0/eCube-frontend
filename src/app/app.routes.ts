@@ -84,7 +84,7 @@ export const routes: Routes = [
       {
         path: 'software',
         component: SoftwareServiceComponent,
-        data: { breadcrumb: 'Software' },
+        data: { breadcrumb: 'Software Devlopment' },
       },
       {
         path: 'web-design',
