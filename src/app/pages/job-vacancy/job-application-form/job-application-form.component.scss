@@ -1,5 +1,9 @@
 @use "@angular/material" as mat;
 
+label {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
 form {
   display: flex;
   flex-direction: column;
