@@ -44,6 +44,7 @@ export const routes: Routes = [
       {
         path: 'vacancies',
         component: JobVacancyComponent,
+        data: { breadcrumb: 'Vacancies' },
       },
     ],
   },

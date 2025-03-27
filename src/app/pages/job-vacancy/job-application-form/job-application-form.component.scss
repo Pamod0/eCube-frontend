@@ -1,7 +1,8 @@
 @use "@angular/material" as mat;
 
 label {
-  margin-bottom: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
   color: #ffffff;
 }
 form {
@@ -12,13 +13,22 @@ form {
 
 :host ::ng-deep {
   // form
-  .mat-mdc-text-field-wrapper {
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .mdc-text-field--outlined {
+    --mdc-outlined-text-field-container-shape: 8px !important;
   }
   .mat-mdc-text-field-wrapper::hover {
     border-color: #070707;
   }
   // file upload
+  .file-upload-container {
+    width: 100%;
+  }
   .p-fileupload-advanced {
+    width: 100%;
     background: #070707;
     color: #ffffff;
   }
@@ -37,9 +47,24 @@ form {
 :host ::ng-deep {
   @include mat.form-field-overrides(
     (
-      outlined-caret-color: #070707,
+      outlined-caret-color: #ffffff,
 
       outlined-label-text-color: #ffffff,
+      outlined-focus-label-text-color: #ffffff,
+      outlined-hover-label-text-color: #ffffff,
+
+      outlined-focus-outline-color: #ffffff,
+
+      outlined-input-text-color: #ffffff,
+      outlined-disabled-input-text-color: #ffffff,
+
+      outlined-hover-outline-color: #ffffff,
+
+      outlined-error-label-text-color: #ff0000,
+      outlined-error-hover-label-text-color: #ff0000,
+      outlined-error-focus-label-text-color: #ff0000,
+      outlined-error-focus-outline-color: #ff0000,
+      outlined-error-hover-outline-color: #ff0000,
     )
   );
 }

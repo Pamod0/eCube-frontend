@@ -1,21 +1,83 @@
-<form>
-  <mat-form-field appearance="outline">
-    <mat-label>Input</mat-label>
-    <input matInput />
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker" [hideRequiredMarker]="hideRequiredMarker">
+    <mat-label>First Name</mat-label>
+    <input matInput formControlName="firstName" placeholder="Ex. John" />
+    @if(form.get('firstName')?.hasError('required')) {
+    <mat-error>First Name is required</mat-error>
+    }
   </mat-form-field>
-  <mat-form-field appearance="outline">
+
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
+    <mat-label>Last Name</mat-label>
+    <input matInput formControlName="lastName" placeholder="Ex. Doe" />
+    @if(form.get('lastName')?.hasError('required')) {
+    <mat-error>Last Name is required</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
+    <mat-label>Email Address</mat-label>
+    <input matInput formControlName="email" placeholder="Ex. someone@example.com" />
+    @if(form.get('email')?.hasError('required')) {
+    <mat-error>Email is required</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
+    <mat-label>Phone Number</mat-label>
+    <input matInput formControlName="phone" placeholder="Ex. 0701489965" />
+    @if(form.get('phone')?.hasError('required')) {
+    <mat-error>Email is required</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
+    <mat-label>Linkedin Profile Link</mat-label>
+    <input matInput formControlName="linkedin" placeholder="Ex. " />
+    @if(form.get('linkedin')?.hasError('required')) {
+    <mat-error>Email is required</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
+    <mat-label>What is your expected salary for this position?</mat-label>
+    <input matInput formControlName="salary" placeholder="Ex. John Doe" />
+    @if(form.get('salary')?.hasError('required')) {
+    <mat-error>Email is required</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
+    <mat-label>How did you hear about this opportunity?</mat-label>
+    <input matInput formControlName="howDidFind" placeholder="Ex. John Doe" />
+    @if(form.get('howDidFind')?.hasError('required')) {
+    <mat-error>Email is required</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
+    <mat-label
+      >If you are shortlisted for this position, What will be your notice period to your current employer?</mat-label
+    >
+    <input matInput formControlName="noticePeriod" placeholder="Ex. John Doe" />
+    @if(form.get('noticePeriod')?.hasError('required')) {
+    <mat-error>Email is required</mat-error>
+    }
+  </mat-form-field>
+
+  <!-- <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
     <mat-label>Select</mat-label>
     <mat-select>
       <mat-option value="one">First option</mat-option>
       <mat-option value="two">Second option</mat-option>
     </mat-select>
   </mat-form-field>
-  <mat-form-field appearance="outline">
+  <mat-form-field appearance="outline" [hideRequiredMarker]="hideRequiredMarker">
     <mat-label>Textarea</mat-label>
     <textarea matInput></textarea>
-  </mat-form-field>
+  </mat-form-field> -->
 
-  <div class="card">
+  <div class="card file-upload-container">
     <label for="Resume/CV">Resume/CV</label>
     <p-toast />
     <p-fileupload
