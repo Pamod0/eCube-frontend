@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { HeaderComponent } from '../../../../layout/header/header.component';
 import { MatIconModule } from '@angular/material/icon';
 import { AccordionComponent } from '../../../../layout/accordion/accordion.component';
-import { ContactFormComponent } from '../../../../layout/contact-form/contact-form.component';
+import { ContactFormComponent } from '../../../../components/contact-form/contact-form.component';
 import { FooterComponent } from '../../../../layout/footer/footer.component';
 import { ActivatedRoute } from '@angular/router';
 import { BlogpageService } from './blogpage.service';
