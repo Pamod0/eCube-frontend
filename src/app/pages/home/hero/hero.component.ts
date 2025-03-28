@@ -9,6 +9,7 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
@@ -28,7 +29,11 @@ export class HeroComponent implements AfterViewInit {
   name: string = 'Jason Reynolds';
   designation: string = 'CEO, NextGen Technologies';
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) {}
+  constructor(
+    private elementRef: ElementRef,
+    private renderer: Renderer2,
+    private router: Router,
+  ) {}
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -37,20 +42,20 @@ export class HeroComponent implements AfterViewInit {
   ngOnInit(): void {
     this.testimonialContent = [
       {
-      name: 'Robert Johnson',
-      designation: 'CEO, Quantum Innovations',
+        name: 'Robert Johnson',
+        designation: 'CEO, Quantum Innovations',
       },
       {
-      name: 'Michael Park',
-      designation: 'CTO, CloudSphere Technologies',
+        name: 'Michael Park',
+        designation: 'CTO, CloudSphere Technologies',
       },
       {
-      name: 'William Chen',
-      designation: 'COO, Digital Horizon',
+        name: 'William Chen',
+        designation: 'COO, Digital Horizon',
       },
       {
-      name: 'James Morrison',
-      designation: 'CFO, Synergy Solutions',
+        name: 'James Morrison',
+        designation: 'CFO, Synergy Solutions',
       },
     ];
   }
@@ -101,5 +106,13 @@ export class HeroComponent implements AfterViewInit {
     if (!this.radios) return;
 
     this.renderer.setProperty(this.radios[this.currentIndex], 'checked', true);
+  }
+
+  scrollToSection(elementId: string): void {
+    const element = document.getElementById(elementId);
+    // if (element) {
+    //   element.scrollIntoView({ behavior: 'smooth' });
+    // }
+    this.router.navigate(['/'], { fragment: elementId });
   }
 }
