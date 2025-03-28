@@ -1,97 +1,129 @@
 import { Component, inject } from '@angular/core';
-import { FileUploadModule } from 'primeng/fileupload';
-import { MessageService } from 'primeng/api';
-import { FileUpload } from 'primeng/fileupload';
-import { ToastModule } from 'primeng/toast';
 import { CommonModule } from '@angular/common';
-import { MatSelectModule } from '@angular/material/select';
+import { 
+  ReactiveFormsModule, 
+  FormBuilder, 
+  Validators, 
+  FormGroup 
+} from '@angular/forms';
+
+// Angular Material Imports
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { JobFormService } from '../../../services/job-form.service';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-interface UploadEvent {
-  originalEvent: Event;
-  files: File[];
-}
+// Services
+import { JobFormService } from '../../../services/job-form.service';
+
+// Interfaces
+import { JobApplicationFormData } from '../../../services/job-form.service';
 
 @Component({
   selector: 'app-job-application-form',
+  standalone: true,
   imports: [
-    FileUploadModule,
-    FileUpload,
-    ToastModule,
     CommonModule,
-    MatSelectModule,
+    ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    ReactiveFormsModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule
   ],
   templateUrl: './job-application-form.component.html',
-  styleUrl: './job-application-form.component.scss',
-  providers: [MessageService],
+  styleUrl: './job-application-form.component.scss'
 })
 export class JobApplicationFormComponent {
-  isSubmitting: boolean;
-  successMessage: string | null;
-  errorMessage: string | null;
-  hideRequiredMarker = true;
-
-  uploadedFiles: any[] = [];
-
-  form = new FormGroup({
-    firstName: new FormControl('', [Validators.required]),
-    lastName: new FormControl('', [Validators.required]),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    phone: new FormControl('', [Validators.required]),
-    linkedIn: new FormControl('', [Validators.required]),
-    salary: new FormControl('', [Validators.required]),
-    howDidFind: new FormControl('', [Validators.required]),
-    noticePeriod: new FormControl('', [Validators.required]),
-  });
-
-  private messageService = inject(MessageService);
-  private formService = inject(JobFormService);
+  private _fb = inject(FormBuilder);
+  private _jobFormService = inject(JobFormService);
   private _snackBar = inject(MatSnackBar);
 
-  submitForm() {
+  // Form definition
+  form: FormGroup = this._fb.group({
+    firstName: ['', [
+      Validators.required, 
+      Validators.minLength(2),
+      Validators.maxLength(50)
+    ]],
+    lastName: ['', [
+      Validators.required, 
+      Validators.minLength(2),
+      Validators.maxLength(50)
+    ]],
+    email: ['', [
+      Validators.required, 
+      Validators.email
+    ]],
+    phone: ['', [
+      Validators.required, 
+      Validators.pattern(/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/im)
+    ]],
+    linkedIn: ['', [
+      Validators.pattern(/^(https?:\/\/)?(www\.)?linkedin\.com\/.*$/)
+    ]],
+    salary: ['', [
+      Validators.required, 
+      Validators.min(0),
+      Validators.max(1000000)
+    ]],
+    howDidFind: ['', Validators.required],
+    noticePeriod: ['', Validators.required]
+  });
+
+  // Submission state
+  isSubmitting = false;
+
+  // Getter for easy access to form controls in template
+  get f() {
+    return this.form.controls;
+  }
+
+  // Submission method
+  onSubmit() {
     if (this.form.invalid) {
+      this.markFormGroupTouched(this.form);
       return;
     }
 
     this.isSubmitting = true;
-    this.successMessage = null;
-    this.errorMessage = null;
 
-    this.formService.submitForm(this.form.value).subscribe({
-      next: () => {
-        this.successMessage = 'Your message has been sent!';
-        this.form.reset();
-        Object.keys(this.form.controls).forEach((key) => {
-          this.form.get(key)?.setErrors(null);
-        });
-        this.openSnackBar('Submitted Successfully', 'Ok');
-      },
-      error: (err) => {
-        this.errorMessage = 'Failed to send message. Please try again.';
-        console.error(err);
-      },
-      complete: () => {
-        this.isSubmitting = false;
-      },
+    this._jobFormService.submitForm(this.form.value as JobApplicationFormData)
+      .subscribe({
+        next: () => {
+          this._snackBar.open('Application submitted successfully', 'Close', { 
+            duration: 3000,
+            horizontalPosition: 'center',
+            verticalPosition: 'top',
+          });
+          this.form.reset();
+        },
+        error: (err) => {
+          this._snackBar.open('Failed to submit application', 'Close', { 
+            duration: 3000,
+            horizontalPosition: 'center',
+            verticalPosition: 'top',
+            panelClass: ['error-snackbar']
+          });
+          console.error('Submission error:', err);
+        },
+        complete: () => {
+          this.isSubmitting = false;
+        }
+      });
+  }
+
+  // Helper method to mark all form controls as touched
+  private markFormGroupTouched(formGroup: FormGroup) {
+    Object.values(formGroup.controls).forEach(control => {
+      control.markAsTouched();
+
+      if (control instanceof FormGroup) {
+        this.markFormGroupTouched(control);
+      }
     });
-  }
-
-  onUpload(event: UploadEvent) {
-    for (let file of event.files) {
-      this.uploadedFiles.push(file);
-    }
-
-    this.messageService.add({ severity: 'info', summary: 'File Uploaded', detail: '' });
-  }
-
-  openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action);
   }
 }

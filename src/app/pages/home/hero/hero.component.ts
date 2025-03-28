@@ -37,19 +37,19 @@ export class HeroComponent implements AfterViewInit {
   ngOnInit(): void {
     this.testimonialContent = [
       {
-      name: 'Sarah Johnson',
+      name: 'Robert Johnson',
       designation: 'CEO, Quantum Innovations',
       },
       {
-      name: 'David Park',
+      name: 'Michael Park',
       designation: 'CTO, CloudSphere Technologies',
       },
       {
-      name: 'Emily Chen',
+      name: 'William Chen',
       designation: 'COO, Digital Horizon',
       },
       {
-      name: 'Marcus Williams',
+      name: 'James Morrison',
       designation: 'CFO, Synergy Solutions',
       },
     ];
